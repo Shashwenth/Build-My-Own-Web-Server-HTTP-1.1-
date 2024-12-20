@@ -26,6 +26,11 @@ public class JsonParser {
         return jsonEntity;
     }
 
+    public JsonEntity getJsonEntity() {
+        SetObjectMapper();
+        return mapJsonToModel();
+    }
+
     
     public void printJsonEntity() {
         SetObjectMapper();
