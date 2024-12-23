@@ -21,13 +21,13 @@ public class ThreadStartUp extends Thread {
 
     @Override
     public void run(){
-        
+        int x=0;
         try {
             while(serverSocket.isBound() && !serverSocket.isClosed()){
                 try {
                     Socket socket = serverSocket.accept();
                     
-                    ThreadSocketImplementation threadSocketImplementation = new ThreadSocketImplementation(socket);
+                    ThreadSocketImplementation threadSocketImplementation = new ThreadSocketImplementation(socket,x++);
                     threadSocketImplementation.start();
                     
                 } catch (IOException ex) {
