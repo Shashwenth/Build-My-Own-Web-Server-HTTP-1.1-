@@ -1,5 +1,12 @@
 package com.codingchallenges.web_server.RequestMapping;
 
+
+/*
+ * 
+ * HTTP Method.
+ * 
+ */
+
 public class RequestMethod {
 
     private final String method;

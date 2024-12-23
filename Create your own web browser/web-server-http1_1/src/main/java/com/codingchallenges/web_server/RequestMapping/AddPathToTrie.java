@@ -1,10 +1,19 @@
 package com.codingchallenges.web_server.RequestMapping;
 
+
+/*
+ * 
+ * DEPRECATED. ONLY USE THE ADDENDPOINTS CLASS TO ADD ENDPOINTS TO THE TRIE. USE CHECKIFPATHISVALID TO CHECK IF A PATH IS VALID.
+ * 
+ */
+
 public class AddPathToTrie {
 
     private Trie root;
 
     private String path;
+
+
 
     public AddPathToTrie(String path, Trie root){
         this.path = path;

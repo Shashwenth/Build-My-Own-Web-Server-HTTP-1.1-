@@ -6,20 +6,17 @@ public class CheckIfPathIsValid {
 
     private String path;
 
+    private String responseBody;
+
     public CheckIfPathIsValid(String path, Trie root){
         this.path = path;
         this.root = root;
     }
 
     public boolean checkIfPathIsValid(){
-        if(path.length()==1 && path.charAt(0)=='/'){
-            return true;
-        }
         String[] pathArray=this.path.split("/");
-        // for(String x:pathArray){
-        //     System.out.println(x);
-        // }
-        //System.out.println("Inside Trie");
+        // System.out.println("Path Array");
+        // System.out.println(Arrays.toString(pathArray));
         Trie current = root;
         for(String p: pathArray){
             if(p.length()==0){
@@ -38,7 +35,14 @@ public class CheckIfPathIsValid {
                 return false;
             }
         }
+        //System.out.println(current.current);
+        this.responseBody=current.ReturnFilePath;
+        //System.out.printf("Check Validity Current Value %s and its response path %s \n",current.current, current.ReturnFilePath);
         return current.isEnd;
+    }
+
+    public String getHTMLResponsePath(){
+        return this.responseBody;
     }
 
 }

@@ -1,5 +1,11 @@
 package com.codingchallenges.web_server.RequestMapping;
 
+/*
+ * 
+ * Sets the Request Body DTO.
+ * 
+ */
+
 public class InitialiseRequestBody {
 
     private String RequestLine;

@@ -1,5 +1,11 @@
 package com.codingchallenges.web_server.RequestMapping;
 
+/*
+ * 
+ * DTO to store the HTTP Method and the Path. This is to Store the request from the user.
+ * 
+ */
+
 public class RequestBody {
 
     private String METHOD;
