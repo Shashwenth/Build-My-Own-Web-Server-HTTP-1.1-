@@ -2,9 +2,9 @@ package com.codingchallenges.web_server.RequestMapping;
 
 public class CheckIfPathIsValid {
 
-    private Trie root;
+    private final Trie root;
 
-    private String path;
+    private final String path;
 
     private String responseBody;
 

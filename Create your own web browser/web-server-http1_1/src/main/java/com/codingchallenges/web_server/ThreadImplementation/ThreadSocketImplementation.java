@@ -14,7 +14,10 @@ import com.codingchallenges.web_server.handleResponse.HandleHTMLResponse;
 public class ThreadSocketImplementation extends Thread {
 
     private final Socket socket;
+
+    @SuppressWarnings("unused")
     private final int x;
+
     public ThreadSocketImplementation(Socket socket, int x){
         this.x=x;
         this.socket = socket;
@@ -27,33 +30,45 @@ public class ThreadSocketImplementation extends Thread {
                     OutputStream outputStream = socket.getOutputStream();) {
                         String inputLine;
                         StringBuilder requestData = new StringBuilder();
-                            RequestBody requestBody;
+                            RequestBody requestBody=null;
                             String HTMLResponsePath="";
                             boolean flag=true;
+                            int contentLength = 0;
                             while ((inputLine = in.readLine()) != null && !inputLine.isEmpty()) {
+
                                 if(flag){
                                     InitialiseRequestBody initialiseRequestBody = new InitialiseRequestBody(inputLine);
                                     requestBody = initialiseRequestBody.initialiseRequestBody();
                                     CheckValidityService checkValidityService = new CheckValidityService(requestBody);
-                                    String validity = checkValidityService.checkValidity();
+                                    //String validity = checkValidityService.checkValidity();
                                     HTMLResponsePath=checkValidityService.ReturnHTMLResponseBody();
                                     //System.out.println(validity);
                                     flag=false;
                                     
                                 }
+                                if (inputLine.toLowerCase().startsWith("content-length:")) {
+                                    contentLength = Integer.parseInt(inputLine.substring(15).trim());
+                                }
+                                
                                 requestData.append(inputLine).append("\n");
-                                break;
+                            }
+                            
+                            // Read body if it's a POST request and has content
+                            if (requestBody != null && requestBody.getMETHOD().equals("POST") && contentLength > 0) {
+                                char[] bodyChars = new char[contentLength];
+                                in.read(bodyChars, 0, contentLength);
+                                String body = new String(bodyChars);
+                                requestData.append("\n").append(body);
+                                
+                                // Now you can process the body
+                                System.out.println("Request body: " + body);
                             }
 
-
-                            //System.out.printf("The HTMLResponsePath is %s and it's length is %d\n",HTMLResponsePath,HTMLResponsePath.length());
-                            //System.out.println(requestData);
-                        
                         HandleHTMLResponse handleHTMLResponse=new HandleHTMLResponse();
-                        
-                        
-                        //System.out.println("Request complete, sending response...");
 
+                        System.out.println(requestData);
+                                   
+                        //System.out.println("Request complete, sending response...");
                         // try (BufferedWriter writer = new BufferedWriter(new FileWriter("web-server-http1_1\\src\\main\\java\\com\\codingchallenges\\web_server\\ThreadImplementation\\readthis.txt", true))) {
                         //     writer.write("X: " + x + "\n");
                         //     writer.write("Thread " + Thread.currentThread().getName() + " received request:\n");
@@ -62,35 +77,32 @@ public class ThreadSocketImplementation extends Thread {
                         // }catch (IOException e) {
                         //     System.err.println("Error writing to file: " + e.getMessage());
                         // }
-                        
                         // String html = "<html><head><title>My Web Server</title></head><body><h1>Welcome to my web server!</h1></body></html>";
+                        
                         final String CRLF = "\r\n";
-                        String response="";
+                        String response;
                         if(HTMLResponsePath.equals("")){
+
                             String notFoundHtml = "<html><body><h1>404 Not Found</h1><p>The requested resource could not be found.</p></body></html>";
-                                response = "HTTP/1.1 404 Not Found" + CRLF +
+                            response = "HTTP/1.1 404 Not Found" + CRLF +
                                         "Content-Type: text/html" + CRLF +
                                         "Content-Length: " + notFoundHtml.getBytes().length + CRLF +
                                         CRLF +
                                         notFoundHtml;
                         }
+
                         else{
+
                             response=handleHTMLResponse.GetHTMLResponse(HTMLResponsePath);
-                        }
-                         
                         
+                        }
+             
                         outputStream.write(response.getBytes());
                         outputStream.flush();
                         outputStream.close();
 
-                        // try {
-                        //     sleep(5000);
-                        // } catch (InterruptedException e) {
-                        //     System.err.println("Error: " + e.getMessage());
-                        // }
-                        
-
                     }
+
                     catch (SocketTimeoutException e) {
                         System.err.println("Connection timed out: " + e.getMessage());
                     } catch (IOException e) {
@@ -102,7 +114,6 @@ public class ThreadSocketImplementation extends Thread {
                             System.err.println("Error: " + e.getMessage());
                         }
                     }
-
         } 
 
     }

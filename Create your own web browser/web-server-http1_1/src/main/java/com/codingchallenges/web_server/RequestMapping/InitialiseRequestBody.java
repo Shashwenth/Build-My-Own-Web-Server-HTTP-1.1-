@@ -8,7 +8,7 @@ package com.codingchallenges.web_server.RequestMapping;
 
 public class InitialiseRequestBody {
 
-    private String RequestLine;
+    private final String RequestLine;
 
     public InitialiseRequestBody(String RequestLine) {
         this.RequestLine = RequestLine;
@@ -16,7 +16,7 @@ public class InitialiseRequestBody {
 
     public RequestBody initialiseRequestBody() {
         String Method="";
-        String Path="";
+        
         String[] requestLineArray = this.RequestLine.split(" ");
 
         RequestMethod requestMethod = new RequestMethod(requestLineArray[0]);
@@ -40,7 +40,7 @@ public class InitialiseRequestBody {
             Method = "PATCH";
         }
 
-        Path = requestLineArray[1];
+        String Path = requestLineArray[1];
 
         RequestBody requestBody = new RequestBody(Method, Path);
         return requestBody;
