@@ -5,7 +5,7 @@ import com.codingchallenges.web_server.RequestMapping.MainTrieGetter;
 
 public class InitializeEndpointGET {
 
-    private String responsePath;
+    private final String responsePath;
     private String getPath;
 
     public InitializeEndpointGET(String responsePath, String getPath){
@@ -16,6 +16,14 @@ public class InitializeEndpointGET {
     protected  void callAddEndpoint(){
         AddEndPoints addEndPoints=new AddEndPoints(MainTrieGetter.getRoot());
         addEndPoints.AddpathToTrie(getPath, responsePath);
+    }
+
+    public String getGetPath() {
+        return getPath;
+    }
+
+    public void setGetPath(String getPath) {
+        this.getPath = getPath;
     }
 
 

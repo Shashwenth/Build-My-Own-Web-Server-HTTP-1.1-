@@ -4,7 +4,7 @@ import com.codingchallenges.web_server.RequestMapping.Trie;
 
 public class AddEndPoints {
 
-    private Trie root;
+    private final Trie root;
 
     public AddEndPoints(Trie root){
         this.root = root;

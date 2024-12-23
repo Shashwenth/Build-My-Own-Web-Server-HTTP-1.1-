@@ -7,7 +7,7 @@ import com.codingchallenges.web_server.RequestMapping.Trie;
 
 public class CheckValidityService {
 
-    private RequestBody requestBody;
+    private final RequestBody requestBody;
 
     Trie root=MainTrieGetter.getRoot();
 

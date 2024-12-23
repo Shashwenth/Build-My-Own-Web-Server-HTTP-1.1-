@@ -9,9 +9,9 @@ package com.codingchallenges.web_server.RequestMapping;
 
 public class AddPathToTrie {
 
-    private Trie root;
+    private final Trie root;
 
-    private String path;
+    private final String path;
 
 
 
