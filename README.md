@@ -44,3 +44,31 @@ The server utilizes a custom implementation of the HTTP 1.1 protocol, leveraging
 ## Prerequisites
 Java JDK 8 or higher
 Maven (for dependency management)
+
+## Roadmap
+Future enhancements planned for the project:
+
+Database Integration
+
+Implementation of database connectivity
+URL storage and retrieval capabilities
+Object persistence functionality
+
+
+Enhanced Response Types
+
+Support for additional content types
+Improved content negotiation
+
+
+HTTP Method Extension
+
+Implementation of PUT, DELETE, PATCH methods
+Enhanced HTTP protocol support
+
+
+URL Shortener Specific Features
+
+Custom URL support
+Analytics tracking
+URL expiration handling
