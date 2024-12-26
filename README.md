@@ -48,27 +48,24 @@ Maven (for dependency management)
 ## Roadmap
 Future enhancements planned for the project:
 
-Database Integration
+#### 1. Database Integration
 
 Implementation of database connectivity
+
 URL storage and retrieval capabilities
+
 Object persistence functionality
 
 
-Enhanced Response Types
+#### 2. Enhanced Response Types
 
 Support for additional content types
+
 Improved content negotiation
 
 
-HTTP Method Extension
+#### 3. HTTP Method Extension
 
 Implementation of PUT, DELETE, PATCH methods
+
 Enhanced HTTP protocol support
-
-
-URL Shortener Specific Features
-
-Custom URL support
-Analytics tracking
-URL expiration handling
