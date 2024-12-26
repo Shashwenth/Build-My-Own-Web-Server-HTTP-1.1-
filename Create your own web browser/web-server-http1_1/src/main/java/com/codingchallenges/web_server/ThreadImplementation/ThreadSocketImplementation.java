@@ -5,11 +5,11 @@ import java.io.InputStreamReader;
 import java.io.OutputStream;
 import java.net.Socket;
 import java.net.SocketTimeoutException;
+import java.util.List;
 
 import com.codingchallenges.web_server.RequestMapping.InitialiseRequestBody;
 import com.codingchallenges.web_server.RequestMapping.RequestBody;
 import com.codingchallenges.web_server.handleRequest.CheckValidityService;
-import com.codingchallenges.web_server.handleResponse.HandleHTMLResponse;
 
 public class ThreadSocketImplementation extends Thread {
 
@@ -30,9 +30,11 @@ public class ThreadSocketImplementation extends Thread {
                     OutputStream outputStream = socket.getOutputStream();) {
                         String inputLine;
                         StringBuilder requestData = new StringBuilder();
+                        StringBuilder ReqDataAsString = new StringBuilder();
                             RequestBody requestBody=null;
-                            String HTMLResponsePath="";
+                            //String HTMLResponsePath="";
                             boolean flag=true;
+                            List<String> ClassAndMethod=null;
                             int contentLength = 0;
                             while ((inputLine = in.readLine()) != null && !inputLine.isEmpty()) {
 
@@ -40,9 +42,16 @@ public class ThreadSocketImplementation extends Thread {
                                     InitialiseRequestBody initialiseRequestBody = new InitialiseRequestBody(inputLine);
                                     requestBody = initialiseRequestBody.initialiseRequestBody();
                                     CheckValidityService checkValidityService = new CheckValidityService(requestBody);
-                                    //String validity = checkValidityService.checkValidity();
-                                    HTMLResponsePath=checkValidityService.ReturnHTMLResponseBody();
+                                    @SuppressWarnings("unused")
+                                    String validity = checkValidityService.checkValidity();
                                     //System.out.println(validity);
+                                    //HTMLResponsePath=checkValidityService.ReturnHTMLResponseBody();
+                                    ClassAndMethod=checkValidityService.ReturnClassAndMethod();
+                                    if(ClassAndMethod==null){
+                                        System.out.println("Class and Method is nyll");
+
+                                    }
+                                    //
                                     flag=false;
                                     
                                 }
@@ -52,22 +61,42 @@ public class ThreadSocketImplementation extends Thread {
                                 
                                 requestData.append(inputLine).append("\n");
                             }
-                            
-                            // Read body if it's a POST request and has content
-                            if (requestBody != null && requestBody.getMETHOD().equals("POST") && contentLength > 0) {
-                                char[] bodyChars = new char[contentLength];
-                                in.read(bodyChars, 0, contentLength);
-                                String body = new String(bodyChars);
-                                requestData.append("\n").append(body);
-                                
-                                // Now you can process the body
-                                System.out.println("Request body: " + body);
+
+
+                            final String CRLF = "\r\n";
+                            String ErrorResponse="HTTP/1.1 200 OK" + CRLF +
+                                                    "Content-Type: text/plain" + CRLF +
+                                                    "Content-Length: " + "NO Such MethodName Defined".getBytes().length + CRLF +
+                                                    CRLF +
+                                                    "NO Such MethodName Defined";
+
+                            if(ClassAndMethod==null){
+                                outputStream.write(ErrorResponse.getBytes());
                             }
+                            else{   
+                                String response;                             
+                                if (requestBody != null && requestBody.getMETHOD().equals("POST") && contentLength > 0) {
+                                    char[] bodyChars = new char[contentLength];
+                                    in.read(bodyChars, 0, contentLength);
+                                    String body = new String(bodyChars);
+                                    ReqDataAsString.append("\n").append(body); 
+                                    ExecuteReturnMethod executeReturnMethod=new ExecuteReturnMethod(ClassAndMethod.get(0), ClassAndMethod.get(1));
+                                    response=executeReturnMethod.invokeMethod(ReqDataAsString.toString());
+                                }
+                                else{
+                                    ExecuteReturnMethod executeReturnMethod=new ExecuteReturnMethod(ClassAndMethod.get(0), ClassAndMethod.get(1));
+                                    response=executeReturnMethod.invokeMethod();
+                                }
 
-                        HandleHTMLResponse handleHTMLResponse=new HandleHTMLResponse();
+                                outputStream.write(response.getBytes());
+                            }
+                            
 
-                        System.out.println(requestData);
-                                   
+                        //HandleHTMLResponse handleHTMLResponse=new HandleHTMLResponse();
+                        
+
+
+                                                       
                         //System.out.println("Request complete, sending response...");
                         // try (BufferedWriter writer = new BufferedWriter(new FileWriter("web-server-http1_1\\src\\main\\java\\com\\codingchallenges\\web_server\\ThreadImplementation\\readthis.txt", true))) {
                         //     writer.write("X: " + x + "\n");
@@ -79,25 +108,25 @@ public class ThreadSocketImplementation extends Thread {
                         // }
                         // String html = "<html><head><title>My Web Server</title></head><body><h1>Welcome to my web server!</h1></body></html>";
                         
-                        final String CRLF = "\r\n";
-                        String response;
-                        if(HTMLResponsePath.equals("")){
+                        // final String CRLF = "\r\n";
+                        // String response;
+                        // if(HTMLResponsePath.equals("")){
 
-                            String notFoundHtml = "<html><body><h1>404 Not Found</h1><p>The requested resource could not be found.</p></body></html>";
-                            response = "HTTP/1.1 404 Not Found" + CRLF +
-                                        "Content-Type: text/html" + CRLF +
-                                        "Content-Length: " + notFoundHtml.getBytes().length + CRLF +
-                                        CRLF +
-                                        notFoundHtml;
-                        }
+                        //     String notFoundHtml = "<html><body><h1>404 Not Found</h1><p>The requested resource could not be found.</p></body></html>";
+                        //     response = "HTTP/1.1 404 Not Found" + CRLF +
+                        //                 "Content-Type: text/html" + CRLF +
+                        //                 "Content-Length: " + notFoundHtml.getBytes().length + CRLF +
+                        //                 CRLF +
+                        //                 notFoundHtml;
+                        // }
 
-                        else{
+                        // else{
 
-                            response=handleHTMLResponse.GetHTMLResponse(HTMLResponsePath);
+                        //     response=handleHTMLResponse.GetHTMLResponse(HTMLResponsePath);
                         
-                        }
+                        // }
              
-                        outputStream.write(response.getBytes());
+                        
                         outputStream.flush();
                         outputStream.close();
 

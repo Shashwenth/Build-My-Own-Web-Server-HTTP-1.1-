@@ -1,5 +1,7 @@
 package com.codingchallenges.web_server.handleRequest;
 
+import java.util.List;
+
 import com.codingchallenges.web_server.RequestMapping.CheckIfPathIsValid;
 import com.codingchallenges.web_server.RequestMapping.MainTrieGetter;
 import com.codingchallenges.web_server.RequestMapping.RequestBody;
@@ -18,7 +20,7 @@ public class CheckValidityService {
     }
 
     public String checkValidity(){
-        checkIfPathIsValid = new CheckIfPathIsValid(requestBody.getPATH(), root);
+        checkIfPathIsValid = new CheckIfPathIsValid(requestBody.getPATH(), root, requestBody.getMETHOD());
             if(checkIfPathIsValid.checkIfPathIsValid()){
                return ("Valid Path");
             }else{
@@ -28,6 +30,10 @@ public class CheckValidityService {
 
     public String ReturnHTMLResponseBody(){
         return checkIfPathIsValid.getHTMLResponsePath()==null?"":checkIfPathIsValid.getHTMLResponsePath();
+    }
+
+    public List<String> ReturnClassAndMethod(){
+        return checkIfPathIsValid.getClassAndMethod()==null?null:checkIfPathIsValid.getClassAndMethod();
     }
 
 }

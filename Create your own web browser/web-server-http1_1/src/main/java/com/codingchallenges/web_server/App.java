@@ -5,10 +5,10 @@ import java.io.IOException;
 
 import com.codingchallenges.web_server.ConfigurationMapper.JsonParser;
 import com.codingchallenges.web_server.ConfigurationModel.JsonEntity;
-import com.codingchallenges.web_server.IntitalizeGetRequests.Intializer;
 import com.codingchallenges.web_server.RequestMapping.MainTrieGetter;
 import com.codingchallenges.web_server.RequestMapping.Trie;
 import com.codingchallenges.web_server.ThreadImplementation.ThreadStartUp;
+import com.codingchallenges.web_server.UserImplementation.MyInitialTestApp;
 
 /**
  * Hello world!
@@ -25,22 +25,32 @@ public final class App {
         System.out.println("Hello World!");
 
         String jsonFilePath = "/config.json";
-        JsonParser jsonParser = new JsonParser(jsonFilePath);
-        jsonParser.printJsonEntity();
-        JsonEntity jsonEntity = jsonParser.getJsonEntity();
+        JsonParser<JsonEntity> jsonParser = new JsonParser<>(JsonEntity.class);
+        JsonEntity jsonEntity = jsonParser.parseFromFile(jsonFilePath);
+        jsonParser.printEntity(jsonEntity);
+
+        //JsonEntity jsonEntity = jsonParser.getJsonEntity();
 
         Trie trie = new Trie("/");
 
-        Intializer it=new Intializer();
+        // Intializer it=new Intializer();
         MainTrieGetter.setRoot(trie);
 
-        it.GetInitialize("/Shashwenth", "web-server-http1_1\\src\\main\\java\\com\\codingchallenges\\web_server\\ResponseHTMLFiles\\Shashwenth.html");
+        // it.GetInitialize("/Shashwenth", "web-server-http1_1\\src\\main\\java\\com\\codingchallenges\\web_server\\ResponseHTMLFiles\\Shashwenth.html");
 
-        it.GetInitialize("/Dhay", "web-server-http1_1\\src\\main\\java\\com\\codingchallenges\\web_server\\ResponseHTMLFiles\\Dhay.html");
+        // it.GetInitialize("/Dhay", "web-server-http1_1\\src\\main\\java\\com\\codingchallenges\\web_server\\ResponseHTMLFiles\\Dhay.html");
 
+        // it.GetInitialize("/", "web-server-http1_1\\src\\main\\java\\com\\codingchallenges\\web_server\\ResponseHTMLFiles\\Welcome.html");
 
-        it.GetInitialize("/", "web-server-http1_1\\src\\main\\java\\com\\codingchallenges\\web_server\\ResponseHTMLFiles\\Welcome.html");
+        // it.PostInitialize("/Shashwenth", "web-server-http1_1\\src\\main\\java\\com\\codingchallenges\\web_server\\ResponseHTMLFiles\\Dhay.html");
 
+        // it.PostInitialize("/Dhay", "web-server-http1_1\\src\\main\\java\\com\\codingchallenges\\web_server\\ResponseHTMLFiles\\Shashwenth.html");
+
+        MyInitialTestApp myInitialTestApp=new MyInitialTestApp();
+
+        myInitialTestApp.initialize("/Shashwent/name", "getName", "GET");
+        myInitialTestApp.initialize("/Shashwent/age", "getAge", "GET");
+        myInitialTestApp.initialize("/Shashwent/name", "setName", "POST");
         ThreadStartUp threadStartUp;
         try {
             threadStartUp = new ThreadStartUp(jsonEntity.getPORT(), jsonEntity.getWebRoot());

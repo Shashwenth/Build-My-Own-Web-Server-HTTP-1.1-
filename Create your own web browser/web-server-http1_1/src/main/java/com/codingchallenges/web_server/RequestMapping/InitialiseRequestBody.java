@@ -40,7 +40,7 @@ public class InitialiseRequestBody {
             Method = "PATCH";
         }
 
-        String Path = requestLineArray[1];
+        String Path= requestLineArray[1];
 
         RequestBody requestBody = new RequestBody(Method, Path);
         return requestBody;
