@@ -1,27 +1,26 @@
 package com.codingchallenges.web_server.RequestMapping;
 
-/*
- * 
- * This Trie data structure is going to hold the Request paths.
- * The ReturnFilePath is going to point to the path of the return HTML file.
- * 
- */
-
-
+import java.util.HashMap;
 import java.util.HashSet;
+import java.util.List;
 
 public class Trie{
     public HashSet<Trie> children;
+    public HashMap<String,Trie> child;
     public boolean isEnd;
     public String current;
     public String ReturnFilePath;
-
+    public HashMap<String, String> ReturnFilePathMap;
+    public HashMap<String, List<String>> ReflectionPath;
 
     public Trie(String current){
         this.current = current;
+        this.child= new HashMap<>();
         this.children = new HashSet<>();
         this.isEnd = false;
         this.ReturnFilePath="";
+        this.ReturnFilePathMap=new HashMap<>();
+        this.ReflectionPath=new HashMap<>();
     }
 
 }

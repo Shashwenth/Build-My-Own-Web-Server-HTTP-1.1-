@@ -3,13 +3,13 @@ package com.codingchallenges.web_server.IntitalizeGetRequests;
 import com.codingchallenges.web_server.EndPoints.AddEndPoints;
 import com.codingchallenges.web_server.RequestMapping.MainTrieGetter;
 
-public class InitializeEndpointGET implements  InitializeEndPoints {
+public class InitializeEndpointPOST implements  InitializeEndPoints {
 
     private final String responsePath;
     private String getPath;
     private final String method;
 
-    public InitializeEndpointGET(String responsePath, String getPath, String Method){
+    public InitializeEndpointPOST(String responsePath, String getPath, String Method){
         this.responsePath=responsePath;
         this.getPath=getPath;
         this.method=Method;
