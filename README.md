@@ -3,19 +3,30 @@ A lightweight, extensible web server built from scratch in Java that supports dy
 Features
 
 Custom HTTP Server: Built using Java ServerSockets listening on port 8080
+
 Concurrent Request Handling: Multithreaded architecture for handling multiple simultaneous requests
+
+
 Dynamic Endpoint Registration: Register custom endpoints and map them to specific functions
+
 Efficient Path Mapping: TRIE-based path resolution for optimal routing performance
+
 Java Reflection: Dynamic method execution based on registered endpoints
+
 Request Support: Currently handles GET and POST methods
+
 Response Types: Supports HTML and String response formats
+
 Object Mapping: Uses Jackson Mapper for automatic request body to object mapping
 
 ## Technical Stack
 
 Java
+
 Java Reflection API
+
 Jackson Mapper
+
 HTTP 1.1 Protocol
 Computer Networks fundamentals
 
