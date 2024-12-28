@@ -4,6 +4,18 @@ import java.io.IOException;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 
+
+/*
+ * 
+ *  Enter a description for this class:
+ *  This class is used to parse JSON files and strings into Java objects.
+ *  The ObjectMapper is configured to ignore unknown properties.
+ *  This class is used by the JsonEntity  and Userentity(temp) class.
+ *  The class is generic and can be used to parse any JSON file or string.
+ *  
+ * 
+ */
+
 public class JsonParser<T> {
     private ObjectMapper objectMapper;
     private final Class<T> type;

@@ -3,6 +3,16 @@ package com.codingchallenges.web_server.ConfigurationMapper;
 import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
+/*
+ * 
+ *  Enter a description for this class:
+ *  This class is used to configure the ObjectMapper for the JSON parser.
+ *  The ObjectMapper is configured to ignore unknown properties.
+ *  This class is used by the JsonParser class.
+ * 
+ * 
+ */
+
 public class ConfigureObjectMapper {
 
 

@@ -39,6 +39,11 @@ public class MyInitialTestApp {
         return "Added Successfully";
     }
 
+    public String TestRequestParams(String body, String username, String pass){
+        System.out.printf("This is userName %s and Pass %s",username,pass);
+        return "Test Request Params Successful";
+    }
+
     public void initialize(String path, String FunctionName, String Method){
         List<String> classAndMethod=register(FunctionName);
         AddEndPoints addEndPoints=new AddEndPoints(MainTrieGetter.getRoot());

@@ -3,6 +3,11 @@ package com.codingchallenges.web_server.IntitalizeGetRequests;
 import com.codingchallenges.web_server.EndPoints.AddEndPoints;
 import com.codingchallenges.web_server.RequestMapping.MainTrieGetter;
 
+/*
+ *  Deprecated
+ *  Initialize the POST endpoints
+ */
+
 public class InitializeEndpointPOST implements  InitializeEndPoints {
 
     private final String responsePath;

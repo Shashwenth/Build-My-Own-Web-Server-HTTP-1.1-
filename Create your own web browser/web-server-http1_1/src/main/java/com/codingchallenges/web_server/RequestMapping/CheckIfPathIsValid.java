@@ -3,6 +3,14 @@ package com.codingchallenges.web_server.RequestMapping;
 import java.util.Arrays;
 import java.util.List;
 
+/*
+ *  Enter the description of the class
+ * 
+ *  CheckIfPathIsValid is a class that checks if the path is valid or not.
+ *  It also intitializes the response bosy and Class and Method name for the reflection API.
+ * 
+ */
+
 public class CheckIfPathIsValid {
 
     private final Trie root;
