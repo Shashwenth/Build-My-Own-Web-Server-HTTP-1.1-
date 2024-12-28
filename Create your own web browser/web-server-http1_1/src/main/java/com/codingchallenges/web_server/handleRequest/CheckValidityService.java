@@ -7,6 +7,16 @@ import com.codingchallenges.web_server.RequestMapping.MainTrieGetter;
 import com.codingchallenges.web_server.RequestMapping.RequestBody;
 import com.codingchallenges.web_server.RequestMapping.Trie;
 
+/*
+ *  Enter a description of the class
+ *  CheckValidityService is a class that checks if the path is valid or not.
+ *  CheckIfPathIsValid is called to check if the path is valid or not.
+ *  If the path is valid, it returns "Valid Path". If the path is invalid, it returns "Invalid Path".
+ *  It also returns the HTML response body and the class and method of the path.
+ *  It also returns the Class and Method name that would be used by the Reflection API.
+ * 
+ */
+
 public class CheckValidityService {
 
     private final RequestBody requestBody;

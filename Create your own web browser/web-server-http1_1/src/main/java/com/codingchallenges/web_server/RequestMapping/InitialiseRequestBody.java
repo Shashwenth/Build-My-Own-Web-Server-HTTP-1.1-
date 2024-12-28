@@ -15,6 +15,7 @@ public class InitialiseRequestBody {
     }
 
     public RequestBody initialiseRequestBody() {
+
         String Method="";
         
         String[] requestLineArray = this.RequestLine.split(" ");
@@ -40,7 +41,7 @@ public class InitialiseRequestBody {
             Method = "PATCH";
         }
 
-        String Path= requestLineArray[1];
+        String Path= requestLineArray[1].split("\\?")[0];
 
         RequestBody requestBody = new RequestBody(Method, Path);
         return requestBody;

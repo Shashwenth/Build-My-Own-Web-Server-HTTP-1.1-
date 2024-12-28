@@ -1,5 +1,11 @@
 package com.codingchallenges.web_server.IntitalizeGetRequests;
 
+
+/*
+ * Deprecated
+ * Earlier used to initialize the endpoints
+ */
+
 public class Intializer {
 
     public Intializer(){

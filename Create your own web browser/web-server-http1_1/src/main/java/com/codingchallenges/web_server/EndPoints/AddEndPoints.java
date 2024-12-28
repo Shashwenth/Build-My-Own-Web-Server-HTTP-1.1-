@@ -4,6 +4,13 @@ import java.util.List;
 
 import com.codingchallenges.web_server.RequestMapping.Trie;
 
+/*
+ *  Enter a description for this class:
+ *  AddEndPoints is a class that adds endpoints to the Trie data structure.
+ *  It is used to add endpoints to the Trie data structure.
+ *  It also add the Reflection Method to the trie data structure.
+ */
+
 public class AddEndPoints {
 
     private final Trie root;
@@ -12,6 +19,7 @@ public class AddEndPoints {
         this.root = root;
     }
 
+    // Deprecated. Earlier used for adding endpoints to the Trie.
     public void AddpathToTrie(String path, String ResponsePath, String Method){
 
         String[] pathArray=path.split("/");

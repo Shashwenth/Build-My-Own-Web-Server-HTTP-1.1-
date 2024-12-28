@@ -5,11 +5,27 @@ import java.io.InputStreamReader;
 import java.io.OutputStream;
 import java.net.Socket;
 import java.net.SocketTimeoutException;
+import java.util.ArrayList;
 import java.util.List;
 
 import com.codingchallenges.web_server.RequestMapping.InitialiseRequestBody;
+import com.codingchallenges.web_server.RequestMapping.InitializeRequestParams;
 import com.codingchallenges.web_server.RequestMapping.RequestBody;
+import com.codingchallenges.web_server.RequestMapping.RequestParams;
 import com.codingchallenges.web_server.handleRequest.CheckValidityService;
+
+
+/*
+ *  ThreadSocketImplementation is a class that extends the Thread class.
+ *  It is used to handle the request from the user.
+ *  It reads the request from the user and sends the response back to the user.
+ *  Intially get the Response Body and the Class and Method name from the CheckValidityService class.
+ *  It then checks if the request is a POST request or a GET request.
+ *  If it is a POST request, it reads the body of the request and sends it to the ExecuteReturnMethod class.
+ *  If it is a GET request, it sends the response to the ExecuteReturnMethod class.
+ *  It then sends the response back to the user.
+ *  
+ */
 
 public class ThreadSocketImplementation extends Thread {
 
@@ -33,6 +49,8 @@ public class ThreadSocketImplementation extends Thread {
                         StringBuilder ReqDataAsString = new StringBuilder();
                             RequestBody requestBody=null;
                             //String HTMLResponsePath="";
+                            boolean containsRequestParameters=false;
+                            RequestParams requestParams = null;
                             boolean flag=true;
                             List<String> ClassAndMethod=null;
                             int contentLength = 0;
@@ -51,7 +69,14 @@ public class ThreadSocketImplementation extends Thread {
                                         System.out.println("Class and Method is nyll");
 
                                     }
-                                    //
+
+                                    //Check If Request Parameters Are Present
+                                    InitializeRequestParams initializeRequestParams=new InitializeRequestParams(inputLine);
+                                    containsRequestParameters=initializeRequestParams.checkIfRequestParamsPresent();
+                                    if(containsRequestParameters){
+                                        requestParams=initializeRequestParams.GetRequestParams();
+                                    }
+
                                     flag=false;
                                     
                                 }
@@ -61,7 +86,7 @@ public class ThreadSocketImplementation extends Thread {
                                 
                                 requestData.append(inputLine).append("\n");
                             }
-
+                            System.out.println(requestData.toString());
 
                             final String CRLF = "\r\n";
                             String ErrorResponse="HTTP/1.1 200 OK" + CRLF +
@@ -79,9 +104,23 @@ public class ThreadSocketImplementation extends Thread {
                                     char[] bodyChars = new char[contentLength];
                                     in.read(bodyChars, 0, contentLength);
                                     String body = new String(bodyChars);
-                                    ReqDataAsString.append("\n").append(body); 
+                                    ReqDataAsString.append("\n").append(body);
                                     ExecuteReturnMethod executeReturnMethod=new ExecuteReturnMethod(ClassAndMethod.get(0), ClassAndMethod.get(1));
-                                    response=executeReturnMethod.invokeMethod(ReqDataAsString.toString());
+                                    if(!containsRequestParameters){
+                                        response=executeReturnMethod.invokeMethod(ReqDataAsString.toString());
+                                    }else if(containsRequestParameters && requestParams!=null){
+                                        List<Object> params = new ArrayList<>(requestParams.requestParams.values());
+                                        List<Object> allParams = new ArrayList<>();
+                                        allParams.add(ReqDataAsString.toString());
+                                        allParams.addAll(params);
+                                        response = executeReturnMethod.invokeMethod(
+                                            allParams.toArray()
+                                        );
+                                    }
+                                    else{
+                                        response=executeReturnMethod.invokeMethod();
+                                    }
+                                    
                                 }
                                 else{
                                     ExecuteReturnMethod executeReturnMethod=new ExecuteReturnMethod(ClassAndMethod.get(0), ClassAndMethod.get(1));

@@ -4,6 +4,15 @@ import java.net.InetAddress;
 import java.net.ServerSocket;
 import java.net.Socket;
 
+
+/*
+ * 
+ *  Thread to start the server and listen to the port.
+ *  It creates a new thread for each request.
+ *  This allows concurrent requests to be handled.
+ * 
+ */
+
 public class ThreadStartUp extends Thread {
 
     private final int port;

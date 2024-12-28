@@ -3,6 +3,16 @@ package com.codingchallenges.web_server.ThreadImplementation;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 
+/*
+ * Enter the description of the class
+ * 
+ * It is used to invoke the method of the class using the Reflection API.
+ * Gets Var Args and returns a String response.
+ * Using Java reflction it call the other classes and methods dynamically.
+ * 
+ * 
+ */
+
 public class ExecuteReturnMethod {
 
     private final String className;
@@ -23,10 +33,11 @@ public class ExecuteReturnMethod {
         try {
             // Load the class
         Class<?> loadedClass = Class.forName(className);
-        
+        System.out.println("LEt us SEE HERE");
         Class<?>[] parameterTypes = new Class[args.length];
             for (int i = 0; i < args.length; i++) {
                 parameterTypes[i] = args[i].getClass();
+                System.out.println(parameterTypes[i]);
             }
 
         // Create instance

@@ -48,9 +48,11 @@ public final class App {
 
         MyInitialTestApp myInitialTestApp=new MyInitialTestApp();
 
-        myInitialTestApp.initialize("/Shashwent/name", "getName", "GET");
-        myInitialTestApp.initialize("/Shashwent/age", "getAge", "GET");
-        myInitialTestApp.initialize("/Shashwent/name", "setName", "POST");
+        myInitialTestApp.initialize("/Shashwenth/name", "getName", "GET");
+        myInitialTestApp.initialize("/Shashwenth/age", "getAge", "GET");
+        myInitialTestApp.initialize("/Shashwenth/name", "setName", "POST");
+        myInitialTestApp.initialize("/Shashwenth", "TestRequestParams", "POST");
+        
         ThreadStartUp threadStartUp;
         try {
             threadStartUp = new ThreadStartUp(jsonEntity.getPORT(), jsonEntity.getWebRoot());
