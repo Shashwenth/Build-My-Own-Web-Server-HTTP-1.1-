@@ -1,6 +1,6 @@
 package com.codingchallenges.web_server.RequestMapping;
 
-import java.util.HashMap;
+import java.util.LinkedHashMap;
 import java.util.Map;
 
 /*
@@ -11,10 +11,10 @@ import java.util.Map;
 
 public class RequestParams {
 
-    public HashMap<String, Object> requestParams;
+    public Map<String, Object> requestParams;
 
     public RequestParams(){
-        requestParams=new HashMap<>();
+        requestParams=new LinkedHashMap<>();
     }
 
     @Override
