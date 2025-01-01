@@ -25,6 +25,7 @@ public class ExecuteReturnMethod {
     
             this.className=ClassName;
             this.methodName=MethodName;
+            System.out.println("This is the "+this.className+" and "+this.methodName);
     
         }
     
@@ -54,7 +55,6 @@ public class ExecuteReturnMethod {
                 break;
             }
         }
-        
         Class<?>[] OurMethodparameterTypes = ourMethod.getParameterTypes();
         
         Object[] newArgs=new Object[args.length];
@@ -96,19 +96,19 @@ public class ExecuteReturnMethod {
         
                     // Primitive types
                     case "int":
-                        newArgs[i] = Integer.parseInt(args[i].toString()); // Convert to primitive int
+                        newArgs[i] = Integer.valueOf(args[i].toString()); // Convert to primitive int
                         break;
                     case "double":
-                        newArgs[i] = Double.parseDouble(args[i].toString()); // Convert to primitive double
+                        newArgs[i] = Double.valueOf(args[i].toString()); // Convert to primitive double
                         break;
                     case "boolean":
-                        newArgs[i] = Boolean.parseBoolean(args[i].toString()); // Convert to primitive boolean
+                        newArgs[i] = Boolean.valueOf(args[i].toString()); // Convert to primitive boolean
                         break;
                     case "long":
-                        newArgs[i] = Long.parseLong(args[i].toString()); // Convert to primitive long
+                        newArgs[i] = Long.valueOf(args[i].toString()); // Convert to primitive long
                         break;
                     case "float":
-                        newArgs[i] = Float.parseFloat(args[i].toString()); // Convert to primitive float
+                        newArgs[i] = Float.valueOf(args[i].toString()); // Convert to primitive float
                         break;
                     case "char":
                         newArgs[i] = args[i].toString().charAt(0); // Convert to primitive char

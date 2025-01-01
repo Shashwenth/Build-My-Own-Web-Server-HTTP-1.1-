@@ -12,6 +12,7 @@ public class Trie{
     public String ReturnFilePath;
     public HashMap<String, String> ReturnFilePathMap;
     public HashMap<String, List<String>> ReflectionPath;
+    public HashMap<String, String> PathVariableType;
 
     public Trie(String current){
         this.current = current;
@@ -21,6 +22,7 @@ public class Trie{
         this.ReturnFilePath="";
         this.ReturnFilePathMap=new HashMap<>();
         this.ReflectionPath=new HashMap<>();
+        this.PathVariableType=new HashMap<>();
     }
 
 }

@@ -48,12 +48,35 @@ public final class App {
 
         MyInitialTestApp myInitialTestApp=new MyInitialTestApp();
 
-        myInitialTestApp.initialize("/Shashwenth/name", "getName", "GET");
-        myInitialTestApp.initialize("/Shashwenth/age", "getAge", "GET");
-        myInitialTestApp.initialize("/Shashwenth/name", "setName", "POST");
-        myInitialTestApp.initialize("/Shashwenth", "TestRequestParams", "POST");
-        //TestCastRequestParams
+        // myInitialTestApp.initialize("/Shashwenth/name", "getName", "GET");
+        // myInitialTestApp.initialize("/Shashwenth/age", "getAge", "GET");
+        // myInitialTestApp.initialize("/Shashwenth/name", "setName", "POST");
+        // myInitialTestApp.initialize("/Shashwenth", "TestRequestParams", "POST");
+        //TestCastRequestParams TestPathVariable
+        //myInitialTestApp.initialize("/Shashwenth/cast", "TestCastRequestParams", "POST");
+        myInitialTestApp.initializeNew("/Shashwenth/{name}", "TestPathVariable", "POST");
+        myInitialTestApp.initializeNew("/Shashwenth/{name}/{id}", "TestPathVariable2", "POST");
+        myInitialTestApp.initializeNew("/Shashwenth/name", "getName", "GET");
+        myInitialTestApp.initializeNew("/Shashwenth/age", "getAge", "GET");
+        myInitialTestApp.initializeNew("/Shashwenth/name", "setName", "POST");
+        myInitialTestApp.initializeNew("/Shashwenth", "TestRequestParams", "POST");
         myInitialTestApp.initialize("/Shashwenth/cast", "TestCastRequestParams", "POST");
+        // FindPath findPath0=new FindPath("/Shashwenth/Shash");
+        // findPath0.isPathValid("POST");
+        // FindPath findPath1=new FindPath("/Shashwenth/name");
+        // findPath1.isPathValid("GET");
+        // FindPath findPath2=new FindPath("/Shashwenth/age");
+        // findPath2.isPathValid("GET");
+        // FindPath findPath3=new FindPath("/Shashwenth/name");
+        // findPath3.isPathValid("POST");
+        // FindPath findPath4=new FindPath("/Shashwenth");
+        // findPath4.isPathValid("POST");
+        // FindPath findPath5=new FindPath("/Shashwenth/1");
+        // findPath5.isPathValid("POST");
+        // FindPath findPath6=new FindPath("/Shashwenth/Shashwenth");
+        // findPath6.isPathValid("POST");
+        // findPath6=new FindPath("/Shashwenth/Shashwenth/10");
+        // findPath6.isPathValid("POST");
 
         ThreadStartUp threadStartUp;
         try {

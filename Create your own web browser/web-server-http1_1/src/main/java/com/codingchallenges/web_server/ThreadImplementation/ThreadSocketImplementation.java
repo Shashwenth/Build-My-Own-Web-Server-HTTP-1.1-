@@ -53,6 +53,7 @@ public class ThreadSocketImplementation extends Thread {
                             RequestParams requestParams = null;
                             boolean flag=true;
                             List<String> ClassAndMethod=null;
+                            List<Object> pathVars=null;
                             int contentLength = 0;
                             while ((inputLine = in.readLine()) != null && !inputLine.isEmpty()) {
 
@@ -69,6 +70,7 @@ public class ThreadSocketImplementation extends Thread {
                                         System.out.println("Class and Method is nyll");
 
                                     }
+                                    pathVars=checkValidityService.getPAthVars();
 
                                     //Check If Request Parameters Are Present
                                     InitializeRequestParams initializeRequestParams=new InitializeRequestParams(inputLine);
@@ -106,13 +108,22 @@ public class ThreadSocketImplementation extends Thread {
                                     String body = new String(bodyChars);
                                     ReqDataAsString.append("\n").append(body);
                                     ExecuteReturnMethod executeReturnMethod=new ExecuteReturnMethod(ClassAndMethod.get(0), ClassAndMethod.get(1));
+
                                     if(!containsRequestParameters){
-                                        response=executeReturnMethod.invokeMethod(ReqDataAsString.toString());
+                                        List<Object> allParams = new ArrayList<>();
+                                        if(pathVars!=null){
+                                            allParams.addAll(pathVars);
+                                        }
+                                        allParams.add(ReqDataAsString.toString());
+                                        response=executeReturnMethod.invokeMethod(allParams.toArray());
                                     }else if(containsRequestParameters && requestParams!=null){
                                         List<Object> params = new ArrayList<>(requestParams.requestParams.values());
                                         List<Object> allParams = new ArrayList<>();
-                                        allParams.add(ReqDataAsString.toString());
+                                        if(pathVars!=null){
+                                            allParams.addAll(pathVars);
+                                        }
                                         allParams.addAll(params);
+                                        allParams.add(ReqDataAsString.toString());
                                         response = executeReturnMethod.invokeMethod(
                                             allParams.toArray()
                                         );
