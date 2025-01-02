@@ -1,5 +1,8 @@
 package com.codingchallenges.web_server.RequestMapping;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 /*
  * 
  * Sets the Request Body DTO.
@@ -8,10 +11,13 @@ package com.codingchallenges.web_server.RequestMapping;
 
 public class InitialiseRequestBody {
 
+    private static final Logger logger=LoggerFactory.getLogger(InitialiseRequestBody.class);
+
     private final String RequestLine;
 
     public InitialiseRequestBody(String RequestLine) {
         this.RequestLine = RequestLine;
+        logger.atInfo().addKeyValue("RequestLine", this.RequestLine).log("Inside InitialiseRequestBody");
     }
 
     public RequestBody initialiseRequestBody() {
@@ -44,6 +50,12 @@ public class InitialiseRequestBody {
         String Path= requestLineArray[1].split("\\?")[0];
 
         RequestBody requestBody = new RequestBody(Method, Path);
+
+        logger.atInfo()
+        .addKeyValue("Request Body Method", requestBody.getMETHOD())
+        .addKeyValue("REquest Body Path", requestBody.getPATH())
+        .log("Successfully initialized Request Body");
+        
         return requestBody;
 
     }

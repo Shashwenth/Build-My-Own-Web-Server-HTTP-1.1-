@@ -4,6 +4,9 @@ import java.net.InetAddress;
 import java.net.ServerSocket;
 import java.net.Socket;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 
 /*
  * 
@@ -14,6 +17,8 @@ import java.net.Socket;
  */
 
 public class ThreadStartUp extends Thread {
+
+    private static final Logger logger=LoggerFactory.getLogger(ThreadStartUp.class);
 
     private final int port;
     @SuppressWarnings("unused")
@@ -30,6 +35,7 @@ public class ThreadStartUp extends Thread {
 
     @Override
     public void run(){
+        logger.atInfo().addKeyValue("PORT", this.port).log("Server Started Listening at...");
         int x=0;
         try {
             while(serverSocket.isBound() && !serverSocket.isClosed()){
@@ -37,6 +43,7 @@ public class ThreadStartUp extends Thread {
                     Socket socket = serverSocket.accept();
                     
                     ThreadSocketImplementation threadSocketImplementation = new ThreadSocketImplementation(socket,x++);
+                    logger.atInfo().addKeyValue("Thread Id: ", threadSocketImplementation.getId()).log("Exection Begins");
                     threadSocketImplementation.start();
                     
                 } catch (IOException ex) {

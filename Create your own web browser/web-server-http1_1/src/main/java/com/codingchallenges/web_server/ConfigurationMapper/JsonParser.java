@@ -48,16 +48,16 @@ public class JsonParser<T> {
         try {
             entity = this.objectMapper.readValue(jsonString, type);
         } catch (IOException e) {
-            System.err.println("Error parsing JSON from string: " + e.getMessage());
+            //System.err.println("Error parsing JSON from string: " + e.getMessage());
         }
         return entity;
     }
 
     public void printEntity(T entity) {
         if (entity != null) {
-            System.out.println(entity.toString());
+            //System.out.println(entity.toString());
         } else {
-            System.err.println("Entity is null.");
+            //System.err.println("Entity is null.");
         }
     }
 }

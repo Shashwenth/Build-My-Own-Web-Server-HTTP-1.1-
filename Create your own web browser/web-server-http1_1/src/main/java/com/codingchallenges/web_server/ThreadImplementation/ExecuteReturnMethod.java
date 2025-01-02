@@ -3,6 +3,9 @@ package com.codingchallenges.web_server.ThreadImplementation;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 /*
  * Enter the description of the class
  * 
@@ -15,6 +18,8 @@ import java.lang.reflect.Method;
 
 public class ExecuteReturnMethod {
 
+    private static final Logger logger= LoggerFactory.getLogger(ExecuteReturnMethod.class);
+
     private final String className;
     
     private final String methodName;
@@ -25,7 +30,10 @@ public class ExecuteReturnMethod {
     
             this.className=ClassName;
             this.methodName=MethodName;
-            System.out.println("This is the "+this.className+" and "+this.methodName);
+            logger.atInfo().addKeyValue("className", this.className)
+            .addKeyValue("Method Name", this.methodName)
+            .log("Inititlaizing the Execute Return Method with Java Reflection");
+    //        System.out.println("This is the "+this.className+" and "+this.methodName);
     
         }
     
@@ -34,12 +42,14 @@ public class ExecuteReturnMethod {
         try {
             // Load the class
         Class<?> loadedClass = Class.forName(className);
-        System.out.println("LEt us SEE HERE");
-        Class<?>[] parameterTypes = new Class[args.length];
-            for (int i = 0; i < args.length; i++) {
-                parameterTypes[i] = args[i].getClass();
-                System.out.println(parameterTypes[i]);
-            }
+
+        logger.atInfo().addKeyValue("Class", loadedClass.getName()).log("Successfully Loaded the Class");
+    //    System.out.println("LEt us SEE HERE");
+    //     Class<?>[] parameterTypes = new Class[args.length];
+    //         for (int i = 0; i < args.length; i++) {
+    //             parameterTypes[i] = args[i].getClass();
+    // //           System.out.println(parameterTypes[i]);
+    //         }
 
         // Create instance
         Object instance = loadedClass.getDeclaredConstructor().newInstance();
@@ -55,7 +65,16 @@ public class ExecuteReturnMethod {
                 break;
             }
         }
-        Class<?>[] OurMethodparameterTypes = ourMethod.getParameterTypes();
+
+        Class<?>[] OurMethodparameterTypes;
+            if(ourMethod!=null){
+                logger.atInfo().addKeyValue("Method", ourMethod.getName()).log("Found The Function");
+                OurMethodparameterTypes = ourMethod.getParameterTypes();
+            }else{
+                logger.atInfo().log("The OurMethod is Null");
+            OurMethodparameterTypes=new Class[1];
+            }
+        
         
         Object[] newArgs=new Object[args.length];
         
@@ -67,7 +86,7 @@ public class ExecuteReturnMethod {
         // }
 
         for (int i = 0; i < args.length; i++) {
-            System.out.println(OurMethodparameterTypes[i].getName());
+        //    System.out.println(OurMethodparameterTypes[i].getName());
 
             if (args[i] != null) {
                 switch (OurMethodparameterTypes[i].getName()) {
@@ -129,6 +148,9 @@ public class ExecuteReturnMethod {
         Method method = loadedClass.getMethod(methodName, OurMethodparameterTypes);
         Object result=method.invoke(instance, newArgs);  // Returns Object type
         String responseText = result != null ? result.toString() : "";
+
+        logger.info("Successfully Completed the Execute Return Method");
+
             
             // Format HTTP response
             return "HTTP/1.1 200 OK" + CRLF +
@@ -136,6 +158,7 @@ public class ExecuteReturnMethod {
                    "Content-Length: " + responseText.getBytes().length + CRLF +
                    CRLF +
                    responseText;
+
         
     } catch (ClassNotFoundException | IllegalAccessException | IllegalArgumentException | InstantiationException | NoSuchMethodException | SecurityException | InvocationTargetException e) {
         e.printStackTrace();
