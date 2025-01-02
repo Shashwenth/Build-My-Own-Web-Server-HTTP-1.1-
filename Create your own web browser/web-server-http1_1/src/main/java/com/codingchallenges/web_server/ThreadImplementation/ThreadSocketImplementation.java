@@ -8,6 +8,9 @@ import java.net.SocketTimeoutException;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import com.codingchallenges.web_server.RequestMapping.InitialiseRequestBody;
 import com.codingchallenges.web_server.RequestMapping.InitializeRequestParams;
 import com.codingchallenges.web_server.RequestMapping.RequestBody;
@@ -29,6 +32,8 @@ import com.codingchallenges.web_server.handleRequest.CheckValidityService;
 
 public class ThreadSocketImplementation extends Thread {
 
+    private static final Logger logger=LoggerFactory.getLogger(ThreadSocketImplementation.class);
+
     private final Socket socket;
 
     @SuppressWarnings("unused")
@@ -37,18 +42,18 @@ public class ThreadSocketImplementation extends Thread {
     public ThreadSocketImplementation(Socket socket, int x){
         this.x=x;
         this.socket = socket;
+        logger.atInfo().addKeyValue("Socket at Port", this.socket.getPort()).log("Inititalizing socket");
     }
 
     @Override
     public void run(){
-
+        logger.info("Thread Execution started");
         try (BufferedReader in = new BufferedReader(new InputStreamReader(socket.getInputStream()));
                     OutputStream outputStream = socket.getOutputStream();) {
                         String inputLine;
                         StringBuilder requestData = new StringBuilder();
                         StringBuilder ReqDataAsString = new StringBuilder();
                             RequestBody requestBody=null;
-                            //String HTMLResponsePath="";
                             boolean containsRequestParameters=false;
                             RequestParams requestParams = null;
                             boolean flag=true;
@@ -67,7 +72,7 @@ public class ThreadSocketImplementation extends Thread {
                                     //HTMLResponsePath=checkValidityService.ReturnHTMLResponseBody();
                                     ClassAndMethod=checkValidityService.ReturnClassAndMethod();
                                     if(ClassAndMethod==null){
-                                        System.out.println("Class and Method is nyll");
+                                    //    System.out.println("Class and Method is nyll");
 
                                     }
                                     pathVars=checkValidityService.getPAthVars();
@@ -84,11 +89,12 @@ public class ThreadSocketImplementation extends Thread {
                                 }
                                 if (inputLine.toLowerCase().startsWith("content-length:")) {
                                     contentLength = Integer.parseInt(inputLine.substring(15).trim());
+                                    logger.atInfo().addKeyValue("contentLength", contentLength).log("Contains Body");
                                 }
                                 
                                 requestData.append(inputLine).append("\n");
                             }
-                            System.out.println(requestData.toString());
+                            //System.out.println(requestData.toString());
 
                             final String CRLF = "\r\n";
                             String ErrorResponse="HTTP/1.1 200 OK" + CRLF +
@@ -98,9 +104,21 @@ public class ThreadSocketImplementation extends Thread {
                                                     "NO Such MethodName Defined";
 
                             if(ClassAndMethod==null){
+                                logger.atInfo().log("There is no Class and Method associated with the URL");
                                 outputStream.write(ErrorResponse.getBytes());
                             }
-                            else{   
+                            else{  
+                                List<Object> allParams = new ArrayList<>();
+                                if(pathVars!=null){
+                                    allParams.addAll(pathVars);
+                                    logger.info("Contains Path Variables");
+                                }
+                                if(containsRequestParameters && requestParams!=null){
+                                    List<Object> params = new ArrayList<>(requestParams.requestParams.values());
+                                    allParams.addAll(params);
+                                    logger.info("Contains Request Parameters");
+                                }
+                                
                                 String response;                             
                                 if (requestBody != null && requestBody.getMETHOD().equals("POST") && contentLength > 0) {
                                     char[] bodyChars = new char[contentLength];
@@ -108,34 +126,24 @@ public class ThreadSocketImplementation extends Thread {
                                     String body = new String(bodyChars);
                                     ReqDataAsString.append("\n").append(body);
                                     ExecuteReturnMethod executeReturnMethod=new ExecuteReturnMethod(ClassAndMethod.get(0), ClassAndMethod.get(1));
+                                    
+                                    allParams.add(ReqDataAsString.toString());
 
-                                    if(!containsRequestParameters){
-                                        List<Object> allParams = new ArrayList<>();
-                                        if(pathVars!=null){
-                                            allParams.addAll(pathVars);
-                                        }
-                                        allParams.add(ReqDataAsString.toString());
-                                        response=executeReturnMethod.invokeMethod(allParams.toArray());
-                                    }else if(containsRequestParameters && requestParams!=null){
-                                        List<Object> params = new ArrayList<>(requestParams.requestParams.values());
-                                        List<Object> allParams = new ArrayList<>();
-                                        if(pathVars!=null){
-                                            allParams.addAll(pathVars);
-                                        }
-                                        allParams.addAll(params);
-                                        allParams.add(ReqDataAsString.toString());
-                                        response = executeReturnMethod.invokeMethod(
+                                    logger.info("Contains Request Body");
+
+                                    response = executeReturnMethod.invokeMethod(
                                             allParams.toArray()
                                         );
-                                    }
-                                    else{
-                                        response=executeReturnMethod.invokeMethod();
-                                    }
+
+                                    
                                     
                                 }
                                 else{
+                                    logger.info("No Request Body");
                                     ExecuteReturnMethod executeReturnMethod=new ExecuteReturnMethod(ClassAndMethod.get(0), ClassAndMethod.get(1));
-                                    response=executeReturnMethod.invokeMethod();
+                                    response=executeReturnMethod.invokeMethod(
+                                        allParams.toArray()
+                                    );
                                 }
 
                                 outputStream.write(response.getBytes());
@@ -193,6 +201,8 @@ public class ThreadSocketImplementation extends Thread {
                             System.err.println("Error: " + e.getMessage());
                         }
                     }
+
+                    logger.info("Successfully completed Socket implmentation");
         } 
 
     }

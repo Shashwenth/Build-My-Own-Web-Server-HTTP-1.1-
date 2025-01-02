@@ -1,16 +1,31 @@
 package com.codingchallenges.web_server.handlePathVariables;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 import java.util.Map;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import com.codingchallenges.web_server.RequestMapping.MainTrieGetter;
 import com.codingchallenges.web_server.RequestMapping.Trie;
 
+/*
+ * 
+ * Enter description for this class:
+ * FindPath is used to check if the given URL is valid.
+ * It also keeps track of the path variables in the URL.
+ * DFS the whole TRIE to check if the path is valid.
+ * Finally has implementation to return the classandmethod, pathvariables
+ * 
+ */
+
 public class FindPath {
 
-    private Trie root= MainTrieGetter.getRoot();
+    private static final Logger logger=LoggerFactory.getLogger(FindPath.class);
+
+
+    private final Trie root= MainTrieGetter.getRoot();
 
     private final String path;
 
@@ -18,6 +33,7 @@ public class FindPath {
 
     public FindPath(String path){
         this.path=path;
+        logger.atInfo().addKeyValue("Path", this.path).log("Initializating Find Path");
     }
 
     private List<String> ReturnableClassAndMethod;
@@ -25,7 +41,7 @@ public class FindPath {
 
     public boolean isPathValid(String Method){
         String[] pathArray=path.split("/");
-        System.out.println(Arrays.toString(pathArray));
+        //System.out.println(Arrays.toString(pathArray));
         Trie current = this.root;
         boolean ans=CheckIfPathIsValid(pathArray, 0, current, Method);
         // if(ans){
@@ -35,15 +51,24 @@ public class FindPath {
         // }else{
         //     System.out.println("Not found");
         // }
+
+        logger.atInfo().log("End Of Checking Path validity");
+
+
         return ans;
+        
 
     }
 
     public List<String> getClassAndMethod(){
+        logger.atInfo().log("Returning Class and Method List at FindPath");
+
         return ReturnableClassAndMethod;
     }
 
     public List<Object> getPathVarList(){
+        logger.atInfo().log("Retuning Path Variables at FIndPath");
+
         return this.PathVariableList;
     }
 
@@ -56,20 +81,20 @@ public class FindPath {
 
         boolean ans=false;
         if(pathArray[i].equals("")){
-            System.out.printf("Inside first if checking for %s\n", pathArray[i]);
+            //System.out.printf("Inside first if checking for %s\n", pathArray[i]);
             ans=ans || CheckIfPathIsValid(pathArray, i+1, current, Method);
         }
         
         if(current.child.containsKey(pathArray[i])){
-            System.out.printf("Inside if checking for %s\n", pathArray[i]);
+            //System.out.printf("Inside if checking for %s\n", pathArray[i]);
             ans=ans || CheckIfPathIsValid(pathArray, i+1, current.child.get(pathArray[i]), Method);
         }else if(!current.PathVariableType.isEmpty()){
-            System.out.printf("Inside else if checking for %s\n", pathArray[i]);
+            //System.out.printf("Inside else if checking for %s\n", pathArray[i]);
             String currentType=detectType(pathArray[i]);
             String currentPrimitiveType=detectPrimitiveType(pathArray[i]);
-            System.out.printf("Inside else if path is %s\n", currentType);
+            //System.out.printf("Inside else if path is %s\n", currentType);
             for(Map.Entry<String,String> m:current.PathVariableType.entrySet()){
-                System.out.printf("the value is %s\n",m.getValue());
+                //System.out.printf("the value is %s\n",m.getValue());
                 if(m.getValue().equals(currentType) || m.getValue().equals(currentPrimitiveType)){
                     PathVariableList.add(pathArray[i]);
                     ans=ans || CheckIfPathIsValid(pathArray, i+1, current.child.get(m.getKey()), Method);

@@ -1,7 +1,11 @@
 package com.codingchallenges.web_server.RequestMapping;
 
-import java.util.Arrays;
 import java.util.List;
+
+/*
+ * DEPRECARED: Check FindPath
+ * 
+ */
 
 /*
  *  Enter the description of the class
@@ -31,8 +35,8 @@ public class CheckIfPathIsValid {
 
     public boolean checkIfPathIsValid(){
         String[] pathArray=this.path.split("/");
-        System.out.println("Path Array");
-        System.out.println(Arrays.toString(pathArray));
+        // System.out.println("Path Array");
+        // System.out.println(Arrays.toString(pathArray));
         Trie current = root;
         for(String p: pathArray){
             if(p.length()==0){

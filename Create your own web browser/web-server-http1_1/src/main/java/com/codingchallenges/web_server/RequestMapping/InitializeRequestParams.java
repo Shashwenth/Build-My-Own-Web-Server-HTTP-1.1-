@@ -1,5 +1,7 @@
 package com.codingchallenges.web_server.RequestMapping;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 /*
  *  Enter the Description of this class
@@ -10,15 +12,20 @@ package com.codingchallenges.web_server.RequestMapping;
 
 public class InitializeRequestParams {
 
+    private static final Logger logger=LoggerFactory.getLogger(InitializeRequestParams.class);
+
+
     private final String RequestLine;
 
     private RequestParams requestParams;
 
     public InitializeRequestParams(String RequestLine){
         this.RequestLine=RequestLine;
+        logger.atInfo().addKeyValue("RequestLine", this.RequestLine).log("Initializing Request Line");
     }
 
     public boolean checkIfRequestParamsPresent(){
+        logger.atInfo().addKeyValue("Contins Params? ", RequestLine.contains("?")).log();
         return RequestLine.contains("?");
     }
 
@@ -36,7 +43,7 @@ public class InitializeRequestParams {
             requestParams.requestParams.put(KeyValPair[0], KeyValPair[1]);
 
         }
-
+        logger.info("Returning the Request Parameters");
         return  requestParams;
 
 

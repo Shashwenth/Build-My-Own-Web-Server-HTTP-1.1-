@@ -2,26 +2,27 @@ package com.codingchallenges.web_server.handleRequest;
 
 import java.util.List;
 
-import com.codingchallenges.web_server.RequestMapping.MainTrieGetter;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import com.codingchallenges.web_server.RequestMapping.RequestBody;
-import com.codingchallenges.web_server.RequestMapping.Trie;
 import com.codingchallenges.web_server.handlePathVariables.FindPath;
 
 /*
  *  Enter a description of the class
  *  CheckValidityService is a class that checks if the path is valid or not.
- *  CheckIfPathIsValid is called to check if the path is valid or not.
+ *  findPath is called to check if the path is valid or not.
  *  If the path is valid, it returns "Valid Path". If the path is invalid, it returns "Invalid Path".
- *  It also returns the HTML response body and the class and method of the path.
+ *  It also returns Path variables list
  *  It also returns the Class and Method name that would be used by the Reflection API.
  * 
  */
 
 public class CheckValidityService {
 
-    private final RequestBody requestBody;
+    private static final Logger logger=LoggerFactory.getLogger(CheckValidityService.class);
 
-    Trie root=MainTrieGetter.getRoot();
+    private final RequestBody requestBody;
 
     //CheckIfPathIsValid checkIfPathIsValid;
 
@@ -29,6 +30,7 @@ public class CheckValidityService {
 
     public CheckValidityService(RequestBody requestBody){
         this.requestBody = requestBody;
+        logger.atInfo().log("Initializing Validity Service");
     }
 
     public String checkValidity(){
@@ -36,9 +38,9 @@ public class CheckValidityService {
         findPath = new FindPath(requestBody.getPATH());
         if(findPath.isPathValid(requestBody.getMETHOD())){
                return ("Valid Path");
-            }else{
+        }else{
                 return ("Invalid Path");
-            }
+        }
     }
 
     // public String ReturnHTMLResponseBody(){

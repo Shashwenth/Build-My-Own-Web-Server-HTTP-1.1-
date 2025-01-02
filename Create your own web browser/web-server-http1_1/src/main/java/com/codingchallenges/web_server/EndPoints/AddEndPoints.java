@@ -4,6 +4,12 @@ import java.util.List;
 
 import com.codingchallenges.web_server.RequestMapping.Trie;
 
+
+/*
+ *  DEPRECATED - CHECK OUT REGISTER END POINT
+ * 
+ */
+
 /*
  *  Enter a description for this class:
  *  AddEndPoints is a class that adds endpoints to the Trie data structure.
@@ -41,7 +47,7 @@ public class AddEndPoints {
         current.isEnd = true;
         current.ReturnFilePath=ResponsePath;
         current.ReturnFilePathMap.put(Method, ResponsePath);
-        System.out.printf("Current Value %s and its response path %s and Path %s \n",current.current, Method, current.ReturnFilePathMap.get(Method));
+        //System.out.printf("Current Value %s and its response path %s and Path %s \n",current.current, Method, current.ReturnFilePathMap.get(Method));
     }
 
     
@@ -68,7 +74,7 @@ public class AddEndPoints {
         current.ReturnFilePath=ResponsePath;
         current.ReturnFilePathMap.put(Method, ResponsePath);
         current.ReflectionPath.put(Method, ClassAndMethod);
-        System.out.printf("Current Value %s and its response path %s and Path %s \n",current.current, Method, current.ReturnFilePathMap.get(Method));
+        //System.out.printf("Current Value %s and its response path %s and Path %s \n",current.current, Method, current.ReturnFilePathMap.get(Method));
     }
 
 }
