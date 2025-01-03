@@ -1,6 +1,7 @@
 package com.codingchallenges.web_server.handlePathVariables;
 
 import java.lang.reflect.Method;
+import java.util.Arrays;
 import java.util.List;
 
 import org.slf4j.Logger;
@@ -39,7 +40,7 @@ public class RegisterEndpoint {
         int i=0;
         getUnderLyingDataType(ClassAndMethod);
         String[] pathArray=path.split("/");
-        //System.out.println(Arrays.toString(pathArray));
+        logger.info("Path array ------------ {} ", Arrays.toString(pathArray));
         Trie current = this.root;
 
         for(String p: pathArray){
@@ -91,6 +92,7 @@ public class RegisterEndpoint {
             }
 
             this.OurMethodparameterTypes = ourMethod.getParameterTypes();
+            logger.info("Our Method Param Types ------------ {}", Arrays.toString(this.OurMethodparameterTypes));
             //System.out.println(Arrays.toString(this.OurMethodparameterTypes));
         } catch (ClassNotFoundException e) {
         }        

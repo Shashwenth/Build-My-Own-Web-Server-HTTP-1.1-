@@ -90,12 +90,13 @@ public class FindPath {
             ans=ans || CheckIfPathIsValid(pathArray, i+1, current.child.get(pathArray[i]), Method);
         }else if(!current.PathVariableType.isEmpty()){
             //System.out.printf("Inside else if checking for %s\n", pathArray[i]);
-            String currentType=detectType(pathArray[i]);
-            String currentPrimitiveType=detectPrimitiveType(pathArray[i]);
+            // String currentType=detectType(pathArray[i]);
+            // String currentPrimitiveType=detectPrimitiveType(pathArray[i]);
             //System.out.printf("Inside else if path is %s\n", currentType);
             for(Map.Entry<String,String> m:current.PathVariableType.entrySet()){
                 //System.out.printf("the value is %s\n",m.getValue());
-                if(m.getValue().equals(currentType) || m.getValue().equals(currentPrimitiveType)){
+                // if(m.getValue().equals(currentType) || m.getValue().equals(currentPrimitiveType)){
+                if(canConvertToType(pathArray[i], m.getValue())){
                     PathVariableList.add(pathArray[i]);
                     ans=ans || CheckIfPathIsValid(pathArray, i+1, current.child.get(m.getKey()), Method);
                 }
@@ -105,6 +106,82 @@ public class FindPath {
 
     }
 
+    public  boolean canConvertToType(String value, String typeName) {
+        return switch (typeName) {
+            case "int", "java.lang.Integer" -> tryParseInt(value);
+            case "double", "java.lang.Double" -> tryParseDouble(value);
+            case "boolean", "java.lang.Boolean" -> tryParseBoolean(value);
+            case "long", "java.lang.Long" -> tryParseLong(value);
+            case "float", "java.lang.Float" -> tryParseFloat(value);
+            case "char", "java.lang.Character" -> value.length() == 1;
+            case "short", "java.lang.Short" -> tryParseShort(value);
+            case "byte", "java.lang.Byte" -> tryParseByte(value);
+            case "java.lang.String" -> true;
+            default -> false;
+            };
+        }
+    
+        // Helper methods for primitive and wrapper parsing
+        private boolean tryParseInt(String value) {
+            try {
+                Integer.valueOf(value);
+                return true;
+            } catch (NumberFormatException e) {
+                return false;
+            }
+        }
+    
+        private boolean tryParseDouble(String value) {
+            try {
+                Double.valueOf(value);
+                return true;
+            } catch (NumberFormatException e) {
+                return false;
+            }
+        }
+    
+        private boolean tryParseBoolean(String value) {
+            return value.equalsIgnoreCase("true") || value.equalsIgnoreCase("false");
+        }
+    
+        private boolean tryParseLong(String value) {
+            try {
+                Long.valueOf(value);
+                return true;
+            } catch (NumberFormatException e) {
+                return false;
+            }
+        }
+    
+        private boolean tryParseFloat(String value) {
+            try {
+                Float.valueOf(value);
+                return true;
+            } catch (NumberFormatException e) {
+                return false;
+            }
+        }
+    
+        private boolean tryParseShort(String value) {
+            try {
+                Short.valueOf(value);
+                return true;
+            } catch (NumberFormatException e) {
+                return false;
+            }
+        }
+    
+        private boolean tryParseByte(String value) {
+            try {
+                Byte.valueOf(value);
+                return true;
+            } catch (NumberFormatException e) {
+                return false;
+            }
+        }
+    
+    
+        //Deprecated
     public static String detectType(String input) {
         if (input == null || input.isEmpty()) {
             return "java.lang.String"; // Default for null or empty strings
@@ -140,6 +217,7 @@ public class FindPath {
         return "java.lang.String";
     }
 
+        //Deprecated
     public static String detectPrimitiveType(String input) {
         if (input == null || input.isEmpty()) {
             return "String"; // Default for null or empty strings

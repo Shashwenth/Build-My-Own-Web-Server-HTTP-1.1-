@@ -70,16 +70,19 @@ public class ThreadSocketImplementation extends Thread {
                                     String validity = checkValidityService.checkValidity();
                                     //System.out.println(validity);
                                     //HTMLResponsePath=checkValidityService.ReturnHTMLResponseBody();
-                                    ClassAndMethod=checkValidityService.ReturnClassAndMethod();
-                                    if(ClassAndMethod==null){
-                                    //    System.out.println("Class and Method is nyll");
+                                    try {
+                                        ClassAndMethod=checkValidityService.ReturnClassAndMethod();
+                                    } catch (Exception e) {
 
                                     }
+
                                     pathVars=checkValidityService.getPAthVars();
+                                    logger.info("We have Path vars {}", pathVars);
 
                                     //Check If Request Parameters Are Present
                                     InitializeRequestParams initializeRequestParams=new InitializeRequestParams(inputLine);
                                     containsRequestParameters=initializeRequestParams.checkIfRequestParamsPresent();
+
                                     if(containsRequestParameters){
                                         requestParams=initializeRequestParams.GetRequestParams();
                                     }
@@ -135,12 +138,11 @@ public class ThreadSocketImplementation extends Thread {
                                             allParams.toArray()
                                         );
 
-                                    
-                                    
                                 }
                                 else{
                                     logger.info("No Request Body");
                                     ExecuteReturnMethod executeReturnMethod=new ExecuteReturnMethod(ClassAndMethod.get(0), ClassAndMethod.get(1));
+                                    logger.info("At Not Req Body with {} ",allParams.toArray());
                                     response=executeReturnMethod.invokeMethod(
                                         allParams.toArray()
                                     );
