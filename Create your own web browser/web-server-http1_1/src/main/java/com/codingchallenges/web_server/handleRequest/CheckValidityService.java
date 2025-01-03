@@ -5,6 +5,7 @@ import java.util.List;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import com.codingchallenges.web_server.CustomExceptions.NoSuchClassOrMethodFoundException;
 import com.codingchallenges.web_server.RequestMapping.RequestBody;
 import com.codingchallenges.web_server.handlePathVariables.FindPath;
 
@@ -47,8 +48,13 @@ public class CheckValidityService {
     //     return checkIfPathIsValid.getHTMLResponsePath()==null?"":checkIfPathIsValid.getHTMLResponsePath();
     // }
 
-    public List<String> ReturnClassAndMethod(){
-        return findPath.getClassAndMethod()==null?null:findPath.getClassAndMethod();
+    public List<String> ReturnClassAndMethod() throws Exception{
+        List<String> returnBody= findPath.getClassAndMethod();
+        if(returnBody==null){
+            logger.warn("--------------Insode NO Class Exception------------");
+            throw new NoSuchClassOrMethodFoundException("Did not Find Class and Method associated with the URL");
+        }
+        return returnBody;
     }
 
     public List<Object> getPAthVars(){

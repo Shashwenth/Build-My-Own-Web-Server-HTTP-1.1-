@@ -30,10 +30,10 @@ public class ExecuteReturnMethod {
     
             this.className=ClassName;
             this.methodName=MethodName;
+
             logger.atInfo().addKeyValue("className", this.className)
             .addKeyValue("Method Name", this.methodName)
             .log("Inititlaizing the Execute Return Method with Java Reflection");
-    //        System.out.println("This is the "+this.className+" and "+this.methodName);
     
         }
     

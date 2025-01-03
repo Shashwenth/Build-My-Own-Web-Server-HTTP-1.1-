@@ -1,7 +1,8 @@
 package com.codingchallenges.web_server;
 
-
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -11,7 +12,8 @@ import com.codingchallenges.web_server.ConfigurationModel.JsonEntity;
 import com.codingchallenges.web_server.RequestMapping.MainTrieGetter;
 import com.codingchallenges.web_server.RequestMapping.Trie;
 import com.codingchallenges.web_server.ThreadImplementation.ThreadStartUp;
-import com.codingchallenges.web_server.UserImplementation.MyInitialTestApp;
+import com.codingchallenges.web_server.handlePathVariables.RegisterEndpoint;
+import com.example.Main;
 
 
 
@@ -21,6 +23,7 @@ import com.codingchallenges.web_server.UserImplementation.MyInitialTestApp;
  */
 public final class App {
 
+    
     private static final Logger logger=LoggerFactory.getLogger(App.class);
 
     private App() {
@@ -56,7 +59,20 @@ public final class App {
         // it.PostInitialize("/Dhay", "web-server-http1_1\\src\\main\\java\\com\\codingchallenges\\web_server\\ResponseHTMLFiles\\Shashwenth.html");
 
         logger.info("Initializing User Implementation");
-        MyInitialTestApp myInitialTestApp=new MyInitialTestApp();
+        // MyInitialTestApp myInitialTestApp=new MyInitialTestApp();
+        // myInitialTestApp.initializeNew("/Shashwenth/{name}", "TestPathVariable", "POST");
+        // myInitialTestApp.initializeNew("/Shashwenth/{name}/{id}", "TestPathVariable2", "POST");
+        // myInitialTestApp.initializeNew("/Shashwenth/name", "getName", "GET");
+        // myInitialTestApp.initializeNew("/Shashwenth/age", "getAge", "GET");
+        // myInitialTestApp.initializeNew("/Shashwenth/name", "setName", "POST");
+        // myInitialTestApp.initializeNew("/Shashwenth", "TestRequestParams", "POST");
+        // myInitialTestApp.initialize("/Shashwenth/cast", "TestCastRequestParams", "POST");
+        Main.main(args);
+        List<Main.StoreClassAndMethod> routes = Main.getResponse();
+
+        for (Main.StoreClassAndMethod route : routes) {
+            initializeNew(route.Path, route.FunctionName, route.MethodName, route.ClassName);
+        }
 
         // myInitialTestApp.initialize("/Shashwenth/name", "getName", "GET");
         // myInitialTestApp.initialize("/Shashwenth/age", "getAge", "GET");
@@ -64,14 +80,7 @@ public final class App {
         // myInitialTestApp.initialize("/Shashwenth", "TestRequestParams", "POST");
         //TestCastRequestParams TestPathVariable
         //myInitialTestApp.initialize("/Shashwenth/cast", "TestCastRequestParams", "POST");
-        myInitialTestApp.initializeNew("/Shashwenth/{name}", "TestPathVariable", "POST");
-        myInitialTestApp.initializeNew("/Shashwenth/{name}/{id}", "TestPathVariable2", "POST");
-        myInitialTestApp.initializeNew("/Shashwenth/name", "getName", "GET");
-        myInitialTestApp.initializeNew("/Shashwenth/age", "getAge", "GET");
-        myInitialTestApp.initializeNew("/Shashwenth/name", "setName", "POST");
-        myInitialTestApp.initializeNew("/Shashwenth", "TestRequestParams", "POST");
-        myInitialTestApp.initialize("/Shashwenth/cast", "TestCastRequestParams", "POST");
-
+        
         // FindPath findPath0=new FindPath("/Shashwenth/Shash");
         // findPath0.isPathValid("POST");
         // FindPath findPath1=new FindPath("/Shashwenth/name");
@@ -99,6 +108,29 @@ public final class App {
             System.err.println("Error: " + ex.getMessage());
         } 
         
+    }
+
+    public static void initializeNew(String path, String FunctionName, String Method, String Classname){
+        List<String> classAndMethod=register(FunctionName, Classname);
+        
+                logger.atInfo().addKeyValue("path", path).log("Registering Endpoint");
+        
+                RegisterEndpoint registerEndpoint=new RegisterEndpoint(path);
+        
+                registerEndpoint.RegisterEndPointPath(path, Method, classAndMethod);
+        
+                logger.info("Successfully initialized the path {} and method {} with FunctionName {}",path,Method,FunctionName);
+                //System.out.println("Sucessfully added the path");
+            }
+        
+    private static List<String> register(String FunctionName, String Classname){
+        List<String> response=new ArrayList<>();
+        response.add(Classname);
+        response.add(FunctionName);
+
+        logger.info("Registered the Class name and function name for Reflection");
+
+        return response;
     }
 
 

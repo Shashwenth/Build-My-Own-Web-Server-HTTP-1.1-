@@ -1,0 +1,17 @@
+1. Invalid Request Format Exception: If the HTTP request body is broken.
+
+2. Malformed URL Exception: If the URL inputted by the user is malformed.
+
+3. No such Method Found: If there is no method associated with the URL.
+
+4. No such class Found: If there is no class associated with the URL
+
+5. Type Mismatch Exception: If there is an Mismatch in the order of elements received.
+
+6. Request Parameter Not Found: If the request parameter does not have a value.
+
+7. Argument Count Mismatch: If there is a Mismatch in the number of paramter present and parameters passed.
+
+8. URl Not Found: If the path is not present in the Trie
+
+9. 
