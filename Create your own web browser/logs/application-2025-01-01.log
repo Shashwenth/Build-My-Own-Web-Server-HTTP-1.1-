@@ -15,6 +15,7 @@
 2025-01-01 17:25:19 [main] INFO  c.c.w.U.MyInitialTestApp - Registering Endpoint
 2025-01-01 17:25:19 [main] INFO  c.c.w.h.RegisterEndpoint - Successfully initialized methodParameters list
 2025-01-01 17:25:19 [main] INFO  c.c.w.h.RegisterEndpoint - Successfully Registered The Endpoint in Root
+2025-01-01 17:25:19 [main] INFO  c.c.w.U.MyInitialTestApp - Successfully initialized the path /Shashwenth/name and method GET with FunctionName getName
 2025-01-01 17:25:19 [main] INFO  c.c.w.U.MyInitialTestApp - Registered the Class name and function name for Reflection
 2025-01-01 17:25:19 [main] INFO  c.c.w.U.MyInitialTestApp - Registering Endpoint
 2025-01-01 17:25:19 [main] INFO  c.c.w.h.RegisterEndpoint - Successfully initialized methodParameters list
