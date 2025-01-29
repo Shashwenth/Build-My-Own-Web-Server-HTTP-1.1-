@@ -1,0 +1,1173 @@
+2025-01-02 11:51:12 [main] INFO  com.codingchallenges.web_server.App - Execution Started 
+2025-01-02 11:51:12 [main] INFO  com.codingchallenges.web_server.App - Intitalizing Trie Mapper 
+2025-01-02 11:51:12 [main] INFO  com.codingchallenges.web_server.App - Initializing User Implementation 
+2025-01-02 11:51:12 [main] INFO  c.c.w.U.MyInitialTestApp - Registered the Class name and function name for Reflection 
+2025-01-02 11:51:12 [main] INFO  c.c.w.U.MyInitialTestApp - Registering Endpoint path="/Shashwenth/{name}"
+2025-01-02 11:51:12 [main] INFO  c.c.w.h.RegisterEndpoint - Successfully initialized methodParameters list 
+2025-01-02 11:51:12 [main] INFO  c.c.w.h.RegisterEndpoint - Successfully Registered The Endpoint in Root 
+2025-01-02 11:51:12 [main] INFO  c.c.w.U.MyInitialTestApp - Successfully initialized the path /Shashwenth/{name} and method POST with FunctionName TestPathVariable 
+2025-01-02 11:51:12 [main] INFO  c.c.w.U.MyInitialTestApp - Registered the Class name and function name for Reflection 
+2025-01-02 11:51:12 [main] INFO  c.c.w.U.MyInitialTestApp - Registering Endpoint path="/Shashwenth/{name}/{id}"
+2025-01-02 11:51:12 [main] INFO  c.c.w.h.RegisterEndpoint - Successfully initialized methodParameters list 
+2025-01-02 11:51:12 [main] INFO  c.c.w.h.RegisterEndpoint - Successfully Registered The Endpoint in Root 
+2025-01-02 11:51:12 [main] INFO  c.c.w.U.MyInitialTestApp - Successfully initialized the path /Shashwenth/{name}/{id} and method POST with FunctionName TestPathVariable2 
+2025-01-02 11:51:12 [main] INFO  c.c.w.U.MyInitialTestApp - Registered the Class name and function name for Reflection 
+2025-01-02 11:51:12 [main] INFO  c.c.w.U.MyInitialTestApp - Registering Endpoint path="/Shashwenth/name"
+2025-01-02 11:51:12 [main] INFO  c.c.w.h.RegisterEndpoint - Successfully initialized methodParameters list 
+2025-01-02 11:51:12 [main] INFO  c.c.w.h.RegisterEndpoint - Successfully Registered The Endpoint in Root 
+2025-01-02 11:51:12 [main] INFO  c.c.w.U.MyInitialTestApp - Successfully initialized the path /Shashwenth/name and method GET with FunctionName getName 
+2025-01-02 11:51:12 [main] INFO  c.c.w.U.MyInitialTestApp - Registered the Class name and function name for Reflection 
+2025-01-02 11:51:12 [main] INFO  c.c.w.U.MyInitialTestApp - Registering Endpoint path="/Shashwenth/age"
+2025-01-02 11:51:12 [main] INFO  c.c.w.h.RegisterEndpoint - Successfully initialized methodParameters list 
+2025-01-02 11:51:12 [main] INFO  c.c.w.h.RegisterEndpoint - Successfully Registered The Endpoint in Root 
+2025-01-02 11:51:12 [main] INFO  c.c.w.U.MyInitialTestApp - Successfully initialized the path /Shashwenth/age and method GET with FunctionName getAge 
+2025-01-02 11:51:12 [main] INFO  c.c.w.U.MyInitialTestApp - Registered the Class name and function name for Reflection 
+2025-01-02 11:51:12 [main] INFO  c.c.w.U.MyInitialTestApp - Registering Endpoint path="/Shashwenth/name"
+2025-01-02 11:51:12 [main] INFO  c.c.w.h.RegisterEndpoint - Successfully initialized methodParameters list 
+2025-01-02 11:51:12 [main] INFO  c.c.w.h.RegisterEndpoint - Successfully Registered The Endpoint in Root 
+2025-01-02 11:51:12 [main] INFO  c.c.w.U.MyInitialTestApp - Successfully initialized the path /Shashwenth/name and method POST with FunctionName setName 
+2025-01-02 11:51:12 [main] INFO  c.c.w.U.MyInitialTestApp - Registered the Class name and function name for Reflection 
+2025-01-02 11:51:12 [main] INFO  c.c.w.U.MyInitialTestApp - Registering Endpoint path="/Shashwenth"
+2025-01-02 11:51:12 [main] INFO  c.c.w.h.RegisterEndpoint - Successfully initialized methodParameters list 
+2025-01-02 11:51:12 [main] INFO  c.c.w.h.RegisterEndpoint - Successfully Registered The Endpoint in Root 
+2025-01-02 11:51:12 [main] INFO  c.c.w.U.MyInitialTestApp - Successfully initialized the path /Shashwenth and method POST with FunctionName TestRequestParams 
+2025-01-02 11:51:12 [main] INFO  c.c.w.U.MyInitialTestApp - Registered the Class name and function name for Reflection 
+2025-01-02 11:51:12 [main] INFO  com.codingchallenges.web_server.App - Server Socket Thread:  Thread Id="16"
+2025-01-02 11:51:12 [Thread-0] INFO  c.c.w.T.ThreadStartUp - Server Started Listening at... PORT="8080"
+2025-01-02 11:51:32 [Thread-0] INFO  c.c.w.T.ThreadSocketImplementation - Inititalizing socket Socket at Port="64260"
+2025-01-02 11:51:32 [Thread-0] INFO  c.c.w.T.ThreadStartUp - Exection Begins Thread Id: ="18"
+2025-01-02 11:51:32 [Thread-1] INFO  c.c.w.T.ThreadSocketImplementation - Thread Execution started 
+2025-01-02 11:51:32 [Thread-1] INFO  c.c.w.R.InitialiseRequestBody - Inside InitialiseRequestBody RequestLine="GET / HTTP/1.1"
+2025-01-02 11:51:32 [Thread-1] INFO  c.c.w.R.InitialiseRequestBody - Successfully initialized Request Body Request Body Method="GET" REquest Body Path="/"
+2025-01-02 11:51:32 [Thread-1] INFO  c.c.w.h.CheckValidityService - Initializing Validity Service 
+2025-01-02 11:51:32 [Thread-1] INFO  c.c.w.handlePathVariables.FindPath - Initializating Find Path Path="/"
+2025-01-02 11:51:32 [Thread-1] INFO  c.c.w.handlePathVariables.FindPath - End Of Checking Path validity 
+2025-01-02 11:51:32 [Thread-1] INFO  c.c.w.handlePathVariables.FindPath - Returning Class and Method List at FindPath 
+2025-01-02 11:51:32 [Thread-1] INFO  c.c.w.handlePathVariables.FindPath - Retuning Path Variables at FIndPath 
+2025-01-02 11:51:32 [Thread-1] INFO  c.c.w.R.InitializeRequestParams - Initializing Request Line RequestLine="GET / HTTP/1.1"
+2025-01-02 11:51:32 [Thread-1] INFO  c.c.w.R.InitializeRequestParams - null Contins Params? ="false"
+2025-01-02 11:51:32 [Thread-1] INFO  c.c.w.T.ThreadSocketImplementation - There is no Class and Method associated with the URL 
+2025-01-02 11:51:32 [Thread-1] INFO  c.c.w.T.ThreadSocketImplementation - Successfully completed Socket implmentation 
+2025-01-02 11:51:40 [Thread-0] INFO  c.c.w.T.ThreadSocketImplementation - Inititalizing socket Socket at Port="64261"
+2025-01-02 11:51:40 [Thread-0] INFO  c.c.w.T.ThreadStartUp - Exection Begins Thread Id: ="19"
+2025-01-02 11:51:40 [Thread-2] INFO  c.c.w.T.ThreadSocketImplementation - Thread Execution started 
+2025-01-02 11:51:40 [Thread-2] INFO  c.c.w.R.InitialiseRequestBody - Inside InitialiseRequestBody RequestLine="GET /Shashwenth/Shash/SH HTTP/1.1"
+2025-01-02 11:51:40 [Thread-2] INFO  c.c.w.R.InitialiseRequestBody - Successfully initialized Request Body Request Body Method="GET" REquest Body Path="/Shashwenth/Shash/SH"
+2025-01-02 11:51:40 [Thread-2] INFO  c.c.w.h.CheckValidityService - Initializing Validity Service 
+2025-01-02 11:51:40 [Thread-2] INFO  c.c.w.handlePathVariables.FindPath - Initializating Find Path Path="/Shashwenth/Shash/SH"
+2025-01-02 11:51:40 [Thread-2] INFO  c.c.w.handlePathVariables.FindPath - End Of Checking Path validity 
+2025-01-02 11:51:40 [Thread-2] INFO  c.c.w.handlePathVariables.FindPath - Returning Class and Method List at FindPath 
+2025-01-02 11:51:40 [Thread-2] INFO  c.c.w.handlePathVariables.FindPath - Retuning Path Variables at FIndPath 
+2025-01-02 11:51:40 [Thread-2] INFO  c.c.w.R.InitializeRequestParams - Initializing Request Line RequestLine="GET /Shashwenth/Shash/SH HTTP/1.1"
+2025-01-02 11:51:40 [Thread-2] INFO  c.c.w.R.InitializeRequestParams - null Contins Params? ="false"
+2025-01-02 11:51:40 [Thread-2] INFO  c.c.w.T.ThreadSocketImplementation - There is no Class and Method associated with the URL 
+2025-01-02 11:51:40 [Thread-2] INFO  c.c.w.T.ThreadSocketImplementation - Successfully completed Socket implmentation 
+2025-01-02 11:51:40 [Thread-0] INFO  c.c.w.T.ThreadSocketImplementation - Inititalizing socket Socket at Port="64262"
+2025-01-02 11:51:40 [Thread-0] INFO  c.c.w.T.ThreadStartUp - Exection Begins Thread Id: ="20"
+2025-01-02 11:51:40 [Thread-3] INFO  c.c.w.T.ThreadSocketImplementation - Thread Execution started 
+2025-01-02 11:51:40 [Thread-3] INFO  c.c.w.R.InitialiseRequestBody - Inside InitialiseRequestBody RequestLine="GET /favicon.ico HTTP/1.1"
+2025-01-02 11:51:40 [Thread-3] INFO  c.c.w.R.InitialiseRequestBody - Successfully initialized Request Body Request Body Method="GET" REquest Body Path="/favicon.ico"
+2025-01-02 11:51:40 [Thread-3] INFO  c.c.w.h.CheckValidityService - Initializing Validity Service 
+2025-01-02 11:51:40 [Thread-3] INFO  c.c.w.handlePathVariables.FindPath - Initializating Find Path Path="/favicon.ico"
+2025-01-02 11:51:40 [Thread-3] INFO  c.c.w.handlePathVariables.FindPath - End Of Checking Path validity 
+2025-01-02 11:51:40 [Thread-3] INFO  c.c.w.handlePathVariables.FindPath - Returning Class and Method List at FindPath 
+2025-01-02 11:51:40 [Thread-3] INFO  c.c.w.handlePathVariables.FindPath - Retuning Path Variables at FIndPath 
+2025-01-02 11:51:40 [Thread-3] INFO  c.c.w.R.InitializeRequestParams - Initializing Request Line RequestLine="GET /favicon.ico HTTP/1.1"
+2025-01-02 11:51:40 [Thread-3] INFO  c.c.w.R.InitializeRequestParams - null Contins Params? ="false"
+2025-01-02 11:51:40 [Thread-3] INFO  c.c.w.T.ThreadSocketImplementation - There is no Class and Method associated with the URL 
+2025-01-02 11:51:40 [Thread-3] INFO  c.c.w.T.ThreadSocketImplementation - Successfully completed Socket implmentation 
+2025-01-02 11:53:29 [main] INFO  com.codingchallenges.web_server.App - Execution Started 
+2025-01-02 11:53:29 [main] INFO  com.codingchallenges.web_server.App - Intitalizing Trie Mapper 
+2025-01-02 11:53:29 [main] INFO  com.codingchallenges.web_server.App - Initializing User Implementation 
+2025-01-02 11:53:29 [main] INFO  c.c.w.U.MyInitialTestApp - Registered the Class name and function name for Reflection 
+2025-01-02 11:53:29 [main] INFO  c.c.w.U.MyInitialTestApp - Registering Endpoint path="/Shashwenth/{name}"
+2025-01-02 11:53:29 [main] INFO  c.c.w.h.RegisterEndpoint - Successfully initialized methodParameters list 
+2025-01-02 11:53:29 [main] INFO  c.c.w.h.RegisterEndpoint - Successfully Registered The Endpoint in Root 
+2025-01-02 11:53:29 [main] INFO  c.c.w.U.MyInitialTestApp - Successfully initialized the path /Shashwenth/{name} and method POST with FunctionName TestPathVariable 
+2025-01-02 11:53:29 [main] INFO  c.c.w.U.MyInitialTestApp - Registered the Class name and function name for Reflection 
+2025-01-02 11:53:29 [main] INFO  c.c.w.U.MyInitialTestApp - Registering Endpoint path="/Shashwenth/{name}/{id}"
+2025-01-02 11:53:29 [main] INFO  c.c.w.h.RegisterEndpoint - Successfully initialized methodParameters list 
+2025-01-02 11:53:29 [main] INFO  c.c.w.h.RegisterEndpoint - Successfully Registered The Endpoint in Root 
+2025-01-02 11:53:29 [main] INFO  c.c.w.U.MyInitialTestApp - Successfully initialized the path /Shashwenth/{name}/{id} and method POST with FunctionName TestPathVariable2 
+2025-01-02 11:53:29 [main] INFO  c.c.w.U.MyInitialTestApp - Registered the Class name and function name for Reflection 
+2025-01-02 11:53:29 [main] INFO  c.c.w.U.MyInitialTestApp - Registering Endpoint path="/Shashwenth/name"
+2025-01-02 11:53:29 [main] INFO  c.c.w.h.RegisterEndpoint - Successfully initialized methodParameters list 
+2025-01-02 11:53:29 [main] INFO  c.c.w.h.RegisterEndpoint - Successfully Registered The Endpoint in Root 
+2025-01-02 11:53:29 [main] INFO  c.c.w.U.MyInitialTestApp - Successfully initialized the path /Shashwenth/name and method GET with FunctionName getName 
+2025-01-02 11:53:29 [main] INFO  c.c.w.U.MyInitialTestApp - Registered the Class name and function name for Reflection 
+2025-01-02 11:53:29 [main] INFO  c.c.w.U.MyInitialTestApp - Registering Endpoint path="/Shashwenth/age"
+2025-01-02 11:53:29 [main] INFO  c.c.w.h.RegisterEndpoint - Successfully initialized methodParameters list 
+2025-01-02 11:53:29 [main] INFO  c.c.w.h.RegisterEndpoint - Successfully Registered The Endpoint in Root 
+2025-01-02 11:53:29 [main] INFO  c.c.w.U.MyInitialTestApp - Successfully initialized the path /Shashwenth/age and method GET with FunctionName getAge 
+2025-01-02 11:53:29 [main] INFO  c.c.w.U.MyInitialTestApp - Registered the Class name and function name for Reflection 
+2025-01-02 11:53:29 [main] INFO  c.c.w.U.MyInitialTestApp - Registering Endpoint path="/Shashwenth/name"
+2025-01-02 11:53:29 [main] INFO  c.c.w.h.RegisterEndpoint - Successfully initialized methodParameters list 
+2025-01-02 11:53:29 [main] INFO  c.c.w.h.RegisterEndpoint - Successfully Registered The Endpoint in Root 
+2025-01-02 11:53:29 [main] INFO  c.c.w.U.MyInitialTestApp - Successfully initialized the path /Shashwenth/name and method POST with FunctionName setName 
+2025-01-02 11:53:29 [main] INFO  c.c.w.U.MyInitialTestApp - Registered the Class name and function name for Reflection 
+2025-01-02 11:53:29 [main] INFO  c.c.w.U.MyInitialTestApp - Registering Endpoint path="/Shashwenth"
+2025-01-02 11:53:29 [main] INFO  c.c.w.h.RegisterEndpoint - Successfully initialized methodParameters list 
+2025-01-02 11:53:29 [main] INFO  c.c.w.h.RegisterEndpoint - Successfully Registered The Endpoint in Root 
+2025-01-02 11:53:29 [main] INFO  c.c.w.U.MyInitialTestApp - Successfully initialized the path /Shashwenth and method POST with FunctionName TestRequestParams 
+2025-01-02 11:53:29 [main] INFO  c.c.w.U.MyInitialTestApp - Registered the Class name and function name for Reflection 
+2025-01-02 11:53:29 [main] INFO  com.codingchallenges.web_server.App - Server Socket Thread:  Thread Id="15"
+2025-01-02 11:53:29 [Thread-0] INFO  c.c.w.T.ThreadStartUp - Server Started Listening at... PORT="8080"
+2025-01-02 11:53:35 [Thread-0] INFO  c.c.w.T.ThreadSocketImplementation - Inititalizing socket Socket at Port="64294"
+2025-01-02 11:53:35 [Thread-0] INFO  c.c.w.T.ThreadStartUp - Exection Begins Thread Id: ="17"
+2025-01-02 11:53:35 [Thread-1] INFO  c.c.w.T.ThreadSocketImplementation - Thread Execution started 
+2025-01-02 11:53:35 [Thread-1] INFO  c.c.w.R.InitialiseRequestBody - Inside InitialiseRequestBody RequestLine="GET /Shashwenth/Shash/SH HTTP/1.1"
+2025-01-02 11:53:35 [Thread-1] INFO  c.c.w.R.InitialiseRequestBody - Successfully initialized Request Body Request Body Method="GET" REquest Body Path="/Shashwenth/Shash/SH"
+2025-01-02 11:53:35 [Thread-1] INFO  c.c.w.h.CheckValidityService - Initializing Validity Service 
+2025-01-02 11:53:35 [Thread-1] INFO  c.c.w.handlePathVariables.FindPath - Initializating Find Path Path="/Shashwenth/Shash/SH"
+2025-01-02 11:53:35 [Thread-1] INFO  c.c.w.handlePathVariables.FindPath - End Of Checking Path validity 
+2025-01-02 11:53:35 [Thread-1] INFO  c.c.w.handlePathVariables.FindPath - Returning Class and Method List at FindPath 
+2025-01-02 11:53:35 [Thread-1] INFO  c.c.w.h.CheckValidityService - --------------Insode NO Class Exception------------ 
+2025-01-02 11:53:35 [Thread-1] INFO  c.c.w.handlePathVariables.FindPath - Retuning Path Variables at FIndPath 
+2025-01-02 11:53:35 [Thread-1] INFO  c.c.w.R.InitializeRequestParams - Initializing Request Line RequestLine="GET /Shashwenth/Shash/SH HTTP/1.1"
+2025-01-02 11:53:35 [Thread-1] INFO  c.c.w.R.InitializeRequestParams - null Contins Params? ="false"
+2025-01-02 11:53:35 [Thread-1] INFO  c.c.w.T.ThreadSocketImplementation - There is no Class and Method associated with the URL 
+2025-01-02 11:53:35 [Thread-1] INFO  c.c.w.T.ThreadSocketImplementation - Successfully completed Socket implmentation 
+2025-01-02 11:53:35 [Thread-0] INFO  c.c.w.T.ThreadSocketImplementation - Inititalizing socket Socket at Port="64298"
+2025-01-02 11:53:35 [Thread-0] INFO  c.c.w.T.ThreadStartUp - Exection Begins Thread Id: ="18"
+2025-01-02 11:53:35 [Thread-2] INFO  c.c.w.T.ThreadSocketImplementation - Thread Execution started 
+2025-01-02 11:53:35 [Thread-2] INFO  c.c.w.R.InitialiseRequestBody - Inside InitialiseRequestBody RequestLine="GET /favicon.ico HTTP/1.1"
+2025-01-02 11:53:35 [Thread-2] INFO  c.c.w.R.InitialiseRequestBody - Successfully initialized Request Body Request Body Method="GET" REquest Body Path="/favicon.ico"
+2025-01-02 11:53:35 [Thread-2] INFO  c.c.w.h.CheckValidityService - Initializing Validity Service 
+2025-01-02 11:53:35 [Thread-2] INFO  c.c.w.handlePathVariables.FindPath - Initializating Find Path Path="/favicon.ico"
+2025-01-02 11:53:35 [Thread-2] INFO  c.c.w.handlePathVariables.FindPath - End Of Checking Path validity 
+2025-01-02 11:53:35 [Thread-2] INFO  c.c.w.handlePathVariables.FindPath - Returning Class and Method List at FindPath 
+2025-01-02 11:53:35 [Thread-2] INFO  c.c.w.h.CheckValidityService - --------------Insode NO Class Exception------------ 
+2025-01-02 11:53:35 [Thread-2] INFO  c.c.w.handlePathVariables.FindPath - Retuning Path Variables at FIndPath 
+2025-01-02 11:53:35 [Thread-2] INFO  c.c.w.R.InitializeRequestParams - Initializing Request Line RequestLine="GET /favicon.ico HTTP/1.1"
+2025-01-02 11:53:35 [Thread-2] INFO  c.c.w.R.InitializeRequestParams - null Contins Params? ="false"
+2025-01-02 11:53:35 [Thread-2] INFO  c.c.w.T.ThreadSocketImplementation - There is no Class and Method associated with the URL 
+2025-01-02 11:53:35 [Thread-2] INFO  c.c.w.T.ThreadSocketImplementation - Successfully completed Socket implmentation 
+2025-01-02 11:58:03 [main] INFO  com.codingchallenges.web_server.App - Execution Started 
+2025-01-02 11:58:03 [main] INFO  com.codingchallenges.web_server.App - Intitalizing Trie Mapper 
+2025-01-02 11:58:03 [main] INFO  com.codingchallenges.web_server.App - Initializing User Implementation 
+2025-01-02 11:58:03 [main] INFO  c.c.w.U.MyInitialTestApp - Registered the Class name and function name for Reflection 
+2025-01-02 11:58:03 [main] INFO  c.c.w.U.MyInitialTestApp - Registering Endpoint path="/Shashwenth/{name}"
+2025-01-02 11:58:03 [main] INFO  c.c.w.h.RegisterEndpoint - Successfully initialized methodParameters list 
+2025-01-02 11:58:03 [main] INFO  c.c.w.h.RegisterEndpoint - Successfully Registered The Endpoint in Root 
+2025-01-02 11:58:03 [main] INFO  c.c.w.U.MyInitialTestApp - Successfully initialized the path /Shashwenth/{name} and method POST with FunctionName TestPathVariable 
+2025-01-02 11:58:03 [main] INFO  c.c.w.U.MyInitialTestApp - Registered the Class name and function name for Reflection 
+2025-01-02 11:58:03 [main] INFO  c.c.w.U.MyInitialTestApp - Registering Endpoint path="/Shashwenth/{name}/{id}"
+2025-01-02 11:58:03 [main] INFO  c.c.w.h.RegisterEndpoint - Successfully initialized methodParameters list 
+2025-01-02 11:58:03 [main] INFO  c.c.w.h.RegisterEndpoint - Successfully Registered The Endpoint in Root 
+2025-01-02 11:58:03 [main] INFO  c.c.w.U.MyInitialTestApp - Successfully initialized the path /Shashwenth/{name}/{id} and method POST with FunctionName TestPathVariable2 
+2025-01-02 11:58:03 [main] INFO  c.c.w.U.MyInitialTestApp - Registered the Class name and function name for Reflection 
+2025-01-02 11:58:03 [main] INFO  c.c.w.U.MyInitialTestApp - Registering Endpoint path="/Shashwenth/name"
+2025-01-02 11:58:03 [main] INFO  c.c.w.h.RegisterEndpoint - Successfully initialized methodParameters list 
+2025-01-02 11:58:03 [main] INFO  c.c.w.h.RegisterEndpoint - Successfully Registered The Endpoint in Root 
+2025-01-02 11:58:03 [main] INFO  c.c.w.U.MyInitialTestApp - Successfully initialized the path /Shashwenth/name and method GET with FunctionName getName 
+2025-01-02 11:58:03 [main] INFO  c.c.w.U.MyInitialTestApp - Registered the Class name and function name for Reflection 
+2025-01-02 11:58:03 [main] INFO  c.c.w.U.MyInitialTestApp - Registering Endpoint path="/Shashwenth/age"
+2025-01-02 11:58:03 [main] INFO  c.c.w.h.RegisterEndpoint - Successfully initialized methodParameters list 
+2025-01-02 11:58:03 [main] INFO  c.c.w.h.RegisterEndpoint - Successfully Registered The Endpoint in Root 
+2025-01-02 11:58:03 [main] INFO  c.c.w.U.MyInitialTestApp - Successfully initialized the path /Shashwenth/age and method GET with FunctionName getAge 
+2025-01-02 11:58:03 [main] INFO  c.c.w.U.MyInitialTestApp - Registered the Class name and function name for Reflection 
+2025-01-02 11:58:03 [main] INFO  c.c.w.U.MyInitialTestApp - Registering Endpoint path="/Shashwenth/name"
+2025-01-02 11:58:03 [main] INFO  c.c.w.h.RegisterEndpoint - Successfully initialized methodParameters list 
+2025-01-02 11:58:03 [main] INFO  c.c.w.h.RegisterEndpoint - Successfully Registered The Endpoint in Root 
+2025-01-02 11:58:03 [main] INFO  c.c.w.U.MyInitialTestApp - Successfully initialized the path /Shashwenth/name and method POST with FunctionName setName 
+2025-01-02 11:58:03 [main] INFO  c.c.w.U.MyInitialTestApp - Registered the Class name and function name for Reflection 
+2025-01-02 11:58:03 [main] INFO  c.c.w.U.MyInitialTestApp - Registering Endpoint path="/Shashwenth"
+2025-01-02 11:58:03 [main] INFO  c.c.w.h.RegisterEndpoint - Successfully initialized methodParameters list 
+2025-01-02 11:58:03 [main] INFO  c.c.w.h.RegisterEndpoint - Successfully Registered The Endpoint in Root 
+2025-01-02 11:58:03 [main] INFO  c.c.w.U.MyInitialTestApp - Successfully initialized the path /Shashwenth and method POST with FunctionName TestRequestParams 
+2025-01-02 11:58:03 [main] INFO  c.c.w.U.MyInitialTestApp - Registered the Class name and function name for Reflection 
+2025-01-02 11:58:03 [main] INFO  com.codingchallenges.web_server.App - Server Socket Thread:  Thread Id="15"
+2025-01-02 11:58:03 [Thread-0] INFO  c.c.w.T.ThreadStartUp - Server Started Listening at... PORT="8080"
+2025-01-02 11:58:17 [Thread-0] INFO  c.c.w.T.ThreadSocketImplementation - Inititalizing socket Socket at Port="65223"
+2025-01-02 11:58:17 [Thread-0] INFO  c.c.w.T.ThreadStartUp - Exection Begins Thread Id: ="17"
+2025-01-02 11:58:17 [Thread-1] INFO  c.c.w.T.ThreadSocketImplementation - Thread Execution started 
+2025-01-02 11:58:17 [Thread-1] INFO  c.c.w.R.InitialiseRequestBody - Inside InitialiseRequestBody RequestLine="GET /Shashwenth/Shash/SH HTTP/1.1"
+2025-01-02 11:58:17 [Thread-1] INFO  c.c.w.R.InitialiseRequestBody - Successfully initialized Request Body Request Body Method="GET" REquest Body Path="/Shashwenth/Shash/SH"
+2025-01-02 11:58:17 [Thread-1] INFO  c.c.w.h.CheckValidityService - Initializing Validity Service 
+2025-01-02 11:58:17 [Thread-1] INFO  c.c.w.handlePathVariables.FindPath - Initializating Find Path Path="/Shashwenth/Shash/SH"
+2025-01-02 11:58:17 [Thread-1] INFO  c.c.w.handlePathVariables.FindPath - End Of Checking Path validity 
+2025-01-02 11:58:17 [Thread-1] INFO  c.c.w.handlePathVariables.FindPath - Returning Class and Method List at FindPath 
+2025-01-02 11:58:17 [Thread-1] WARN  c.c.w.h.CheckValidityService - --------------Insode NO Class Exception------------ 
+2025-01-02 11:58:17 [Thread-1] INFO  c.c.w.handlePathVariables.FindPath - Retuning Path Variables at FIndPath 
+2025-01-02 11:58:17 [Thread-1] INFO  c.c.w.R.InitializeRequestParams - Initializing Request Line RequestLine="GET /Shashwenth/Shash/SH HTTP/1.1"
+2025-01-02 11:58:17 [Thread-1] INFO  c.c.w.R.InitializeRequestParams - null Contins Params? ="false"
+2025-01-02 11:58:17 [Thread-1] INFO  c.c.w.T.ThreadSocketImplementation - There is no Class and Method associated with the URL 
+2025-01-02 11:58:17 [Thread-1] INFO  c.c.w.T.ThreadSocketImplementation - Successfully completed Socket implmentation 
+2025-01-02 11:58:17 [Thread-0] INFO  c.c.w.T.ThreadSocketImplementation - Inititalizing socket Socket at Port="65227"
+2025-01-02 11:58:17 [Thread-0] INFO  c.c.w.T.ThreadStartUp - Exection Begins Thread Id: ="18"
+2025-01-02 11:58:17 [Thread-2] INFO  c.c.w.T.ThreadSocketImplementation - Thread Execution started 
+2025-01-02 11:58:17 [Thread-2] INFO  c.c.w.R.InitialiseRequestBody - Inside InitialiseRequestBody RequestLine="GET /favicon.ico HTTP/1.1"
+2025-01-02 11:58:17 [Thread-2] INFO  c.c.w.R.InitialiseRequestBody - Successfully initialized Request Body Request Body Method="GET" REquest Body Path="/favicon.ico"
+2025-01-02 11:58:17 [Thread-2] INFO  c.c.w.h.CheckValidityService - Initializing Validity Service 
+2025-01-02 11:58:17 [Thread-2] INFO  c.c.w.handlePathVariables.FindPath - Initializating Find Path Path="/favicon.ico"
+2025-01-02 11:58:17 [Thread-2] INFO  c.c.w.handlePathVariables.FindPath - End Of Checking Path validity 
+2025-01-02 11:58:17 [Thread-2] INFO  c.c.w.handlePathVariables.FindPath - Returning Class and Method List at FindPath 
+2025-01-02 11:58:17 [Thread-2] WARN  c.c.w.h.CheckValidityService - --------------Insode NO Class Exception------------ 
+2025-01-02 11:58:17 [Thread-2] INFO  c.c.w.handlePathVariables.FindPath - Retuning Path Variables at FIndPath 
+2025-01-02 11:58:17 [Thread-2] INFO  c.c.w.R.InitializeRequestParams - Initializing Request Line RequestLine="GET /favicon.ico HTTP/1.1"
+2025-01-02 11:58:17 [Thread-2] INFO  c.c.w.R.InitializeRequestParams - null Contins Params? ="false"
+2025-01-02 11:58:17 [Thread-2] INFO  c.c.w.T.ThreadSocketImplementation - There is no Class and Method associated with the URL 
+2025-01-02 11:58:17 [Thread-2] INFO  c.c.w.T.ThreadSocketImplementation - Successfully completed Socket implmentation 
+2025-01-02 16:13:28 [main] INFO  com.codingchallenges.web_server.App - Execution Started 
+2025-01-02 16:13:28 [main] INFO  com.codingchallenges.web_server.App - Intitalizing Trie Mapper 
+2025-01-02 16:13:28 [main] INFO  com.codingchallenges.web_server.App - Initializing User Implementation 
+2025-01-02 16:13:28 [main] INFO  c.c.w.U.MyInitialTestApp - Registered the Class name and function name for Reflection 
+2025-01-02 16:13:28 [main] INFO  c.c.w.U.MyInitialTestApp - Registering Endpoint path="/Shashwenth/{name}"
+2025-01-02 16:13:28 [main] INFO  c.c.w.h.RegisterEndpoint - Successfully initialized methodParameters list 
+2025-01-02 16:13:28 [main] INFO  c.c.w.h.RegisterEndpoint - Successfully Registered The Endpoint in Root 
+2025-01-02 16:13:28 [main] INFO  c.c.w.U.MyInitialTestApp - Successfully initialized the path /Shashwenth/{name} and method POST with FunctionName TestPathVariable 
+2025-01-02 16:13:28 [main] INFO  c.c.w.U.MyInitialTestApp - Registered the Class name and function name for Reflection 
+2025-01-02 16:13:28 [main] INFO  c.c.w.U.MyInitialTestApp - Registering Endpoint path="/Shashwenth/{name}/{id}"
+2025-01-02 16:13:28 [main] INFO  c.c.w.h.RegisterEndpoint - Successfully initialized methodParameters list 
+2025-01-02 16:13:28 [main] INFO  c.c.w.h.RegisterEndpoint - Successfully Registered The Endpoint in Root 
+2025-01-02 16:13:28 [main] INFO  c.c.w.U.MyInitialTestApp - Successfully initialized the path /Shashwenth/{name}/{id} and method POST with FunctionName TestPathVariable2 
+2025-01-02 16:13:28 [main] INFO  c.c.w.U.MyInitialTestApp - Registered the Class name and function name for Reflection 
+2025-01-02 16:13:28 [main] INFO  c.c.w.U.MyInitialTestApp - Registering Endpoint path="/Shashwenth/name"
+2025-01-02 16:13:28 [main] INFO  c.c.w.h.RegisterEndpoint - Successfully initialized methodParameters list 
+2025-01-02 16:13:28 [main] INFO  c.c.w.h.RegisterEndpoint - Successfully Registered The Endpoint in Root 
+2025-01-02 16:13:28 [main] INFO  c.c.w.U.MyInitialTestApp - Successfully initialized the path /Shashwenth/name and method GET with FunctionName getName 
+2025-01-02 16:13:28 [main] INFO  c.c.w.U.MyInitialTestApp - Registered the Class name and function name for Reflection 
+2025-01-02 16:13:28 [main] INFO  c.c.w.U.MyInitialTestApp - Registering Endpoint path="/Shashwenth/age"
+2025-01-02 16:13:28 [main] INFO  c.c.w.h.RegisterEndpoint - Successfully initialized methodParameters list 
+2025-01-02 16:13:28 [main] INFO  c.c.w.h.RegisterEndpoint - Successfully Registered The Endpoint in Root 
+2025-01-02 16:13:28 [main] INFO  c.c.w.U.MyInitialTestApp - Successfully initialized the path /Shashwenth/age and method GET with FunctionName getAge 
+2025-01-02 16:13:28 [main] INFO  c.c.w.U.MyInitialTestApp - Registered the Class name and function name for Reflection 
+2025-01-02 16:13:28 [main] INFO  c.c.w.U.MyInitialTestApp - Registering Endpoint path="/Shashwenth/name"
+2025-01-02 16:13:28 [main] INFO  c.c.w.h.RegisterEndpoint - Successfully initialized methodParameters list 
+2025-01-02 16:13:28 [main] INFO  c.c.w.h.RegisterEndpoint - Successfully Registered The Endpoint in Root 
+2025-01-02 16:13:28 [main] INFO  c.c.w.U.MyInitialTestApp - Successfully initialized the path /Shashwenth/name and method POST with FunctionName setName 
+2025-01-02 16:13:28 [main] INFO  c.c.w.U.MyInitialTestApp - Registered the Class name and function name for Reflection 
+2025-01-02 16:13:28 [main] INFO  c.c.w.U.MyInitialTestApp - Registering Endpoint path="/Shashwenth"
+2025-01-02 16:13:28 [main] INFO  c.c.w.h.RegisterEndpoint - Successfully initialized methodParameters list 
+2025-01-02 16:13:28 [main] INFO  c.c.w.h.RegisterEndpoint - Successfully Registered The Endpoint in Root 
+2025-01-02 16:13:28 [main] INFO  c.c.w.U.MyInitialTestApp - Successfully initialized the path /Shashwenth and method POST with FunctionName TestRequestParams 
+2025-01-02 16:13:28 [main] INFO  c.c.w.U.MyInitialTestApp - Registered the Class name and function name for Reflection 
+2025-01-02 16:13:28 [main] INFO  com.codingchallenges.web_server.App - Server Socket Thread:  Thread Id="15"
+2025-01-02 16:13:28 [Thread-0] INFO  c.c.w.T.ThreadStartUp - Server Started Listening at... PORT="8080"
+2025-01-02 16:13:33 [Thread-0] INFO  c.c.w.T.ThreadSocketImplementation - Inititalizing socket Socket at Port="49533"
+2025-01-02 16:13:33 [Thread-0] INFO  c.c.w.T.ThreadStartUp - Exection Begins Thread Id: ="17"
+2025-01-02 16:13:33 [Thread-1] INFO  c.c.w.T.ThreadSocketImplementation - Thread Execution started 
+2025-01-02 16:13:34 [Thread-1] INFO  c.c.w.R.InitialiseRequestBody - Inside InitialiseRequestBody RequestLine="GET /Shashwenth/Shash/SH HTTP/1.1"
+2025-01-02 16:13:34 [Thread-1] INFO  c.c.w.R.InitialiseRequestBody - Successfully initialized Request Body Request Body Method="GET" REquest Body Path="/Shashwenth/Shash/SH"
+2025-01-02 16:13:34 [Thread-1] INFO  c.c.w.h.CheckValidityService - Initializing Validity Service 
+2025-01-02 16:13:34 [Thread-1] INFO  c.c.w.handlePathVariables.FindPath - Initializating Find Path Path="/Shashwenth/Shash/SH"
+2025-01-02 16:13:34 [Thread-1] INFO  c.c.w.handlePathVariables.FindPath - End Of Checking Path validity 
+2025-01-02 16:13:34 [Thread-1] INFO  c.c.w.handlePathVariables.FindPath - Returning Class and Method List at FindPath 
+2025-01-02 16:13:34 [Thread-1] WARN  c.c.w.h.CheckValidityService - --------------Insode NO Class Exception------------ 
+2025-01-02 16:13:34 [Thread-1] INFO  c.c.w.handlePathVariables.FindPath - Retuning Path Variables at FIndPath 
+2025-01-02 16:13:34 [Thread-1] INFO  c.c.w.R.InitializeRequestParams - Initializing Request Line RequestLine="GET /Shashwenth/Shash/SH HTTP/1.1"
+2025-01-02 16:13:34 [Thread-1] INFO  c.c.w.R.InitializeRequestParams - null Contins Params? ="false"
+2025-01-02 16:13:34 [Thread-1] INFO  c.c.w.T.ThreadSocketImplementation - There is no Class and Method associated with the URL 
+2025-01-02 16:13:34 [Thread-1] INFO  c.c.w.T.ThreadSocketImplementation - Successfully completed Socket implmentation 
+2025-01-02 16:13:34 [Thread-0] INFO  c.c.w.T.ThreadSocketImplementation - Inititalizing socket Socket at Port="49534"
+2025-01-02 16:13:34 [Thread-0] INFO  c.c.w.T.ThreadStartUp - Exection Begins Thread Id: ="18"
+2025-01-02 16:13:34 [Thread-2] INFO  c.c.w.T.ThreadSocketImplementation - Thread Execution started 
+2025-01-02 16:13:34 [Thread-2] INFO  c.c.w.R.InitialiseRequestBody - Inside InitialiseRequestBody RequestLine="GET /favicon.ico HTTP/1.1"
+2025-01-02 16:13:34 [Thread-2] INFO  c.c.w.R.InitialiseRequestBody - Successfully initialized Request Body Request Body Method="GET" REquest Body Path="/favicon.ico"
+2025-01-02 16:13:34 [Thread-2] INFO  c.c.w.h.CheckValidityService - Initializing Validity Service 
+2025-01-02 16:13:34 [Thread-2] INFO  c.c.w.handlePathVariables.FindPath - Initializating Find Path Path="/favicon.ico"
+2025-01-02 16:13:34 [Thread-2] INFO  c.c.w.handlePathVariables.FindPath - End Of Checking Path validity 
+2025-01-02 16:13:34 [Thread-2] INFO  c.c.w.handlePathVariables.FindPath - Returning Class and Method List at FindPath 
+2025-01-02 16:13:34 [Thread-2] WARN  c.c.w.h.CheckValidityService - --------------Insode NO Class Exception------------ 
+2025-01-02 16:13:34 [Thread-2] INFO  c.c.w.handlePathVariables.FindPath - Retuning Path Variables at FIndPath 
+2025-01-02 16:13:34 [Thread-2] INFO  c.c.w.R.InitializeRequestParams - Initializing Request Line RequestLine="GET /favicon.ico HTTP/1.1"
+2025-01-02 16:13:34 [Thread-2] INFO  c.c.w.R.InitializeRequestParams - null Contins Params? ="false"
+2025-01-02 16:13:34 [Thread-2] INFO  c.c.w.T.ThreadSocketImplementation - There is no Class and Method associated with the URL 
+2025-01-02 16:13:34 [Thread-2] INFO  c.c.w.T.ThreadSocketImplementation - Successfully completed Socket implmentation 
+2025-01-02 17:09:24 [main] INFO  com.codingchallenges.web_server.App - Execution Started 
+2025-01-02 17:09:25 [main] INFO  com.codingchallenges.web_server.App - Intitalizing Trie Mapper 
+2025-01-02 17:09:25 [main] INFO  com.codingchallenges.web_server.App - Initializing User Implementation 
+2025-01-02 17:11:05 [main] INFO  com.codingchallenges.web_server.App - Execution Started 
+2025-01-02 17:11:05 [main] INFO  com.codingchallenges.web_server.App - Intitalizing Trie Mapper 
+2025-01-02 17:11:05 [main] INFO  com.codingchallenges.web_server.App - Initializing User Implementation 
+2025-01-02 17:18:08 [main] INFO  com.codingchallenges.web_server.App - Execution Started 
+2025-01-02 17:18:08 [main] INFO  com.codingchallenges.web_server.App - Intitalizing Trie Mapper 
+2025-01-02 17:18:08 [main] INFO  com.codingchallenges.web_server.App - Initializing User Implementation 
+2025-01-02 17:18:08 [main] INFO  com.codingchallenges.web_server.App - Registered the Class name and function name for Reflection 
+2025-01-02 17:18:08 [main] INFO  com.codingchallenges.web_server.App - Registering Endpoint path="/GetName"
+2025-01-02 17:18:08 [main] INFO  c.c.w.h.RegisterEndpoint - Successfully initialized methodParameters list 
+2025-01-02 17:18:08 [main] INFO  c.c.w.h.RegisterEndpoint - Successfully Registered The Endpoint in Root 
+2025-01-02 17:18:08 [main] INFO  com.codingchallenges.web_server.App - Successfully initialized the path /GetName and method GET with FunctionName GetName 
+2025-01-02 17:18:08 [main] INFO  com.codingchallenges.web_server.App - Registered the Class name and function name for Reflection 
+2025-01-02 17:18:08 [main] INFO  com.codingchallenges.web_server.App - Registering Endpoint path="/GetName/{name}/Age/{age}"
+2025-01-02 17:18:08 [main] INFO  c.c.w.h.RegisterEndpoint - Successfully initialized methodParameters list 
+2025-01-02 17:18:08 [main] INFO  c.c.w.h.RegisterEndpoint - Successfully Registered The Endpoint in Root 
+2025-01-02 17:18:08 [main] INFO  com.codingchallenges.web_server.App - Successfully initialized the path /GetName/{name}/Age/{age} and method GET with FunctionName GetNameandAge 
+2025-01-02 17:18:08 [main] INFO  com.codingchallenges.web_server.App - Registered the Class name and function name for Reflection 
+2025-01-02 17:18:08 [main] INFO  com.codingchallenges.web_server.App - Registering Endpoint path="/getAge"
+2025-01-02 17:18:08 [main] INFO  c.c.w.h.RegisterEndpoint - Successfully initialized methodParameters list 
+2025-01-02 17:18:08 [main] INFO  c.c.w.h.RegisterEndpoint - Successfully Registered The Endpoint in Root 
+2025-01-02 17:18:08 [main] INFO  com.codingchallenges.web_server.App - Successfully initialized the path /getAge and method GET with FunctionName getAge 
+2025-01-02 17:18:08 [main] INFO  com.codingchallenges.web_server.App - Registered the Class name and function name for Reflection 
+2025-01-02 17:18:08 [main] INFO  com.codingchallenges.web_server.App - Registering Endpoint path="/SetName/{name}"
+2025-01-02 17:18:08 [main] INFO  c.c.w.h.RegisterEndpoint - Successfully initialized methodParameters list 
+2025-01-02 17:18:08 [main] INFO  c.c.w.h.RegisterEndpoint - Successfully Registered The Endpoint in Root 
+2025-01-02 17:18:08 [main] INFO  com.codingchallenges.web_server.App - Successfully initialized the path /SetName/{name} and method POST with FunctionName SetName 
+2025-01-02 17:18:08 [main] INFO  com.codingchallenges.web_server.App - Registered the Class name and function name for Reflection 
+2025-01-02 17:18:08 [main] INFO  com.codingchallenges.web_server.App - Registering Endpoint path="/SetNameAsReqParameter"
+2025-01-02 17:18:08 [main] INFO  c.c.w.h.RegisterEndpoint - Successfully initialized methodParameters list 
+2025-01-02 17:18:08 [main] INFO  c.c.w.h.RegisterEndpoint - Successfully Registered The Endpoint in Root 
+2025-01-02 17:18:08 [main] INFO  com.codingchallenges.web_server.App - Successfully initialized the path /SetNameAsReqParameter and method POST with FunctionName SetNameAsReqParameter 
+2025-01-02 17:18:08 [main] INFO  com.codingchallenges.web_server.App - Registered the Class name and function name for Reflection 
+2025-01-02 17:18:08 [main] INFO  com.codingchallenges.web_server.App - Registering Endpoint path="/TestCastRequestParams/"
+2025-01-02 17:18:08 [main] INFO  c.c.w.h.RegisterEndpoint - Successfully initialized methodParameters list 
+2025-01-02 17:18:08 [main] INFO  c.c.w.h.RegisterEndpoint - Successfully Registered The Endpoint in Root 
+2025-01-02 17:18:08 [main] INFO  com.codingchallenges.web_server.App - Successfully initialized the path /TestCastRequestParams/ and method POST with FunctionName TestCastRequestParams 
+2025-01-02 17:19:04 [main] INFO  com.codingchallenges.web_server.App - Execution Started 
+2025-01-02 17:19:04 [main] INFO  com.codingchallenges.web_server.App - Intitalizing Trie Mapper 
+2025-01-02 17:19:04 [main] INFO  com.codingchallenges.web_server.App - Initializing User Implementation 
+2025-01-02 17:19:04 [main] INFO  com.codingchallenges.web_server.App - Registered the Class name and function name for Reflection 
+2025-01-02 17:19:04 [main] INFO  com.codingchallenges.web_server.App - Registering Endpoint path="/GetName"
+2025-01-02 17:19:04 [main] INFO  c.c.w.h.RegisterEndpoint - Successfully initialized methodParameters list 
+2025-01-02 17:19:04 [main] INFO  c.c.w.h.RegisterEndpoint - Successfully Registered The Endpoint in Root 
+2025-01-02 17:19:04 [main] INFO  com.codingchallenges.web_server.App - Successfully initialized the path /GetName and method GET with FunctionName GetName 
+2025-01-02 17:19:04 [main] INFO  com.codingchallenges.web_server.App - Registered the Class name and function name for Reflection 
+2025-01-02 17:19:04 [main] INFO  com.codingchallenges.web_server.App - Registering Endpoint path="/GetName/{name}/Age/{age}"
+2025-01-02 17:19:04 [main] INFO  c.c.w.h.RegisterEndpoint - Successfully initialized methodParameters list 
+2025-01-02 17:19:04 [main] INFO  c.c.w.h.RegisterEndpoint - Successfully Registered The Endpoint in Root 
+2025-01-02 17:19:04 [main] INFO  com.codingchallenges.web_server.App - Successfully initialized the path /GetName/{name}/Age/{age} and method GET with FunctionName GetNameandAge 
+2025-01-02 17:19:04 [main] INFO  com.codingchallenges.web_server.App - Registered the Class name and function name for Reflection 
+2025-01-02 17:19:04 [main] INFO  com.codingchallenges.web_server.App - Registering Endpoint path="/getAge"
+2025-01-02 17:19:04 [main] INFO  c.c.w.h.RegisterEndpoint - Successfully initialized methodParameters list 
+2025-01-02 17:19:04 [main] INFO  c.c.w.h.RegisterEndpoint - Successfully Registered The Endpoint in Root 
+2025-01-02 17:19:04 [main] INFO  com.codingchallenges.web_server.App - Successfully initialized the path /getAge and method GET with FunctionName getAge 
+2025-01-02 17:19:04 [main] INFO  com.codingchallenges.web_server.App - Registered the Class name and function name for Reflection 
+2025-01-02 17:19:04 [main] INFO  com.codingchallenges.web_server.App - Registering Endpoint path="/SetName/{name}"
+2025-01-02 17:19:04 [main] INFO  c.c.w.h.RegisterEndpoint - Successfully initialized methodParameters list 
+2025-01-02 17:19:04 [main] INFO  c.c.w.h.RegisterEndpoint - Successfully Registered The Endpoint in Root 
+2025-01-02 17:19:04 [main] INFO  com.codingchallenges.web_server.App - Successfully initialized the path /SetName/{name} and method POST with FunctionName SetName 
+2025-01-02 17:19:04 [main] INFO  com.codingchallenges.web_server.App - Registered the Class name and function name for Reflection 
+2025-01-02 17:19:04 [main] INFO  com.codingchallenges.web_server.App - Registering Endpoint path="/SetNameAsReqParameter"
+2025-01-02 17:19:04 [main] INFO  c.c.w.h.RegisterEndpoint - Successfully initialized methodParameters list 
+2025-01-02 17:19:04 [main] INFO  c.c.w.h.RegisterEndpoint - Successfully Registered The Endpoint in Root 
+2025-01-02 17:19:04 [main] INFO  com.codingchallenges.web_server.App - Successfully initialized the path /SetNameAsReqParameter and method POST with FunctionName SetNameAsReqParameter 
+2025-01-02 17:19:04 [main] INFO  com.codingchallenges.web_server.App - Registered the Class name and function name for Reflection 
+2025-01-02 17:19:04 [main] INFO  com.codingchallenges.web_server.App - Registering Endpoint path="/TestCastRequestParams/"
+2025-01-02 17:19:04 [main] INFO  c.c.w.h.RegisterEndpoint - Successfully initialized methodParameters list 
+2025-01-02 17:19:04 [main] INFO  c.c.w.h.RegisterEndpoint - Successfully Registered The Endpoint in Root 
+2025-01-02 17:19:04 [main] INFO  com.codingchallenges.web_server.App - Successfully initialized the path /TestCastRequestParams/ and method POST with FunctionName TestCastRequestParams 
+2025-01-02 17:19:04 [main] INFO  com.codingchallenges.web_server.App - Server Socket Thread:  Thread Id="15"
+2025-01-02 17:19:04 [Thread-0] INFO  c.c.w.T.ThreadStartUp - Server Started Listening at... PORT="8080"
+2025-01-02 17:19:08 [Thread-0] INFO  c.c.w.T.ThreadSocketImplementation - Inititalizing socket Socket at Port="51113"
+2025-01-02 17:19:08 [Thread-0] INFO  c.c.w.T.ThreadStartUp - Exection Begins Thread Id: ="17"
+2025-01-02 17:19:08 [Thread-1] INFO  c.c.w.T.ThreadSocketImplementation - Thread Execution started 
+2025-01-02 17:19:08 [Thread-0] INFO  c.c.w.T.ThreadSocketImplementation - Inititalizing socket Socket at Port="51114"
+2025-01-02 17:19:08 [Thread-0] INFO  c.c.w.T.ThreadStartUp - Exection Begins Thread Id: ="18"
+2025-01-02 17:19:08 [Thread-1] INFO  c.c.w.R.InitialiseRequestBody - Inside InitialiseRequestBody RequestLine="GET /GetName HTTP/1.1"
+2025-01-02 17:19:08 [Thread-2] INFO  c.c.w.T.ThreadSocketImplementation - Thread Execution started 
+2025-01-02 17:19:08 [Thread-1] INFO  c.c.w.R.InitialiseRequestBody - Successfully initialized Request Body Request Body Method="GET" REquest Body Path="/GetName"
+2025-01-02 17:19:08 [Thread-1] INFO  c.c.w.h.CheckValidityService - Initializing Validity Service 
+2025-01-02 17:19:08 [Thread-1] INFO  c.c.w.handlePathVariables.FindPath - Initializating Find Path Path="/GetName"
+2025-01-02 17:19:08 [Thread-1] INFO  c.c.w.handlePathVariables.FindPath - End Of Checking Path validity 
+2025-01-02 17:19:08 [Thread-1] INFO  c.c.w.handlePathVariables.FindPath - Returning Class and Method List at FindPath 
+2025-01-02 17:19:08 [Thread-1] INFO  c.c.w.handlePathVariables.FindPath - Retuning Path Variables at FIndPath 
+2025-01-02 17:19:08 [Thread-1] INFO  c.c.w.R.InitializeRequestParams - Initializing Request Line RequestLine="GET /GetName HTTP/1.1"
+2025-01-02 17:19:08 [Thread-1] INFO  c.c.w.R.InitializeRequestParams - null Contins Params? ="false"
+2025-01-02 17:19:08 [Thread-1] INFO  c.c.w.T.ThreadSocketImplementation - Contains Path Variables 
+2025-01-02 17:19:08 [Thread-1] INFO  c.c.w.T.ThreadSocketImplementation - No Request Body 
+2025-01-02 17:19:08 [Thread-1] INFO  c.c.w.T.ExecuteReturnMethod - Inititlaizing the Execute Return Method with Java Reflection className="com.example.Example1.ExampleMethods" Method Name="GetName"
+2025-01-02 17:19:08 [Thread-1] INFO  c.c.w.T.ExecuteReturnMethod - Successfully Loaded the Class Class="com.example.Example1.ExampleMethods"
+2025-01-02 17:19:08 [Thread-1] INFO  c.c.w.T.ExecuteReturnMethod - Found The Function Method="GetName"
+2025-01-02 17:19:08 [Thread-1] INFO  c.c.w.T.ExecuteReturnMethod - Successfully Completed the Execute Return Method 
+2025-01-02 17:19:08 [Thread-1] INFO  c.c.w.T.ThreadSocketImplementation - Successfully completed Socket implmentation 
+2025-01-02 17:19:09 [Thread-2] INFO  c.c.w.R.InitialiseRequestBody - Inside InitialiseRequestBody RequestLine="GET /favicon.ico HTTP/1.1"
+2025-01-02 17:19:09 [Thread-2] INFO  c.c.w.R.InitialiseRequestBody - Successfully initialized Request Body Request Body Method="GET" REquest Body Path="/favicon.ico"
+2025-01-02 17:19:09 [Thread-2] INFO  c.c.w.h.CheckValidityService - Initializing Validity Service 
+2025-01-02 17:19:09 [Thread-2] INFO  c.c.w.handlePathVariables.FindPath - Initializating Find Path Path="/favicon.ico"
+2025-01-02 17:19:09 [Thread-2] INFO  c.c.w.handlePathVariables.FindPath - End Of Checking Path validity 
+2025-01-02 17:19:09 [Thread-2] INFO  c.c.w.handlePathVariables.FindPath - Returning Class and Method List at FindPath 
+2025-01-02 17:19:09 [Thread-2] WARN  c.c.w.h.CheckValidityService - --------------Insode NO Class Exception------------ 
+2025-01-02 17:19:09 [Thread-2] INFO  c.c.w.handlePathVariables.FindPath - Retuning Path Variables at FIndPath 
+2025-01-02 17:19:09 [Thread-2] INFO  c.c.w.R.InitializeRequestParams - Initializing Request Line RequestLine="GET /favicon.ico HTTP/1.1"
+2025-01-02 17:19:09 [Thread-2] INFO  c.c.w.R.InitializeRequestParams - null Contins Params? ="false"
+2025-01-02 17:19:09 [Thread-2] INFO  c.c.w.T.ThreadSocketImplementation - There is no Class and Method associated with the URL 
+2025-01-02 17:19:09 [Thread-2] INFO  c.c.w.T.ThreadSocketImplementation - Successfully completed Socket implmentation 
+2025-01-02 17:20:17 [Thread-0] INFO  c.c.w.T.ThreadSocketImplementation - Inititalizing socket Socket at Port="51134"
+2025-01-02 17:20:17 [Thread-0] INFO  c.c.w.T.ThreadStartUp - Exection Begins Thread Id: ="19"
+2025-01-02 17:20:17 [Thread-3] INFO  c.c.w.T.ThreadSocketImplementation - Thread Execution started 
+2025-01-02 17:20:17 [Thread-3] INFO  c.c.w.R.InitialiseRequestBody - Inside InitialiseRequestBody RequestLine="GET /GetNameandAge/Shashwenth/Age/23 HTTP/1.1"
+2025-01-02 17:20:17 [Thread-3] INFO  c.c.w.R.InitialiseRequestBody - Successfully initialized Request Body Request Body Method="GET" REquest Body Path="/GetNameandAge/Shashwenth/Age/23"
+2025-01-02 17:20:17 [Thread-3] INFO  c.c.w.h.CheckValidityService - Initializing Validity Service 
+2025-01-02 17:20:17 [Thread-3] INFO  c.c.w.handlePathVariables.FindPath - Initializating Find Path Path="/GetNameandAge/Shashwenth/Age/23"
+2025-01-02 17:20:17 [Thread-3] INFO  c.c.w.handlePathVariables.FindPath - End Of Checking Path validity 
+2025-01-02 17:20:17 [Thread-3] INFO  c.c.w.handlePathVariables.FindPath - Returning Class and Method List at FindPath 
+2025-01-02 17:20:17 [Thread-0] INFO  c.c.w.T.ThreadSocketImplementation - Inititalizing socket Socket at Port="51135"
+2025-01-02 17:20:17 [Thread-3] WARN  c.c.w.h.CheckValidityService - --------------Insode NO Class Exception------------ 
+2025-01-02 17:20:17 [Thread-0] INFO  c.c.w.T.ThreadStartUp - Exection Begins Thread Id: ="20"
+2025-01-02 17:20:17 [Thread-3] INFO  c.c.w.handlePathVariables.FindPath - Retuning Path Variables at FIndPath 
+2025-01-02 17:20:17 [Thread-3] INFO  c.c.w.R.InitializeRequestParams - Initializing Request Line RequestLine="GET /GetNameandAge/Shashwenth/Age/23 HTTP/1.1"
+2025-01-02 17:20:17 [Thread-4] INFO  c.c.w.T.ThreadSocketImplementation - Thread Execution started 
+2025-01-02 17:20:17 [Thread-3] INFO  c.c.w.R.InitializeRequestParams - null Contins Params? ="false"
+2025-01-02 17:20:17 [Thread-3] INFO  c.c.w.T.ThreadSocketImplementation - There is no Class and Method associated with the URL 
+2025-01-02 17:20:17 [Thread-3] INFO  c.c.w.T.ThreadSocketImplementation - Successfully completed Socket implmentation 
+2025-01-02 17:20:17 [Thread-4] INFO  c.c.w.R.InitialiseRequestBody - Inside InitialiseRequestBody RequestLine="GET /favicon.ico HTTP/1.1"
+2025-01-02 17:20:17 [Thread-4] INFO  c.c.w.R.InitialiseRequestBody - Successfully initialized Request Body Request Body Method="GET" REquest Body Path="/favicon.ico"
+2025-01-02 17:20:17 [Thread-4] INFO  c.c.w.h.CheckValidityService - Initializing Validity Service 
+2025-01-02 17:20:17 [Thread-4] INFO  c.c.w.handlePathVariables.FindPath - Initializating Find Path Path="/favicon.ico"
+2025-01-02 17:20:17 [Thread-4] INFO  c.c.w.handlePathVariables.FindPath - End Of Checking Path validity 
+2025-01-02 17:20:17 [Thread-4] INFO  c.c.w.handlePathVariables.FindPath - Returning Class and Method List at FindPath 
+2025-01-02 17:20:17 [Thread-4] WARN  c.c.w.h.CheckValidityService - --------------Insode NO Class Exception------------ 
+2025-01-02 17:20:17 [Thread-4] INFO  c.c.w.handlePathVariables.FindPath - Retuning Path Variables at FIndPath 
+2025-01-02 17:20:17 [Thread-4] INFO  c.c.w.R.InitializeRequestParams - Initializing Request Line RequestLine="GET /favicon.ico HTTP/1.1"
+2025-01-02 17:20:17 [Thread-4] INFO  c.c.w.R.InitializeRequestParams - null Contins Params? ="false"
+2025-01-02 17:20:17 [Thread-4] INFO  c.c.w.T.ThreadSocketImplementation - There is no Class and Method associated with the URL 
+2025-01-02 17:20:17 [Thread-4] INFO  c.c.w.T.ThreadSocketImplementation - Successfully completed Socket implmentation 
+2025-01-02 17:21:23 [Thread-0] INFO  c.c.w.T.ThreadSocketImplementation - Inititalizing socket Socket at Port="51150"
+2025-01-02 17:21:23 [Thread-0] INFO  c.c.w.T.ThreadStartUp - Exection Begins Thread Id: ="21"
+2025-01-02 17:21:23 [Thread-5] INFO  c.c.w.T.ThreadSocketImplementation - Thread Execution started 
+2025-01-02 17:21:23 [Thread-5] INFO  c.c.w.R.InitialiseRequestBody - Inside InitialiseRequestBody RequestLine="GET /GetNameandAge/Shashwenth/Age/23 HTTP/1.1"
+2025-01-02 17:21:23 [Thread-5] INFO  c.c.w.R.InitialiseRequestBody - Successfully initialized Request Body Request Body Method="GET" REquest Body Path="/GetNameandAge/Shashwenth/Age/23"
+2025-01-02 17:21:23 [Thread-5] INFO  c.c.w.h.CheckValidityService - Initializing Validity Service 
+2025-01-02 17:21:23 [Thread-5] INFO  c.c.w.handlePathVariables.FindPath - Initializating Find Path Path="/GetNameandAge/Shashwenth/Age/23"
+2025-01-02 17:21:23 [Thread-5] INFO  c.c.w.handlePathVariables.FindPath - End Of Checking Path validity 
+2025-01-02 17:21:23 [Thread-5] INFO  c.c.w.handlePathVariables.FindPath - Returning Class and Method List at FindPath 
+2025-01-02 17:21:23 [Thread-5] WARN  c.c.w.h.CheckValidityService - --------------Insode NO Class Exception------------ 
+2025-01-02 17:21:23 [Thread-5] INFO  c.c.w.handlePathVariables.FindPath - Retuning Path Variables at FIndPath 
+2025-01-02 17:21:23 [Thread-5] INFO  c.c.w.R.InitializeRequestParams - Initializing Request Line RequestLine="GET /GetNameandAge/Shashwenth/Age/23 HTTP/1.1"
+2025-01-02 17:21:23 [Thread-5] INFO  c.c.w.R.InitializeRequestParams - null Contins Params? ="false"
+2025-01-02 17:21:23 [Thread-0] INFO  c.c.w.T.ThreadSocketImplementation - Inititalizing socket Socket at Port="51151"
+2025-01-02 17:21:23 [Thread-0] INFO  c.c.w.T.ThreadStartUp - Exection Begins Thread Id: ="22"
+2025-01-02 17:21:23 [Thread-5] INFO  c.c.w.T.ThreadSocketImplementation - There is no Class and Method associated with the URL 
+2025-01-02 17:21:23 [Thread-6] INFO  c.c.w.T.ThreadSocketImplementation - Thread Execution started 
+2025-01-02 17:21:23 [Thread-5] INFO  c.c.w.T.ThreadSocketImplementation - Successfully completed Socket implmentation 
+2025-01-02 17:21:24 [Thread-6] INFO  c.c.w.R.InitialiseRequestBody - Inside InitialiseRequestBody RequestLine="GET /favicon.ico HTTP/1.1"
+2025-01-02 17:21:24 [Thread-6] INFO  c.c.w.R.InitialiseRequestBody - Successfully initialized Request Body Request Body Method="GET" REquest Body Path="/favicon.ico"
+2025-01-02 17:21:24 [Thread-6] INFO  c.c.w.h.CheckValidityService - Initializing Validity Service 
+2025-01-02 17:21:24 [Thread-6] INFO  c.c.w.handlePathVariables.FindPath - Initializating Find Path Path="/favicon.ico"
+2025-01-02 17:21:24 [Thread-6] INFO  c.c.w.handlePathVariables.FindPath - End Of Checking Path validity 
+2025-01-02 17:21:24 [Thread-6] INFO  c.c.w.handlePathVariables.FindPath - Returning Class and Method List at FindPath 
+2025-01-02 17:21:24 [Thread-6] WARN  c.c.w.h.CheckValidityService - --------------Insode NO Class Exception------------ 
+2025-01-02 17:21:24 [Thread-6] INFO  c.c.w.handlePathVariables.FindPath - Retuning Path Variables at FIndPath 
+2025-01-02 17:21:24 [Thread-6] INFO  c.c.w.R.InitializeRequestParams - Initializing Request Line RequestLine="GET /favicon.ico HTTP/1.1"
+2025-01-02 17:21:24 [Thread-6] INFO  c.c.w.R.InitializeRequestParams - null Contins Params? ="false"
+2025-01-02 17:21:24 [Thread-6] INFO  c.c.w.T.ThreadSocketImplementation - There is no Class and Method associated with the URL 
+2025-01-02 17:21:24 [Thread-6] INFO  c.c.w.T.ThreadSocketImplementation - Successfully completed Socket implmentation 
+2025-01-02 17:23:33 [main] INFO  com.codingchallenges.web_server.App - Execution Started 
+2025-01-02 17:23:33 [main] INFO  com.codingchallenges.web_server.App - Intitalizing Trie Mapper 
+2025-01-02 17:23:33 [main] INFO  com.codingchallenges.web_server.App - Initializing User Implementation 
+2025-01-02 17:23:33 [main] INFO  com.codingchallenges.web_server.App - Registered the Class name and function name for Reflection 
+2025-01-02 17:23:33 [main] INFO  com.codingchallenges.web_server.App - Registering Endpoint path="/GetName"
+2025-01-02 17:23:33 [main] INFO  c.c.w.h.RegisterEndpoint - Successfully initialized methodParameters list 
+2025-01-02 17:23:33 [main] INFO  c.c.w.h.RegisterEndpoint - Successfully Registered The Endpoint in Root 
+2025-01-02 17:23:33 [main] INFO  com.codingchallenges.web_server.App - Successfully initialized the path /GetName and method GET with FunctionName GetName 
+2025-01-02 17:23:33 [main] INFO  com.codingchallenges.web_server.App - Registered the Class name and function name for Reflection 
+2025-01-02 17:23:33 [main] INFO  com.codingchallenges.web_server.App - Registering Endpoint path="/GetName/{name}/Age/{age}"
+2025-01-02 17:23:33 [main] INFO  c.c.w.h.RegisterEndpoint - Successfully initialized methodParameters list 
+2025-01-02 17:23:33 [main] INFO  c.c.w.h.RegisterEndpoint - Successfully Registered The Endpoint in Root 
+2025-01-02 17:23:33 [main] INFO  com.codingchallenges.web_server.App - Successfully initialized the path /GetName/{name}/Age/{age} and method GET with FunctionName GetNameandAge 
+2025-01-02 17:23:33 [main] INFO  com.codingchallenges.web_server.App - Registered the Class name and function name for Reflection 
+2025-01-02 17:23:33 [main] INFO  com.codingchallenges.web_server.App - Registering Endpoint path="/getAge"
+2025-01-02 17:23:33 [main] INFO  c.c.w.h.RegisterEndpoint - Successfully initialized methodParameters list 
+2025-01-02 17:23:33 [main] INFO  c.c.w.h.RegisterEndpoint - Successfully Registered The Endpoint in Root 
+2025-01-02 17:23:33 [main] INFO  com.codingchallenges.web_server.App - Successfully initialized the path /getAge and method GET with FunctionName getAge 
+2025-01-02 17:23:33 [main] INFO  com.codingchallenges.web_server.App - Registered the Class name and function name for Reflection 
+2025-01-02 17:23:33 [main] INFO  com.codingchallenges.web_server.App - Registering Endpoint path="/SetName/{name}"
+2025-01-02 17:23:33 [main] INFO  c.c.w.h.RegisterEndpoint - Successfully initialized methodParameters list 
+2025-01-02 17:23:33 [main] INFO  c.c.w.h.RegisterEndpoint - Successfully Registered The Endpoint in Root 
+2025-01-02 17:23:33 [main] INFO  com.codingchallenges.web_server.App - Successfully initialized the path /SetName/{name} and method POST with FunctionName SetName 
+2025-01-02 17:23:33 [main] INFO  com.codingchallenges.web_server.App - Registered the Class name and function name for Reflection 
+2025-01-02 17:23:33 [main] INFO  com.codingchallenges.web_server.App - Registering Endpoint path="/SetNameAsReqParameter"
+2025-01-02 17:23:33 [main] INFO  c.c.w.h.RegisterEndpoint - Successfully initialized methodParameters list 
+2025-01-02 17:23:33 [main] INFO  c.c.w.h.RegisterEndpoint - Successfully Registered The Endpoint in Root 
+2025-01-02 17:23:33 [main] INFO  com.codingchallenges.web_server.App - Successfully initialized the path /SetNameAsReqParameter and method POST with FunctionName SetNameAsReqParameter 
+2025-01-02 17:23:33 [main] INFO  com.codingchallenges.web_server.App - Registered the Class name and function name for Reflection 
+2025-01-02 17:23:33 [main] INFO  com.codingchallenges.web_server.App - Registering Endpoint path="/TestCastRequestParams/"
+2025-01-02 17:23:33 [main] INFO  c.c.w.h.RegisterEndpoint - Successfully initialized methodParameters list 
+2025-01-02 17:23:33 [main] INFO  c.c.w.h.RegisterEndpoint - Successfully Registered The Endpoint in Root 
+2025-01-02 17:23:33 [main] INFO  com.codingchallenges.web_server.App - Successfully initialized the path /TestCastRequestParams/ and method POST with FunctionName TestCastRequestParams 
+2025-01-02 17:23:33 [main] INFO  com.codingchallenges.web_server.App - Server Socket Thread:  Thread Id="15"
+2025-01-02 17:23:33 [Thread-0] INFO  c.c.w.T.ThreadStartUp - Server Started Listening at... PORT="8080"
+2025-01-02 17:23:37 [Thread-0] INFO  c.c.w.T.ThreadSocketImplementation - Inititalizing socket Socket at Port="51159"
+2025-01-02 17:23:37 [Thread-0] INFO  c.c.w.T.ThreadStartUp - Exection Begins Thread Id: ="17"
+2025-01-02 17:23:37 [Thread-1] INFO  c.c.w.T.ThreadSocketImplementation - Thread Execution started 
+2025-01-02 17:23:37 [Thread-0] INFO  c.c.w.T.ThreadSocketImplementation - Inititalizing socket Socket at Port="51160"
+2025-01-02 17:23:37 [Thread-0] INFO  c.c.w.T.ThreadStartUp - Exection Begins Thread Id: ="18"
+2025-01-02 17:23:37 [Thread-1] INFO  c.c.w.R.InitialiseRequestBody - Inside InitialiseRequestBody RequestLine="GET /GetNameandAge/Shashwenth/Age/23 HTTP/1.1"
+2025-01-02 17:23:37 [Thread-2] INFO  c.c.w.T.ThreadSocketImplementation - Thread Execution started 
+2025-01-02 17:23:37 [Thread-1] INFO  c.c.w.R.InitialiseRequestBody - Successfully initialized Request Body Request Body Method="GET" REquest Body Path="/GetNameandAge/Shashwenth/Age/23"
+2025-01-02 17:23:37 [Thread-1] INFO  c.c.w.h.CheckValidityService - Initializing Validity Service 
+2025-01-02 17:23:37 [Thread-1] INFO  c.c.w.handlePathVariables.FindPath - Initializating Find Path Path="/GetNameandAge/Shashwenth/Age/23"
+2025-01-02 17:23:37 [Thread-1] INFO  c.c.w.handlePathVariables.FindPath - End Of Checking Path validity 
+2025-01-02 17:23:37 [Thread-1] INFO  c.c.w.handlePathVariables.FindPath - Returning Class and Method List at FindPath 
+2025-01-02 17:23:37 [Thread-1] WARN  c.c.w.h.CheckValidityService - --------------Insode NO Class Exception------------ 
+2025-01-02 17:23:37 [Thread-1] INFO  c.c.w.handlePathVariables.FindPath - Retuning Path Variables at FIndPath 
+2025-01-02 17:23:37 [Thread-1] INFO  c.c.w.R.InitializeRequestParams - Initializing Request Line RequestLine="GET /GetNameandAge/Shashwenth/Age/23 HTTP/1.1"
+2025-01-02 17:23:37 [Thread-1] INFO  c.c.w.R.InitializeRequestParams - null Contins Params? ="false"
+2025-01-02 17:23:37 [Thread-1] INFO  c.c.w.T.ThreadSocketImplementation - There is no Class and Method associated with the URL 
+2025-01-02 17:23:37 [Thread-1] INFO  c.c.w.T.ThreadSocketImplementation - Successfully completed Socket implmentation 
+2025-01-02 17:23:37 [Thread-2] INFO  c.c.w.R.InitialiseRequestBody - Inside InitialiseRequestBody RequestLine="GET /favicon.ico HTTP/1.1"
+2025-01-02 17:23:37 [Thread-2] INFO  c.c.w.R.InitialiseRequestBody - Successfully initialized Request Body Request Body Method="GET" REquest Body Path="/favicon.ico"
+2025-01-02 17:23:37 [Thread-2] INFO  c.c.w.h.CheckValidityService - Initializing Validity Service 
+2025-01-02 17:23:37 [Thread-2] INFO  c.c.w.handlePathVariables.FindPath - Initializating Find Path Path="/favicon.ico"
+2025-01-02 17:23:37 [Thread-2] INFO  c.c.w.handlePathVariables.FindPath - End Of Checking Path validity 
+2025-01-02 17:23:37 [Thread-2] INFO  c.c.w.handlePathVariables.FindPath - Returning Class and Method List at FindPath 
+2025-01-02 17:23:37 [Thread-2] WARN  c.c.w.h.CheckValidityService - --------------Insode NO Class Exception------------ 
+2025-01-02 17:23:37 [Thread-2] INFO  c.c.w.handlePathVariables.FindPath - Retuning Path Variables at FIndPath 
+2025-01-02 17:23:37 [Thread-2] INFO  c.c.w.R.InitializeRequestParams - Initializing Request Line RequestLine="GET /favicon.ico HTTP/1.1"
+2025-01-02 17:23:37 [Thread-2] INFO  c.c.w.R.InitializeRequestParams - null Contins Params? ="false"
+2025-01-02 17:23:37 [Thread-2] INFO  c.c.w.T.ThreadSocketImplementation - There is no Class and Method associated with the URL 
+2025-01-02 17:23:37 [Thread-2] INFO  c.c.w.T.ThreadSocketImplementation - Successfully completed Socket implmentation 
+2025-01-02 17:25:08 [main] INFO  com.codingchallenges.web_server.App - Execution Started 
+2025-01-02 17:25:08 [main] INFO  com.codingchallenges.web_server.App - Intitalizing Trie Mapper 
+2025-01-02 17:25:08 [main] INFO  com.codingchallenges.web_server.App - Initializing User Implementation 
+2025-01-02 17:25:08 [main] INFO  com.codingchallenges.web_server.App - Registered the Class name and function name for Reflection 
+2025-01-02 17:25:08 [main] INFO  com.codingchallenges.web_server.App - Registering Endpoint path="/GetName"
+2025-01-02 17:25:08 [main] INFO  c.c.w.h.RegisterEndpoint - Successfully initialized methodParameters list 
+2025-01-02 17:25:08 [main] INFO  c.c.w.h.RegisterEndpoint - Successfully Registered The Endpoint in Root 
+2025-01-02 17:25:08 [main] INFO  com.codingchallenges.web_server.App - Successfully initialized the path /GetName and method GET with FunctionName GetName 
+2025-01-02 17:25:08 [main] INFO  com.codingchallenges.web_server.App - Registered the Class name and function name for Reflection 
+2025-01-02 17:25:08 [main] INFO  com.codingchallenges.web_server.App - Registering Endpoint path="/GetName/{name}/Age/{age}"
+2025-01-02 17:25:08 [main] INFO  c.c.w.h.RegisterEndpoint - Successfully initialized methodParameters list 
+2025-01-02 17:25:08 [main] INFO  c.c.w.h.RegisterEndpoint - Successfully Registered The Endpoint in Root 
+2025-01-02 17:25:08 [main] INFO  com.codingchallenges.web_server.App - Successfully initialized the path /GetName/{name}/Age/{age} and method GET with FunctionName GetNameandAge 
+2025-01-02 17:25:08 [main] INFO  com.codingchallenges.web_server.App - Registered the Class name and function name for Reflection 
+2025-01-02 17:25:08 [main] INFO  com.codingchallenges.web_server.App - Registering Endpoint path="/getAge"
+2025-01-02 17:25:08 [main] INFO  c.c.w.h.RegisterEndpoint - Successfully initialized methodParameters list 
+2025-01-02 17:25:08 [main] INFO  c.c.w.h.RegisterEndpoint - Successfully Registered The Endpoint in Root 
+2025-01-02 17:25:08 [main] INFO  com.codingchallenges.web_server.App - Successfully initialized the path /getAge and method GET with FunctionName getAge 
+2025-01-02 17:25:08 [main] INFO  com.codingchallenges.web_server.App - Registered the Class name and function name for Reflection 
+2025-01-02 17:25:08 [main] INFO  com.codingchallenges.web_server.App - Registering Endpoint path="/SetName/{name}"
+2025-01-02 17:25:08 [main] INFO  c.c.w.h.RegisterEndpoint - Successfully initialized methodParameters list 
+2025-01-02 17:25:08 [main] INFO  c.c.w.h.RegisterEndpoint - Successfully Registered The Endpoint in Root 
+2025-01-02 17:25:08 [main] INFO  com.codingchallenges.web_server.App - Successfully initialized the path /SetName/{name} and method POST with FunctionName SetName 
+2025-01-02 17:25:08 [main] INFO  com.codingchallenges.web_server.App - Registered the Class name and function name for Reflection 
+2025-01-02 17:25:08 [main] INFO  com.codingchallenges.web_server.App - Registering Endpoint path="/SetNameAsReqParameter"
+2025-01-02 17:25:08 [main] INFO  c.c.w.h.RegisterEndpoint - Successfully initialized methodParameters list 
+2025-01-02 17:25:08 [main] INFO  c.c.w.h.RegisterEndpoint - Successfully Registered The Endpoint in Root 
+2025-01-02 17:25:08 [main] INFO  com.codingchallenges.web_server.App - Successfully initialized the path /SetNameAsReqParameter and method POST with FunctionName SetNameAsReqParameter 
+2025-01-02 17:25:08 [main] INFO  com.codingchallenges.web_server.App - Registered the Class name and function name for Reflection 
+2025-01-02 17:25:08 [main] INFO  com.codingchallenges.web_server.App - Registering Endpoint path="/TestCastRequestParams/"
+2025-01-02 17:25:08 [main] INFO  c.c.w.h.RegisterEndpoint - Successfully initialized methodParameters list 
+2025-01-02 17:25:08 [main] INFO  c.c.w.h.RegisterEndpoint - Successfully Registered The Endpoint in Root 
+2025-01-02 17:25:08 [main] INFO  com.codingchallenges.web_server.App - Successfully initialized the path /TestCastRequestParams/ and method POST with FunctionName TestCastRequestParams 
+2025-01-02 17:25:08 [main] INFO  com.codingchallenges.web_server.App - Server Socket Thread:  Thread Id="15"
+2025-01-02 17:25:08 [Thread-0] INFO  c.c.w.T.ThreadStartUp - Server Started Listening at... PORT="8080"
+2025-01-02 17:25:12 [Thread-0] INFO  c.c.w.T.ThreadSocketImplementation - Inititalizing socket Socket at Port="51170"
+2025-01-02 17:25:12 [Thread-0] INFO  c.c.w.T.ThreadStartUp - Exection Begins Thread Id: ="17"
+2025-01-02 17:25:12 [Thread-1] INFO  c.c.w.T.ThreadSocketImplementation - Thread Execution started 
+2025-01-02 17:25:12 [Thread-0] INFO  c.c.w.T.ThreadSocketImplementation - Inititalizing socket Socket at Port="51171"
+2025-01-02 17:25:12 [Thread-0] INFO  c.c.w.T.ThreadStartUp - Exection Begins Thread Id: ="18"
+2025-01-02 17:25:12 [Thread-1] INFO  c.c.w.R.InitialiseRequestBody - Inside InitialiseRequestBody RequestLine="GET /GetNameandAge/Shashwenth/Age/23 HTTP/1.1"
+2025-01-02 17:25:12 [Thread-2] INFO  c.c.w.T.ThreadSocketImplementation - Thread Execution started 
+2025-01-02 17:25:12 [Thread-1] INFO  c.c.w.R.InitialiseRequestBody - Successfully initialized Request Body Request Body Method="GET" REquest Body Path="/GetNameandAge/Shashwenth/Age/23"
+2025-01-02 17:25:12 [Thread-1] INFO  c.c.w.h.CheckValidityService - Initializing Validity Service 
+2025-01-02 17:25:12 [Thread-1] INFO  c.c.w.handlePathVariables.FindPath - Initializating Find Path Path="/GetNameandAge/Shashwenth/Age/23"
+2025-01-02 17:25:12 [Thread-1] INFO  c.c.w.handlePathVariables.FindPath - End Of Checking Path validity 
+2025-01-02 17:25:12 [Thread-1] INFO  c.c.w.handlePathVariables.FindPath - Returning Class and Method List at FindPath 
+2025-01-02 17:25:12 [Thread-1] WARN  c.c.w.h.CheckValidityService - --------------Insode NO Class Exception------------ 
+2025-01-02 17:25:12 [Thread-1] INFO  c.c.w.handlePathVariables.FindPath - Retuning Path Variables at FIndPath 
+2025-01-02 17:25:12 [Thread-1] INFO  c.c.w.T.ThreadSocketImplementation - We have Path vars [] 
+2025-01-02 17:25:12 [Thread-1] INFO  c.c.w.R.InitializeRequestParams - Initializing Request Line RequestLine="GET /GetNameandAge/Shashwenth/Age/23 HTTP/1.1"
+2025-01-02 17:25:12 [Thread-1] INFO  c.c.w.R.InitializeRequestParams - null Contins Params? ="false"
+2025-01-02 17:25:12 [Thread-1] INFO  c.c.w.T.ThreadSocketImplementation - There is no Class and Method associated with the URL 
+2025-01-02 17:25:12 [Thread-1] INFO  c.c.w.T.ThreadSocketImplementation - Successfully completed Socket implmentation 
+2025-01-02 17:25:13 [Thread-2] INFO  c.c.w.R.InitialiseRequestBody - Inside InitialiseRequestBody RequestLine="GET /favicon.ico HTTP/1.1"
+2025-01-02 17:25:13 [Thread-2] INFO  c.c.w.R.InitialiseRequestBody - Successfully initialized Request Body Request Body Method="GET" REquest Body Path="/favicon.ico"
+2025-01-02 17:25:13 [Thread-2] INFO  c.c.w.h.CheckValidityService - Initializing Validity Service 
+2025-01-02 17:25:13 [Thread-2] INFO  c.c.w.handlePathVariables.FindPath - Initializating Find Path Path="/favicon.ico"
+2025-01-02 17:25:13 [Thread-2] INFO  c.c.w.handlePathVariables.FindPath - End Of Checking Path validity 
+2025-01-02 17:25:13 [Thread-2] INFO  c.c.w.handlePathVariables.FindPath - Returning Class and Method List at FindPath 
+2025-01-02 17:25:13 [Thread-2] WARN  c.c.w.h.CheckValidityService - --------------Insode NO Class Exception------------ 
+2025-01-02 17:25:13 [Thread-2] INFO  c.c.w.handlePathVariables.FindPath - Retuning Path Variables at FIndPath 
+2025-01-02 17:25:13 [Thread-2] INFO  c.c.w.T.ThreadSocketImplementation - We have Path vars [] 
+2025-01-02 17:25:13 [Thread-2] INFO  c.c.w.R.InitializeRequestParams - Initializing Request Line RequestLine="GET /favicon.ico HTTP/1.1"
+2025-01-02 17:25:13 [Thread-2] INFO  c.c.w.R.InitializeRequestParams - null Contins Params? ="false"
+2025-01-02 17:25:13 [Thread-2] INFO  c.c.w.T.ThreadSocketImplementation - There is no Class and Method associated with the URL 
+2025-01-02 17:25:13 [Thread-2] INFO  c.c.w.T.ThreadSocketImplementation - Successfully completed Socket implmentation 
+2025-01-02 17:27:48 [main] INFO  com.codingchallenges.web_server.App - Execution Started 
+2025-01-02 17:27:48 [main] INFO  com.codingchallenges.web_server.App - Intitalizing Trie Mapper 
+2025-01-02 17:27:48 [main] INFO  com.codingchallenges.web_server.App - Initializing User Implementation 
+2025-01-02 17:27:48 [main] INFO  com.codingchallenges.web_server.App - Registered the Class name and function name for Reflection 
+2025-01-02 17:27:48 [main] INFO  com.codingchallenges.web_server.App - Registering Endpoint path="/GetName"
+2025-01-02 17:27:48 [main] INFO  c.c.w.h.RegisterEndpoint - Successfully initialized methodParameters list 
+2025-01-02 17:27:48 [main] INFO  c.c.w.h.RegisterEndpoint - Successfully Registered The Endpoint in Root 
+2025-01-02 17:27:48 [main] INFO  com.codingchallenges.web_server.App - Successfully initialized the path /GetName and method GET with FunctionName GetName 
+2025-01-02 17:27:48 [main] INFO  com.codingchallenges.web_server.App - Registered the Class name and function name for Reflection 
+2025-01-02 17:27:48 [main] INFO  com.codingchallenges.web_server.App - Registering Endpoint path="/GetName/{name}/Age/{age}"
+2025-01-02 17:27:48 [main] INFO  c.c.w.h.RegisterEndpoint - Successfully initialized methodParameters list 
+2025-01-02 17:27:48 [main] INFO  c.c.w.h.RegisterEndpoint - Successfully Registered The Endpoint in Root 
+2025-01-02 17:27:48 [main] INFO  com.codingchallenges.web_server.App - Successfully initialized the path /GetName/{name}/Age/{age} and method GET with FunctionName GetNameandAge 
+2025-01-02 17:27:48 [main] INFO  com.codingchallenges.web_server.App - Registered the Class name and function name for Reflection 
+2025-01-02 17:27:48 [main] INFO  com.codingchallenges.web_server.App - Registering Endpoint path="/getAge"
+2025-01-02 17:27:48 [main] INFO  c.c.w.h.RegisterEndpoint - Successfully initialized methodParameters list 
+2025-01-02 17:27:48 [main] INFO  c.c.w.h.RegisterEndpoint - Successfully Registered The Endpoint in Root 
+2025-01-02 17:27:48 [main] INFO  com.codingchallenges.web_server.App - Successfully initialized the path /getAge and method GET with FunctionName getAge 
+2025-01-02 17:27:48 [main] INFO  com.codingchallenges.web_server.App - Registered the Class name and function name for Reflection 
+2025-01-02 17:27:48 [main] INFO  com.codingchallenges.web_server.App - Registering Endpoint path="/SetName/{name}"
+2025-01-02 17:27:48 [main] INFO  c.c.w.h.RegisterEndpoint - Successfully initialized methodParameters list 
+2025-01-02 17:27:48 [main] INFO  c.c.w.h.RegisterEndpoint - Successfully Registered The Endpoint in Root 
+2025-01-02 17:27:48 [main] INFO  com.codingchallenges.web_server.App - Successfully initialized the path /SetName/{name} and method POST with FunctionName SetName 
+2025-01-02 17:27:48 [main] INFO  com.codingchallenges.web_server.App - Registered the Class name and function name for Reflection 
+2025-01-02 17:27:48 [main] INFO  com.codingchallenges.web_server.App - Registering Endpoint path="/SetNameAsReqParameter"
+2025-01-02 17:27:48 [main] INFO  c.c.w.h.RegisterEndpoint - Successfully initialized methodParameters list 
+2025-01-02 17:27:48 [main] INFO  c.c.w.h.RegisterEndpoint - Successfully Registered The Endpoint in Root 
+2025-01-02 17:27:48 [main] INFO  com.codingchallenges.web_server.App - Successfully initialized the path /SetNameAsReqParameter and method POST with FunctionName SetNameAsReqParameter 
+2025-01-02 17:27:48 [main] INFO  com.codingchallenges.web_server.App - Registered the Class name and function name for Reflection 
+2025-01-02 17:27:48 [main] INFO  com.codingchallenges.web_server.App - Registering Endpoint path="/TestCastRequestParams/"
+2025-01-02 17:27:48 [main] INFO  c.c.w.h.RegisterEndpoint - Successfully initialized methodParameters list 
+2025-01-02 17:27:48 [main] INFO  c.c.w.h.RegisterEndpoint - Successfully Registered The Endpoint in Root 
+2025-01-02 17:27:48 [main] INFO  com.codingchallenges.web_server.App - Successfully initialized the path /TestCastRequestParams/ and method POST with FunctionName TestCastRequestParams 
+2025-01-02 17:27:48 [main] INFO  com.codingchallenges.web_server.App - Server Socket Thread:  Thread Id="15"
+2025-01-02 17:27:48 [Thread-0] INFO  c.c.w.T.ThreadStartUp - Server Started Listening at... PORT="8080"
+2025-01-02 17:27:55 [Thread-0] INFO  c.c.w.T.ThreadSocketImplementation - Inititalizing socket Socket at Port="51229"
+2025-01-02 17:27:55 [Thread-0] INFO  c.c.w.T.ThreadStartUp - Exection Begins Thread Id: ="17"
+2025-01-02 17:27:55 [Thread-0] INFO  c.c.w.T.ThreadSocketImplementation - Inititalizing socket Socket at Port="51230"
+2025-01-02 17:27:55 [Thread-1] INFO  c.c.w.T.ThreadSocketImplementation - Thread Execution started 
+2025-01-02 17:27:55 [Thread-0] INFO  c.c.w.T.ThreadStartUp - Exection Begins Thread Id: ="18"
+2025-01-02 17:27:55 [Thread-2] INFO  c.c.w.T.ThreadSocketImplementation - Thread Execution started 
+2025-01-02 17:27:55 [Thread-1] INFO  c.c.w.R.InitialiseRequestBody - Inside InitialiseRequestBody RequestLine="GET /GetNameandAge/Shashwenth/Age/23 HTTP/1.1"
+2025-01-02 17:27:55 [Thread-1] INFO  c.c.w.R.InitialiseRequestBody - Successfully initialized Request Body Request Body Method="GET" REquest Body Path="/GetNameandAge/Shashwenth/Age/23"
+2025-01-02 17:27:55 [Thread-1] INFO  c.c.w.h.CheckValidityService - Initializing Validity Service 
+2025-01-02 17:27:55 [Thread-1] INFO  c.c.w.handlePathVariables.FindPath - Initializating Find Path Path="/GetNameandAge/Shashwenth/Age/23"
+2025-01-02 17:27:55 [Thread-1] INFO  c.c.w.handlePathVariables.FindPath - End Of Checking Path validity 
+2025-01-02 17:27:55 [Thread-1] INFO  c.c.w.handlePathVariables.FindPath - Returning Class and Method List at FindPath 
+2025-01-02 17:27:55 [Thread-1] WARN  c.c.w.h.CheckValidityService - --------------Insode NO Class Exception------------ 
+2025-01-02 17:27:55 [Thread-1] INFO  c.c.w.handlePathVariables.FindPath - Retuning Path Variables at FIndPath 
+2025-01-02 17:27:55 [Thread-1] INFO  c.c.w.T.ThreadSocketImplementation - We have Path vars [] 
+2025-01-02 17:27:55 [Thread-1] INFO  c.c.w.R.InitializeRequestParams - Initializing Request Line RequestLine="GET /GetNameandAge/Shashwenth/Age/23 HTTP/1.1"
+2025-01-02 17:27:55 [Thread-1] INFO  c.c.w.R.InitializeRequestParams - null Contins Params? ="false"
+2025-01-02 17:27:55 [Thread-1] INFO  c.c.w.T.ThreadSocketImplementation - There is no Class and Method associated with the URL 
+2025-01-02 17:27:55 [Thread-1] INFO  c.c.w.T.ThreadSocketImplementation - Successfully completed Socket implmentation 
+2025-01-02 17:27:55 [Thread-2] INFO  c.c.w.R.InitialiseRequestBody - Inside InitialiseRequestBody RequestLine="GET /favicon.ico HTTP/1.1"
+2025-01-02 17:27:55 [Thread-2] INFO  c.c.w.R.InitialiseRequestBody - Successfully initialized Request Body Request Body Method="GET" REquest Body Path="/favicon.ico"
+2025-01-02 17:27:55 [Thread-2] INFO  c.c.w.h.CheckValidityService - Initializing Validity Service 
+2025-01-02 17:27:55 [Thread-2] INFO  c.c.w.handlePathVariables.FindPath - Initializating Find Path Path="/favicon.ico"
+2025-01-02 17:27:55 [Thread-2] INFO  c.c.w.handlePathVariables.FindPath - End Of Checking Path validity 
+2025-01-02 17:27:55 [Thread-2] INFO  c.c.w.handlePathVariables.FindPath - Returning Class and Method List at FindPath 
+2025-01-02 17:27:55 [Thread-2] WARN  c.c.w.h.CheckValidityService - --------------Insode NO Class Exception------------ 
+2025-01-02 17:27:55 [Thread-2] INFO  c.c.w.handlePathVariables.FindPath - Retuning Path Variables at FIndPath 
+2025-01-02 17:27:55 [Thread-2] INFO  c.c.w.T.ThreadSocketImplementation - We have Path vars [] 
+2025-01-02 17:27:55 [Thread-2] INFO  c.c.w.R.InitializeRequestParams - Initializing Request Line RequestLine="GET /favicon.ico HTTP/1.1"
+2025-01-02 17:27:55 [Thread-2] INFO  c.c.w.R.InitializeRequestParams - null Contins Params? ="false"
+2025-01-02 17:27:55 [Thread-2] INFO  c.c.w.T.ThreadSocketImplementation - There is no Class and Method associated with the URL 
+2025-01-02 17:27:55 [Thread-2] INFO  c.c.w.T.ThreadSocketImplementation - Successfully completed Socket implmentation 
+2025-01-02 17:30:11 [main] INFO  com.codingchallenges.web_server.App - Execution Started 
+2025-01-02 17:30:12 [main] INFO  com.codingchallenges.web_server.App - Intitalizing Trie Mapper 
+2025-01-02 17:30:12 [main] INFO  com.codingchallenges.web_server.App - Initializing User Implementation 
+2025-01-02 17:30:12 [main] INFO  com.codingchallenges.web_server.App - Registered the Class name and function name for Reflection 
+2025-01-02 17:30:12 [main] INFO  com.codingchallenges.web_server.App - Registering Endpoint path="/GetName"
+2025-01-02 17:30:12 [main] INFO  c.c.w.h.RegisterEndpoint - Our Method Param Types ------------ [] 
+2025-01-02 17:30:12 [main] INFO  c.c.w.h.RegisterEndpoint - Successfully initialized methodParameters list 
+2025-01-02 17:30:12 [main] INFO  c.c.w.h.RegisterEndpoint - Path array ------------ [, GetName]  
+2025-01-02 17:30:12 [main] INFO  c.c.w.h.RegisterEndpoint - Successfully Registered The Endpoint in Root 
+2025-01-02 17:30:12 [main] INFO  com.codingchallenges.web_server.App - Successfully initialized the path /GetName and method GET with FunctionName GetName 
+2025-01-02 17:30:12 [main] INFO  com.codingchallenges.web_server.App - Registered the Class name and function name for Reflection 
+2025-01-02 17:30:12 [main] INFO  com.codingchallenges.web_server.App - Registering Endpoint path="/GetName/{name}/Age/{age}"
+2025-01-02 17:30:12 [main] INFO  c.c.w.h.RegisterEndpoint - Our Method Param Types ------------ [class java.lang.String, class java.lang.String] 
+2025-01-02 17:30:12 [main] INFO  c.c.w.h.RegisterEndpoint - Successfully initialized methodParameters list 
+2025-01-02 17:30:12 [main] INFO  c.c.w.h.RegisterEndpoint - Path array ------------ [, GetName, {name}, Age, {age}]  
+2025-01-02 17:30:12 [main] INFO  c.c.w.h.RegisterEndpoint - Successfully Registered The Endpoint in Root 
+2025-01-02 17:30:12 [main] INFO  com.codingchallenges.web_server.App - Successfully initialized the path /GetName/{name}/Age/{age} and method GET with FunctionName GetNameandAge 
+2025-01-02 17:30:12 [main] INFO  com.codingchallenges.web_server.App - Registered the Class name and function name for Reflection 
+2025-01-02 17:30:12 [main] INFO  com.codingchallenges.web_server.App - Registering Endpoint path="/getAge"
+2025-01-02 17:30:12 [main] INFO  c.c.w.h.RegisterEndpoint - Our Method Param Types ------------ [] 
+2025-01-02 17:30:12 [main] INFO  c.c.w.h.RegisterEndpoint - Successfully initialized methodParameters list 
+2025-01-02 17:30:12 [main] INFO  c.c.w.h.RegisterEndpoint - Path array ------------ [, getAge]  
+2025-01-02 17:30:12 [main] INFO  c.c.w.h.RegisterEndpoint - Successfully Registered The Endpoint in Root 
+2025-01-02 17:30:12 [main] INFO  com.codingchallenges.web_server.App - Successfully initialized the path /getAge and method GET with FunctionName getAge 
+2025-01-02 17:30:12 [main] INFO  com.codingchallenges.web_server.App - Registered the Class name and function name for Reflection 
+2025-01-02 17:30:12 [main] INFO  com.codingchallenges.web_server.App - Registering Endpoint path="/SetName/{name}"
+2025-01-02 17:30:12 [main] INFO  c.c.w.h.RegisterEndpoint - Our Method Param Types ------------ [class java.lang.String] 
+2025-01-02 17:30:12 [main] INFO  c.c.w.h.RegisterEndpoint - Successfully initialized methodParameters list 
+2025-01-02 17:30:12 [main] INFO  c.c.w.h.RegisterEndpoint - Path array ------------ [, SetName, {name}]  
+2025-01-02 17:30:12 [main] INFO  c.c.w.h.RegisterEndpoint - Successfully Registered The Endpoint in Root 
+2025-01-02 17:30:12 [main] INFO  com.codingchallenges.web_server.App - Successfully initialized the path /SetName/{name} and method POST with FunctionName SetName 
+2025-01-02 17:30:12 [main] INFO  com.codingchallenges.web_server.App - Registered the Class name and function name for Reflection 
+2025-01-02 17:30:12 [main] INFO  com.codingchallenges.web_server.App - Registering Endpoint path="/SetNameAsReqParameter"
+2025-01-02 17:30:12 [main] INFO  c.c.w.h.RegisterEndpoint - Our Method Param Types ------------ [class java.lang.String] 
+2025-01-02 17:30:12 [main] INFO  c.c.w.h.RegisterEndpoint - Successfully initialized methodParameters list 
+2025-01-02 17:30:12 [main] INFO  c.c.w.h.RegisterEndpoint - Path array ------------ [, SetNameAsReqParameter]  
+2025-01-02 17:30:12 [main] INFO  c.c.w.h.RegisterEndpoint - Successfully Registered The Endpoint in Root 
+2025-01-02 17:30:12 [main] INFO  com.codingchallenges.web_server.App - Successfully initialized the path /SetNameAsReqParameter and method POST with FunctionName SetNameAsReqParameter 
+2025-01-02 17:30:12 [main] INFO  com.codingchallenges.web_server.App - Registered the Class name and function name for Reflection 
+2025-01-02 17:30:12 [main] INFO  com.codingchallenges.web_server.App - Registering Endpoint path="/TestCastRequestParams/"
+2025-01-02 17:30:12 [main] INFO  c.c.w.h.RegisterEndpoint - Our Method Param Types ------------ [class java.lang.Integer, class java.lang.String, class java.lang.Double, class java.lang.String] 
+2025-01-02 17:30:12 [main] INFO  c.c.w.h.RegisterEndpoint - Successfully initialized methodParameters list 
+2025-01-02 17:30:12 [main] INFO  c.c.w.h.RegisterEndpoint - Path array ------------ [, TestCastRequestParams]  
+2025-01-02 17:30:12 [main] INFO  c.c.w.h.RegisterEndpoint - Successfully Registered The Endpoint in Root 
+2025-01-02 17:30:12 [main] INFO  com.codingchallenges.web_server.App - Successfully initialized the path /TestCastRequestParams/ and method POST with FunctionName TestCastRequestParams 
+2025-01-02 17:30:12 [main] INFO  com.codingchallenges.web_server.App - Server Socket Thread:  Thread Id="15"
+2025-01-02 17:30:12 [Thread-0] INFO  c.c.w.T.ThreadStartUp - Server Started Listening at... PORT="8080"
+2025-01-02 17:30:15 [Thread-0] INFO  c.c.w.T.ThreadSocketImplementation - Inititalizing socket Socket at Port="51247"
+2025-01-02 17:30:15 [Thread-0] INFO  c.c.w.T.ThreadStartUp - Exection Begins Thread Id: ="17"
+2025-01-02 17:30:15 [Thread-1] INFO  c.c.w.T.ThreadSocketImplementation - Thread Execution started 
+2025-01-02 17:30:15 [Thread-0] INFO  c.c.w.T.ThreadSocketImplementation - Inititalizing socket Socket at Port="51248"
+2025-01-02 17:30:15 [Thread-0] INFO  c.c.w.T.ThreadStartUp - Exection Begins Thread Id: ="18"
+2025-01-02 17:30:15 [Thread-1] INFO  c.c.w.R.InitialiseRequestBody - Inside InitialiseRequestBody RequestLine="GET /GetNameandAge/Shashwenth/Age/23 HTTP/1.1"
+2025-01-02 17:30:15 [Thread-2] INFO  c.c.w.T.ThreadSocketImplementation - Thread Execution started 
+2025-01-02 17:30:15 [Thread-1] INFO  c.c.w.R.InitialiseRequestBody - Successfully initialized Request Body Request Body Method="GET" REquest Body Path="/GetNameandAge/Shashwenth/Age/23"
+2025-01-02 17:30:15 [Thread-1] INFO  c.c.w.h.CheckValidityService - Initializing Validity Service 
+2025-01-02 17:30:15 [Thread-1] INFO  c.c.w.handlePathVariables.FindPath - Initializating Find Path Path="/GetNameandAge/Shashwenth/Age/23"
+2025-01-02 17:30:15 [Thread-1] INFO  c.c.w.handlePathVariables.FindPath - End Of Checking Path validity 
+2025-01-02 17:30:15 [Thread-1] INFO  c.c.w.handlePathVariables.FindPath - Returning Class and Method List at FindPath 
+2025-01-02 17:30:15 [Thread-1] WARN  c.c.w.h.CheckValidityService - --------------Insode NO Class Exception------------ 
+2025-01-02 17:30:15 [Thread-1] INFO  c.c.w.handlePathVariables.FindPath - Retuning Path Variables at FIndPath 
+2025-01-02 17:30:15 [Thread-1] INFO  c.c.w.T.ThreadSocketImplementation - We have Path vars [] 
+2025-01-02 17:30:15 [Thread-1] INFO  c.c.w.R.InitializeRequestParams - Initializing Request Line RequestLine="GET /GetNameandAge/Shashwenth/Age/23 HTTP/1.1"
+2025-01-02 17:30:15 [Thread-1] INFO  c.c.w.R.InitializeRequestParams - null Contins Params? ="false"
+2025-01-02 17:30:15 [Thread-1] INFO  c.c.w.T.ThreadSocketImplementation - There is no Class and Method associated with the URL 
+2025-01-02 17:30:15 [Thread-1] INFO  c.c.w.T.ThreadSocketImplementation - Successfully completed Socket implmentation 
+2025-01-02 17:30:15 [Thread-2] INFO  c.c.w.R.InitialiseRequestBody - Inside InitialiseRequestBody RequestLine="GET /favicon.ico HTTP/1.1"
+2025-01-02 17:30:15 [Thread-2] INFO  c.c.w.R.InitialiseRequestBody - Successfully initialized Request Body Request Body Method="GET" REquest Body Path="/favicon.ico"
+2025-01-02 17:30:15 [Thread-2] INFO  c.c.w.h.CheckValidityService - Initializing Validity Service 
+2025-01-02 17:30:15 [Thread-2] INFO  c.c.w.handlePathVariables.FindPath - Initializating Find Path Path="/favicon.ico"
+2025-01-02 17:30:15 [Thread-2] INFO  c.c.w.handlePathVariables.FindPath - End Of Checking Path validity 
+2025-01-02 17:30:15 [Thread-2] INFO  c.c.w.handlePathVariables.FindPath - Returning Class and Method List at FindPath 
+2025-01-02 17:30:15 [Thread-2] WARN  c.c.w.h.CheckValidityService - --------------Insode NO Class Exception------------ 
+2025-01-02 17:30:15 [Thread-2] INFO  c.c.w.handlePathVariables.FindPath - Retuning Path Variables at FIndPath 
+2025-01-02 17:30:15 [Thread-2] INFO  c.c.w.T.ThreadSocketImplementation - We have Path vars [] 
+2025-01-02 17:30:15 [Thread-2] INFO  c.c.w.R.InitializeRequestParams - Initializing Request Line RequestLine="GET /favicon.ico HTTP/1.1"
+2025-01-02 17:30:15 [Thread-2] INFO  c.c.w.R.InitializeRequestParams - null Contins Params? ="false"
+2025-01-02 17:30:15 [Thread-2] INFO  c.c.w.T.ThreadSocketImplementation - There is no Class and Method associated with the URL 
+2025-01-02 17:30:15 [Thread-2] INFO  c.c.w.T.ThreadSocketImplementation - Successfully completed Socket implmentation 
+2025-01-02 17:32:18 [Thread-0] INFO  c.c.w.T.ThreadSocketImplementation - Inititalizing socket Socket at Port="51272"
+2025-01-02 17:32:18 [Thread-0] INFO  c.c.w.T.ThreadStartUp - Exection Begins Thread Id: ="19"
+2025-01-02 17:32:18 [Thread-3] INFO  c.c.w.T.ThreadSocketImplementation - Thread Execution started 
+2025-01-02 17:32:18 [Thread-3] INFO  c.c.w.R.InitialiseRequestBody - Inside InitialiseRequestBody RequestLine="GET /GetName/Shashwenth/Age/23 HTTP/1.1"
+2025-01-02 17:32:18 [Thread-3] INFO  c.c.w.R.InitialiseRequestBody - Successfully initialized Request Body Request Body Method="GET" REquest Body Path="/GetName/Shashwenth/Age/23"
+2025-01-02 17:32:18 [Thread-3] INFO  c.c.w.h.CheckValidityService - Initializing Validity Service 
+2025-01-02 17:32:18 [Thread-3] INFO  c.c.w.handlePathVariables.FindPath - Initializating Find Path Path="/GetName/Shashwenth/Age/23"
+2025-01-02 17:32:18 [Thread-3] INFO  c.c.w.handlePathVariables.FindPath - End Of Checking Path validity 
+2025-01-02 17:32:18 [Thread-3] INFO  c.c.w.handlePathVariables.FindPath - Returning Class and Method List at FindPath 
+2025-01-02 17:32:18 [Thread-0] INFO  c.c.w.T.ThreadSocketImplementation - Inititalizing socket Socket at Port="51273"
+2025-01-02 17:32:18 [Thread-0] INFO  c.c.w.T.ThreadStartUp - Exection Begins Thread Id: ="20"
+2025-01-02 17:32:18 [Thread-3] WARN  c.c.w.h.CheckValidityService - --------------Insode NO Class Exception------------ 
+2025-01-02 17:32:18 [Thread-3] INFO  c.c.w.handlePathVariables.FindPath - Retuning Path Variables at FIndPath 
+2025-01-02 17:32:18 [Thread-3] INFO  c.c.w.T.ThreadSocketImplementation - We have Path vars [Shashwenth] 
+2025-01-02 17:32:18 [Thread-4] INFO  c.c.w.T.ThreadSocketImplementation - Thread Execution started 
+2025-01-02 17:32:18 [Thread-3] INFO  c.c.w.R.InitializeRequestParams - Initializing Request Line RequestLine="GET /GetName/Shashwenth/Age/23 HTTP/1.1"
+2025-01-02 17:32:18 [Thread-3] INFO  c.c.w.R.InitializeRequestParams - null Contins Params? ="false"
+2025-01-02 17:32:18 [Thread-3] INFO  c.c.w.T.ThreadSocketImplementation - There is no Class and Method associated with the URL 
+2025-01-02 17:32:18 [Thread-3] INFO  c.c.w.T.ThreadSocketImplementation - Successfully completed Socket implmentation 
+2025-01-02 17:32:18 [Thread-4] INFO  c.c.w.R.InitialiseRequestBody - Inside InitialiseRequestBody RequestLine="GET /favicon.ico HTTP/1.1"
+2025-01-02 17:32:18 [Thread-4] INFO  c.c.w.R.InitialiseRequestBody - Successfully initialized Request Body Request Body Method="GET" REquest Body Path="/favicon.ico"
+2025-01-02 17:32:18 [Thread-4] INFO  c.c.w.h.CheckValidityService - Initializing Validity Service 
+2025-01-02 17:32:18 [Thread-4] INFO  c.c.w.handlePathVariables.FindPath - Initializating Find Path Path="/favicon.ico"
+2025-01-02 17:32:18 [Thread-4] INFO  c.c.w.handlePathVariables.FindPath - End Of Checking Path validity 
+2025-01-02 17:32:18 [Thread-4] INFO  c.c.w.handlePathVariables.FindPath - Returning Class and Method List at FindPath 
+2025-01-02 17:32:18 [Thread-4] WARN  c.c.w.h.CheckValidityService - --------------Insode NO Class Exception------------ 
+2025-01-02 17:32:18 [Thread-4] INFO  c.c.w.handlePathVariables.FindPath - Retuning Path Variables at FIndPath 
+2025-01-02 17:32:18 [Thread-4] INFO  c.c.w.T.ThreadSocketImplementation - We have Path vars [] 
+2025-01-02 17:32:18 [Thread-4] INFO  c.c.w.R.InitializeRequestParams - Initializing Request Line RequestLine="GET /favicon.ico HTTP/1.1"
+2025-01-02 17:32:18 [Thread-4] INFO  c.c.w.R.InitializeRequestParams - null Contins Params? ="false"
+2025-01-02 17:32:18 [Thread-4] INFO  c.c.w.T.ThreadSocketImplementation - There is no Class and Method associated with the URL 
+2025-01-02 17:32:18 [Thread-4] INFO  c.c.w.T.ThreadSocketImplementation - Successfully completed Socket implmentation 
+2025-01-02 17:32:20 [Thread-0] INFO  c.c.w.T.ThreadSocketImplementation - Inititalizing socket Socket at Port="51276"
+2025-01-02 17:32:20 [Thread-0] INFO  c.c.w.T.ThreadStartUp - Exection Begins Thread Id: ="21"
+2025-01-02 17:32:20 [Thread-5] INFO  c.c.w.T.ThreadSocketImplementation - Thread Execution started 
+2025-01-02 17:32:20 [Thread-5] INFO  c.c.w.R.InitialiseRequestBody - Inside InitialiseRequestBody RequestLine="GET /GetName/Shashwenth/Age/23 HTTP/1.1"
+2025-01-02 17:32:20 [Thread-5] INFO  c.c.w.R.InitialiseRequestBody - Successfully initialized Request Body Request Body Method="GET" REquest Body Path="/GetName/Shashwenth/Age/23"
+2025-01-02 17:32:20 [Thread-5] INFO  c.c.w.h.CheckValidityService - Initializing Validity Service 
+2025-01-02 17:32:20 [Thread-5] INFO  c.c.w.handlePathVariables.FindPath - Initializating Find Path Path="/GetName/Shashwenth/Age/23"
+2025-01-02 17:32:20 [Thread-5] INFO  c.c.w.handlePathVariables.FindPath - End Of Checking Path validity 
+2025-01-02 17:32:20 [Thread-5] INFO  c.c.w.handlePathVariables.FindPath - Returning Class and Method List at FindPath 
+2025-01-02 17:32:20 [Thread-5] WARN  c.c.w.h.CheckValidityService - --------------Insode NO Class Exception------------ 
+2025-01-02 17:32:20 [Thread-5] INFO  c.c.w.handlePathVariables.FindPath - Retuning Path Variables at FIndPath 
+2025-01-02 17:32:20 [Thread-5] INFO  c.c.w.T.ThreadSocketImplementation - We have Path vars [Shashwenth] 
+2025-01-02 17:32:20 [Thread-5] INFO  c.c.w.R.InitializeRequestParams - Initializing Request Line RequestLine="GET /GetName/Shashwenth/Age/23 HTTP/1.1"
+2025-01-02 17:32:20 [Thread-0] INFO  c.c.w.T.ThreadSocketImplementation - Inititalizing socket Socket at Port="51277"
+2025-01-02 17:32:20 [Thread-0] INFO  c.c.w.T.ThreadStartUp - Exection Begins Thread Id: ="22"
+2025-01-02 17:32:20 [Thread-5] INFO  c.c.w.R.InitializeRequestParams - null Contins Params? ="false"
+2025-01-02 17:32:20 [Thread-5] INFO  c.c.w.T.ThreadSocketImplementation - There is no Class and Method associated with the URL 
+2025-01-02 17:32:20 [Thread-6] INFO  c.c.w.T.ThreadSocketImplementation - Thread Execution started 
+2025-01-02 17:32:20 [Thread-5] INFO  c.c.w.T.ThreadSocketImplementation - Successfully completed Socket implmentation 
+2025-01-02 17:32:21 [Thread-6] INFO  c.c.w.R.InitialiseRequestBody - Inside InitialiseRequestBody RequestLine="GET /favicon.ico HTTP/1.1"
+2025-01-02 17:32:21 [Thread-6] INFO  c.c.w.R.InitialiseRequestBody - Successfully initialized Request Body Request Body Method="GET" REquest Body Path="/favicon.ico"
+2025-01-02 17:32:21 [Thread-6] INFO  c.c.w.h.CheckValidityService - Initializing Validity Service 
+2025-01-02 17:32:21 [Thread-6] INFO  c.c.w.handlePathVariables.FindPath - Initializating Find Path Path="/favicon.ico"
+2025-01-02 17:32:21 [Thread-6] INFO  c.c.w.handlePathVariables.FindPath - End Of Checking Path validity 
+2025-01-02 17:32:21 [Thread-6] INFO  c.c.w.handlePathVariables.FindPath - Returning Class and Method List at FindPath 
+2025-01-02 17:32:21 [Thread-6] WARN  c.c.w.h.CheckValidityService - --------------Insode NO Class Exception------------ 
+2025-01-02 17:32:21 [Thread-6] INFO  c.c.w.handlePathVariables.FindPath - Retuning Path Variables at FIndPath 
+2025-01-02 17:32:21 [Thread-6] INFO  c.c.w.T.ThreadSocketImplementation - We have Path vars [] 
+2025-01-02 17:32:21 [Thread-6] INFO  c.c.w.R.InitializeRequestParams - Initializing Request Line RequestLine="GET /favicon.ico HTTP/1.1"
+2025-01-02 17:32:21 [Thread-6] INFO  c.c.w.R.InitializeRequestParams - null Contins Params? ="false"
+2025-01-02 17:32:21 [Thread-6] INFO  c.c.w.T.ThreadSocketImplementation - There is no Class and Method associated with the URL 
+2025-01-02 17:32:21 [Thread-6] INFO  c.c.w.T.ThreadSocketImplementation - Successfully completed Socket implmentation 
+2025-01-02 17:38:46 [main] INFO  com.codingchallenges.web_server.App - Execution Started 
+2025-01-02 17:38:46 [main] INFO  com.codingchallenges.web_server.App - Intitalizing Trie Mapper 
+2025-01-02 17:38:46 [main] INFO  com.codingchallenges.web_server.App - Initializing User Implementation 
+2025-01-02 17:38:46 [main] INFO  com.codingchallenges.web_server.App - Registered the Class name and function name for Reflection 
+2025-01-02 17:38:46 [main] INFO  com.codingchallenges.web_server.App - Registering Endpoint path="/GetName"
+2025-01-02 17:38:46 [main] INFO  c.c.w.h.RegisterEndpoint - Our Method Param Types ------------ [] 
+2025-01-02 17:38:46 [main] INFO  c.c.w.h.RegisterEndpoint - Successfully initialized methodParameters list 
+2025-01-02 17:38:46 [main] INFO  c.c.w.h.RegisterEndpoint - Path array ------------ [, GetName]  
+2025-01-02 17:38:46 [main] INFO  c.c.w.h.RegisterEndpoint - Successfully Registered The Endpoint in Root 
+2025-01-02 17:38:46 [main] INFO  com.codingchallenges.web_server.App - Successfully initialized the path /GetName and method GET with FunctionName GetName 
+2025-01-02 17:38:46 [main] INFO  com.codingchallenges.web_server.App - Registered the Class name and function name for Reflection 
+2025-01-02 17:38:46 [main] INFO  com.codingchallenges.web_server.App - Registering Endpoint path="/GetName/{name}/Age/{age}"
+2025-01-02 17:38:46 [main] INFO  c.c.w.h.RegisterEndpoint - Our Method Param Types ------------ [class java.lang.String, class java.lang.String] 
+2025-01-02 17:38:46 [main] INFO  c.c.w.h.RegisterEndpoint - Successfully initialized methodParameters list 
+2025-01-02 17:38:46 [main] INFO  c.c.w.h.RegisterEndpoint - Path array ------------ [, GetName, {name}, Age, {age}]  
+2025-01-02 17:38:46 [main] INFO  c.c.w.h.RegisterEndpoint - Successfully Registered The Endpoint in Root 
+2025-01-02 17:38:46 [main] INFO  com.codingchallenges.web_server.App - Successfully initialized the path /GetName/{name}/Age/{age} and method GET with FunctionName GetNameandAge 
+2025-01-02 17:38:46 [main] INFO  com.codingchallenges.web_server.App - Registered the Class name and function name for Reflection 
+2025-01-02 17:38:46 [main] INFO  com.codingchallenges.web_server.App - Registering Endpoint path="/getAge"
+2025-01-02 17:38:46 [main] INFO  c.c.w.h.RegisterEndpoint - Our Method Param Types ------------ [] 
+2025-01-02 17:38:46 [main] INFO  c.c.w.h.RegisterEndpoint - Successfully initialized methodParameters list 
+2025-01-02 17:38:46 [main] INFO  c.c.w.h.RegisterEndpoint - Path array ------------ [, getAge]  
+2025-01-02 17:38:46 [main] INFO  c.c.w.h.RegisterEndpoint - Successfully Registered The Endpoint in Root 
+2025-01-02 17:38:46 [main] INFO  com.codingchallenges.web_server.App - Successfully initialized the path /getAge and method GET with FunctionName getAge 
+2025-01-02 17:38:46 [main] INFO  com.codingchallenges.web_server.App - Registered the Class name and function name for Reflection 
+2025-01-02 17:38:46 [main] INFO  com.codingchallenges.web_server.App - Registering Endpoint path="/SetName/{name}"
+2025-01-02 17:38:46 [main] INFO  c.c.w.h.RegisterEndpoint - Our Method Param Types ------------ [class java.lang.String] 
+2025-01-02 17:38:46 [main] INFO  c.c.w.h.RegisterEndpoint - Successfully initialized methodParameters list 
+2025-01-02 17:38:46 [main] INFO  c.c.w.h.RegisterEndpoint - Path array ------------ [, SetName, {name}]  
+2025-01-02 17:38:46 [main] INFO  c.c.w.h.RegisterEndpoint - Successfully Registered The Endpoint in Root 
+2025-01-02 17:38:46 [main] INFO  com.codingchallenges.web_server.App - Successfully initialized the path /SetName/{name} and method POST with FunctionName SetName 
+2025-01-02 17:38:46 [main] INFO  com.codingchallenges.web_server.App - Registered the Class name and function name for Reflection 
+2025-01-02 17:38:46 [main] INFO  com.codingchallenges.web_server.App - Registering Endpoint path="/SetNameAsReqParameter"
+2025-01-02 17:38:46 [main] INFO  c.c.w.h.RegisterEndpoint - Our Method Param Types ------------ [class java.lang.String] 
+2025-01-02 17:38:46 [main] INFO  c.c.w.h.RegisterEndpoint - Successfully initialized methodParameters list 
+2025-01-02 17:38:46 [main] INFO  c.c.w.h.RegisterEndpoint - Path array ------------ [, SetNameAsReqParameter]  
+2025-01-02 17:38:46 [main] INFO  c.c.w.h.RegisterEndpoint - Successfully Registered The Endpoint in Root 
+2025-01-02 17:38:46 [main] INFO  com.codingchallenges.web_server.App - Successfully initialized the path /SetNameAsReqParameter and method POST with FunctionName SetNameAsReqParameter 
+2025-01-02 17:38:46 [main] INFO  com.codingchallenges.web_server.App - Registered the Class name and function name for Reflection 
+2025-01-02 17:38:46 [main] INFO  com.codingchallenges.web_server.App - Registering Endpoint path="/TestCastRequestParams/"
+2025-01-02 17:38:46 [main] INFO  c.c.w.h.RegisterEndpoint - Our Method Param Types ------------ [class java.lang.Integer, class java.lang.String, class java.lang.Double, class java.lang.String] 
+2025-01-02 17:38:46 [main] INFO  c.c.w.h.RegisterEndpoint - Successfully initialized methodParameters list 
+2025-01-02 17:38:46 [main] INFO  c.c.w.h.RegisterEndpoint - Path array ------------ [, TestCastRequestParams]  
+2025-01-02 17:38:46 [main] INFO  c.c.w.h.RegisterEndpoint - Successfully Registered The Endpoint in Root 
+2025-01-02 17:38:46 [main] INFO  com.codingchallenges.web_server.App - Successfully initialized the path /TestCastRequestParams/ and method POST with FunctionName TestCastRequestParams 
+2025-01-02 17:38:46 [main] INFO  com.codingchallenges.web_server.App - Server Socket Thread:  Thread Id="15"
+2025-01-02 17:38:46 [Thread-0] INFO  c.c.w.T.ThreadStartUp - Server Started Listening at... PORT="8080"
+2025-01-02 17:39:45 [Thread-0] INFO  c.c.w.T.ThreadSocketImplementation - Inititalizing socket Socket at Port="51307"
+2025-01-02 17:39:45 [Thread-0] INFO  c.c.w.T.ThreadStartUp - Exection Begins Thread Id: ="17"
+2025-01-02 17:39:45 [Thread-1] INFO  c.c.w.T.ThreadSocketImplementation - Thread Execution started 
+2025-01-02 17:39:45 [Thread-0] INFO  c.c.w.T.ThreadSocketImplementation - Inititalizing socket Socket at Port="51308"
+2025-01-02 17:39:45 [Thread-1] INFO  c.c.w.R.InitialiseRequestBody - Inside InitialiseRequestBody RequestLine="GET /GetName/Shashwenth/Age/Shas HTTP/1.1"
+2025-01-02 17:39:45 [Thread-0] INFO  c.c.w.T.ThreadStartUp - Exection Begins Thread Id: ="18"
+2025-01-02 17:39:45 [Thread-2] INFO  c.c.w.T.ThreadSocketImplementation - Thread Execution started 
+2025-01-02 17:39:45 [Thread-1] INFO  c.c.w.R.InitialiseRequestBody - Successfully initialized Request Body Request Body Method="GET" REquest Body Path="/GetName/Shashwenth/Age/Shas"
+2025-01-02 17:39:45 [Thread-1] INFO  c.c.w.h.CheckValidityService - Initializing Validity Service 
+2025-01-02 17:39:45 [Thread-1] INFO  c.c.w.handlePathVariables.FindPath - Initializating Find Path Path="/GetName/Shashwenth/Age/Shas"
+2025-01-02 17:39:45 [Thread-1] INFO  c.c.w.handlePathVariables.FindPath - End Of Checking Path validity 
+2025-01-02 17:39:45 [Thread-1] INFO  c.c.w.handlePathVariables.FindPath - Returning Class and Method List at FindPath 
+2025-01-02 17:39:45 [Thread-1] INFO  c.c.w.handlePathVariables.FindPath - Retuning Path Variables at FIndPath 
+2025-01-02 17:39:45 [Thread-1] INFO  c.c.w.T.ThreadSocketImplementation - We have Path vars [Shashwenth, Shas] 
+2025-01-02 17:39:45 [Thread-1] INFO  c.c.w.R.InitializeRequestParams - Initializing Request Line RequestLine="GET /GetName/Shashwenth/Age/Shas HTTP/1.1"
+2025-01-02 17:39:45 [Thread-1] INFO  c.c.w.R.InitializeRequestParams - null Contins Params? ="false"
+2025-01-02 17:39:45 [Thread-1] INFO  c.c.w.T.ThreadSocketImplementation - Contains Path Variables 
+2025-01-02 17:39:45 [Thread-1] INFO  c.c.w.T.ThreadSocketImplementation - No Request Body 
+2025-01-02 17:39:45 [Thread-1] INFO  c.c.w.T.ExecuteReturnMethod - Inititlaizing the Execute Return Method with Java Reflection className="com.example.Example1.ExampleMethods" Method Name="GetNameandAge"
+2025-01-02 17:39:45 [Thread-1] INFO  c.c.w.T.ThreadSocketImplementation - At Not Req Body with Shashwenth  
+2025-01-02 17:39:45 [Thread-1] INFO  c.c.w.T.ExecuteReturnMethod - Successfully Loaded the Class Class="com.example.Example1.ExampleMethods"
+2025-01-02 17:39:45 [Thread-1] INFO  c.c.w.T.ExecuteReturnMethod - Found The Function Method="GetNameandAge"
+2025-01-02 17:39:45 [Thread-1] INFO  c.c.w.T.ExecuteReturnMethod - Successfully Completed the Execute Return Method 
+2025-01-02 17:39:45 [Thread-1] INFO  c.c.w.T.ThreadSocketImplementation - Successfully completed Socket implmentation 
+2025-01-02 17:39:45 [Thread-2] INFO  c.c.w.R.InitialiseRequestBody - Inside InitialiseRequestBody RequestLine="GET /favicon.ico HTTP/1.1"
+2025-01-02 17:39:45 [Thread-2] INFO  c.c.w.R.InitialiseRequestBody - Successfully initialized Request Body Request Body Method="GET" REquest Body Path="/favicon.ico"
+2025-01-02 17:39:45 [Thread-2] INFO  c.c.w.h.CheckValidityService - Initializing Validity Service 
+2025-01-02 17:39:45 [Thread-2] INFO  c.c.w.handlePathVariables.FindPath - Initializating Find Path Path="/favicon.ico"
+2025-01-02 17:39:45 [Thread-2] INFO  c.c.w.handlePathVariables.FindPath - End Of Checking Path validity 
+2025-01-02 17:39:45 [Thread-2] INFO  c.c.w.handlePathVariables.FindPath - Returning Class and Method List at FindPath 
+2025-01-02 17:39:45 [Thread-2] WARN  c.c.w.h.CheckValidityService - --------------Insode NO Class Exception------------ 
+2025-01-02 17:39:45 [Thread-2] INFO  c.c.w.handlePathVariables.FindPath - Retuning Path Variables at FIndPath 
+2025-01-02 17:39:45 [Thread-2] INFO  c.c.w.T.ThreadSocketImplementation - We have Path vars [] 
+2025-01-02 17:39:45 [Thread-2] INFO  c.c.w.R.InitializeRequestParams - Initializing Request Line RequestLine="GET /favicon.ico HTTP/1.1"
+2025-01-02 17:39:45 [Thread-2] INFO  c.c.w.R.InitializeRequestParams - null Contins Params? ="false"
+2025-01-02 17:39:45 [Thread-2] INFO  c.c.w.T.ThreadSocketImplementation - There is no Class and Method associated with the URL 
+2025-01-02 17:39:45 [Thread-2] INFO  c.c.w.T.ThreadSocketImplementation - Successfully completed Socket implmentation 
+2025-01-02 17:39:51 [Thread-0] INFO  c.c.w.T.ThreadSocketImplementation - Inititalizing socket Socket at Port="51311"
+2025-01-02 17:39:51 [Thread-0] INFO  c.c.w.T.ThreadStartUp - Exection Begins Thread Id: ="19"
+2025-01-02 17:39:51 [Thread-3] INFO  c.c.w.T.ThreadSocketImplementation - Thread Execution started 
+2025-01-02 17:39:51 [Thread-3] INFO  c.c.w.R.InitialiseRequestBody - Inside InitialiseRequestBody RequestLine="GET /GetName/Shashwenth/Age/23 HTTP/1.1"
+2025-01-02 17:39:51 [Thread-3] INFO  c.c.w.R.InitialiseRequestBody - Successfully initialized Request Body Request Body Method="GET" REquest Body Path="/GetName/Shashwenth/Age/23"
+2025-01-02 17:39:51 [Thread-3] INFO  c.c.w.h.CheckValidityService - Initializing Validity Service 
+2025-01-02 17:39:51 [Thread-3] INFO  c.c.w.handlePathVariables.FindPath - Initializating Find Path Path="/GetName/Shashwenth/Age/23"
+2025-01-02 17:39:51 [Thread-3] INFO  c.c.w.handlePathVariables.FindPath - End Of Checking Path validity 
+2025-01-02 17:39:51 [Thread-3] INFO  c.c.w.handlePathVariables.FindPath - Returning Class and Method List at FindPath 
+2025-01-02 17:39:51 [Thread-3] WARN  c.c.w.h.CheckValidityService - --------------Insode NO Class Exception------------ 
+2025-01-02 17:39:51 [Thread-3] INFO  c.c.w.handlePathVariables.FindPath - Retuning Path Variables at FIndPath 
+2025-01-02 17:39:51 [Thread-3] INFO  c.c.w.T.ThreadSocketImplementation - We have Path vars [Shashwenth] 
+2025-01-02 17:39:51 [Thread-3] INFO  c.c.w.R.InitializeRequestParams - Initializing Request Line RequestLine="GET /GetName/Shashwenth/Age/23 HTTP/1.1"
+2025-01-02 17:39:51 [Thread-0] INFO  c.c.w.T.ThreadSocketImplementation - Inititalizing socket Socket at Port="51312"
+2025-01-02 17:39:51 [Thread-3] INFO  c.c.w.R.InitializeRequestParams - null Contins Params? ="false"
+2025-01-02 17:39:51 [Thread-0] INFO  c.c.w.T.ThreadStartUp - Exection Begins Thread Id: ="20"
+2025-01-02 17:39:51 [Thread-3] INFO  c.c.w.T.ThreadSocketImplementation - There is no Class and Method associated with the URL 
+2025-01-02 17:39:51 [Thread-3] INFO  c.c.w.T.ThreadSocketImplementation - Successfully completed Socket implmentation 
+2025-01-02 17:39:51 [Thread-4] INFO  c.c.w.T.ThreadSocketImplementation - Thread Execution started 
+2025-01-02 17:39:51 [Thread-4] INFO  c.c.w.R.InitialiseRequestBody - Inside InitialiseRequestBody RequestLine="GET /favicon.ico HTTP/1.1"
+2025-01-02 17:39:51 [Thread-4] INFO  c.c.w.R.InitialiseRequestBody - Successfully initialized Request Body Request Body Method="GET" REquest Body Path="/favicon.ico"
+2025-01-02 17:39:51 [Thread-4] INFO  c.c.w.h.CheckValidityService - Initializing Validity Service 
+2025-01-02 17:39:51 [Thread-4] INFO  c.c.w.handlePathVariables.FindPath - Initializating Find Path Path="/favicon.ico"
+2025-01-02 17:39:51 [Thread-4] INFO  c.c.w.handlePathVariables.FindPath - End Of Checking Path validity 
+2025-01-02 17:39:51 [Thread-4] INFO  c.c.w.handlePathVariables.FindPath - Returning Class and Method List at FindPath 
+2025-01-02 17:39:51 [Thread-4] WARN  c.c.w.h.CheckValidityService - --------------Insode NO Class Exception------------ 
+2025-01-02 17:39:51 [Thread-4] INFO  c.c.w.handlePathVariables.FindPath - Retuning Path Variables at FIndPath 
+2025-01-02 17:39:51 [Thread-4] INFO  c.c.w.T.ThreadSocketImplementation - We have Path vars [] 
+2025-01-02 17:39:51 [Thread-4] INFO  c.c.w.R.InitializeRequestParams - Initializing Request Line RequestLine="GET /favicon.ico HTTP/1.1"
+2025-01-02 17:39:51 [Thread-4] INFO  c.c.w.R.InitializeRequestParams - null Contins Params? ="false"
+2025-01-02 17:39:51 [Thread-4] INFO  c.c.w.T.ThreadSocketImplementation - There is no Class and Method associated with the URL 
+2025-01-02 17:39:51 [Thread-4] INFO  c.c.w.T.ThreadSocketImplementation - Successfully completed Socket implmentation 
+2025-01-02 18:48:46 [Thread-0] INFO  c.c.w.T.ThreadSocketImplementation - Inititalizing socket Socket at Port="51763"
+2025-01-02 18:48:46 [Thread-0] INFO  c.c.w.T.ThreadStartUp - Exection Begins Thread Id: ="21"
+2025-01-02 18:48:46 [Thread-5] INFO  c.c.w.T.ThreadSocketImplementation - Thread Execution started 
+2025-01-02 18:48:46 [Thread-5] INFO  c.c.w.R.InitialiseRequestBody - Inside InitialiseRequestBody RequestLine="GET /GetName/Shashwenth/Age/Shas HTTP/1.1"
+2025-01-02 18:48:46 [Thread-0] INFO  c.c.w.T.ThreadSocketImplementation - Inititalizing socket Socket at Port="51764"
+2025-01-02 18:48:46 [Thread-0] INFO  c.c.w.T.ThreadStartUp - Exection Begins Thread Id: ="22"
+2025-01-02 18:48:46 [Thread-5] INFO  c.c.w.R.InitialiseRequestBody - Successfully initialized Request Body Request Body Method="GET" REquest Body Path="/GetName/Shashwenth/Age/Shas"
+2025-01-02 18:48:46 [Thread-5] INFO  c.c.w.h.CheckValidityService - Initializing Validity Service 
+2025-01-02 18:48:46 [Thread-5] INFO  c.c.w.handlePathVariables.FindPath - Initializating Find Path Path="/GetName/Shashwenth/Age/Shas"
+2025-01-02 18:48:46 [Thread-5] INFO  c.c.w.handlePathVariables.FindPath - End Of Checking Path validity 
+2025-01-02 18:48:46 [Thread-5] INFO  c.c.w.handlePathVariables.FindPath - Returning Class and Method List at FindPath 
+2025-01-02 18:48:46 [Thread-5] INFO  c.c.w.handlePathVariables.FindPath - Retuning Path Variables at FIndPath 
+2025-01-02 18:48:46 [Thread-5] INFO  c.c.w.T.ThreadSocketImplementation - We have Path vars [Shashwenth, Shas] 
+2025-01-02 18:48:46 [Thread-5] INFO  c.c.w.R.InitializeRequestParams - Initializing Request Line RequestLine="GET /GetName/Shashwenth/Age/Shas HTTP/1.1"
+2025-01-02 18:48:46 [Thread-5] INFO  c.c.w.R.InitializeRequestParams - null Contins Params? ="false"
+2025-01-02 18:48:46 [Thread-5] INFO  c.c.w.T.ThreadSocketImplementation - Contains Path Variables 
+2025-01-02 18:48:46 [Thread-6] INFO  c.c.w.T.ThreadSocketImplementation - Thread Execution started 
+2025-01-02 18:48:46 [Thread-5] INFO  c.c.w.T.ThreadSocketImplementation - No Request Body 
+2025-01-02 18:48:46 [Thread-5] INFO  c.c.w.T.ExecuteReturnMethod - Inititlaizing the Execute Return Method with Java Reflection className="com.example.Example1.ExampleMethods" Method Name="GetNameandAge"
+2025-01-02 18:48:46 [Thread-5] INFO  c.c.w.T.ThreadSocketImplementation - At Not Req Body with Shashwenth  
+2025-01-02 18:48:46 [Thread-5] INFO  c.c.w.T.ExecuteReturnMethod - Successfully Loaded the Class Class="com.example.Example1.ExampleMethods"
+2025-01-02 18:48:46 [Thread-5] INFO  c.c.w.T.ExecuteReturnMethod - Found The Function Method="GetNameandAge"
+2025-01-02 18:48:46 [Thread-5] INFO  c.c.w.T.ExecuteReturnMethod - Successfully Completed the Execute Return Method 
+2025-01-02 18:48:46 [Thread-5] INFO  c.c.w.T.ThreadSocketImplementation - Successfully completed Socket implmentation 
+2025-01-02 18:48:47 [Thread-6] INFO  c.c.w.R.InitialiseRequestBody - Inside InitialiseRequestBody RequestLine="GET /favicon.ico HTTP/1.1"
+2025-01-02 18:48:47 [Thread-6] INFO  c.c.w.R.InitialiseRequestBody - Successfully initialized Request Body Request Body Method="GET" REquest Body Path="/favicon.ico"
+2025-01-02 18:48:47 [Thread-6] INFO  c.c.w.h.CheckValidityService - Initializing Validity Service 
+2025-01-02 18:48:47 [Thread-6] INFO  c.c.w.handlePathVariables.FindPath - Initializating Find Path Path="/favicon.ico"
+2025-01-02 18:48:47 [Thread-6] INFO  c.c.w.handlePathVariables.FindPath - End Of Checking Path validity 
+2025-01-02 18:48:47 [Thread-6] INFO  c.c.w.handlePathVariables.FindPath - Returning Class and Method List at FindPath 
+2025-01-02 18:48:47 [Thread-6] WARN  c.c.w.h.CheckValidityService - --------------Insode NO Class Exception------------ 
+2025-01-02 18:48:47 [Thread-6] INFO  c.c.w.handlePathVariables.FindPath - Retuning Path Variables at FIndPath 
+2025-01-02 18:48:47 [Thread-6] INFO  c.c.w.T.ThreadSocketImplementation - We have Path vars [] 
+2025-01-02 18:48:47 [Thread-6] INFO  c.c.w.R.InitializeRequestParams - Initializing Request Line RequestLine="GET /favicon.ico HTTP/1.1"
+2025-01-02 18:48:47 [Thread-6] INFO  c.c.w.R.InitializeRequestParams - null Contins Params? ="false"
+2025-01-02 18:48:47 [Thread-6] INFO  c.c.w.T.ThreadSocketImplementation - There is no Class and Method associated with the URL 
+2025-01-02 18:48:47 [Thread-6] INFO  c.c.w.T.ThreadSocketImplementation - Successfully completed Socket implmentation 
+2025-01-02 20:14:17 [Thread-0] INFO  c.c.w.T.ThreadSocketImplementation - Inititalizing socket Socket at Port="52317"
+2025-01-02 20:14:17 [Thread-0] INFO  c.c.w.T.ThreadStartUp - Exection Begins Thread Id: ="23"
+2025-01-02 20:14:17 [Thread-7] INFO  c.c.w.T.ThreadSocketImplementation - Thread Execution started 
+2025-01-02 20:14:17 [Thread-7] INFO  c.c.w.R.InitialiseRequestBody - Inside InitialiseRequestBody RequestLine="GET /GetName/Shashwenth/Age/ HTTP/1.1"
+2025-01-02 20:14:17 [Thread-7] INFO  c.c.w.R.InitialiseRequestBody - Successfully initialized Request Body Request Body Method="GET" REquest Body Path="/GetName/Shashwenth/Age/"
+2025-01-02 20:14:17 [Thread-7] INFO  c.c.w.h.CheckValidityService - Initializing Validity Service 
+2025-01-02 20:14:17 [Thread-0] INFO  c.c.w.T.ThreadSocketImplementation - Inititalizing socket Socket at Port="52318"
+2025-01-02 20:14:17 [Thread-0] INFO  c.c.w.T.ThreadStartUp - Exection Begins Thread Id: ="24"
+2025-01-02 20:14:17 [Thread-7] INFO  c.c.w.handlePathVariables.FindPath - Initializating Find Path Path="/GetName/Shashwenth/Age/"
+2025-01-02 20:14:17 [Thread-7] INFO  c.c.w.handlePathVariables.FindPath - End Of Checking Path validity 
+2025-01-02 20:14:17 [Thread-8] INFO  c.c.w.T.ThreadSocketImplementation - Thread Execution started 
+2025-01-02 20:14:17 [Thread-7] INFO  c.c.w.handlePathVariables.FindPath - Returning Class and Method List at FindPath 
+2025-01-02 20:14:17 [Thread-7] WARN  c.c.w.h.CheckValidityService - --------------Insode NO Class Exception------------ 
+2025-01-02 20:14:17 [Thread-7] INFO  c.c.w.handlePathVariables.FindPath - Retuning Path Variables at FIndPath 
+2025-01-02 20:14:17 [Thread-7] INFO  c.c.w.T.ThreadSocketImplementation - We have Path vars [Shashwenth] 
+2025-01-02 20:14:17 [Thread-7] INFO  c.c.w.R.InitializeRequestParams - Initializing Request Line RequestLine="GET /GetName/Shashwenth/Age/ HTTP/1.1"
+2025-01-02 20:14:17 [Thread-7] INFO  c.c.w.R.InitializeRequestParams - null Contins Params? ="false"
+2025-01-02 20:14:17 [Thread-7] INFO  c.c.w.T.ThreadSocketImplementation - There is no Class and Method associated with the URL 
+2025-01-02 20:14:17 [Thread-7] INFO  c.c.w.T.ThreadSocketImplementation - Successfully completed Socket implmentation 
+2025-01-02 20:14:18 [Thread-8] INFO  c.c.w.T.ThreadSocketImplementation - There is no Class and Method associated with the URL 
+2025-01-02 20:14:18 [Thread-8] INFO  c.c.w.T.ThreadSocketImplementation - Successfully completed Socket implmentation 
+2025-01-02 20:14:18 [Thread-0] INFO  c.c.w.T.ThreadSocketImplementation - Inititalizing socket Socket at Port="52320"
+2025-01-02 20:14:18 [Thread-0] INFO  c.c.w.T.ThreadStartUp - Exection Begins Thread Id: ="25"
+2025-01-02 20:14:18 [Thread-9] INFO  c.c.w.T.ThreadSocketImplementation - Thread Execution started 
+2025-01-02 20:14:18 [Thread-9] INFO  c.c.w.R.InitialiseRequestBody - Inside InitialiseRequestBody RequestLine="GET /favicon.ico HTTP/1.1"
+2025-01-02 20:14:18 [Thread-9] INFO  c.c.w.R.InitialiseRequestBody - Successfully initialized Request Body Request Body Method="GET" REquest Body Path="/favicon.ico"
+2025-01-02 20:14:18 [Thread-9] INFO  c.c.w.h.CheckValidityService - Initializing Validity Service 
+2025-01-02 20:14:18 [Thread-9] INFO  c.c.w.handlePathVariables.FindPath - Initializating Find Path Path="/favicon.ico"
+2025-01-02 20:14:18 [Thread-9] INFO  c.c.w.handlePathVariables.FindPath - End Of Checking Path validity 
+2025-01-02 20:14:18 [Thread-9] INFO  c.c.w.handlePathVariables.FindPath - Returning Class and Method List at FindPath 
+2025-01-02 20:14:18 [Thread-9] WARN  c.c.w.h.CheckValidityService - --------------Insode NO Class Exception------------ 
+2025-01-02 20:14:18 [Thread-9] INFO  c.c.w.handlePathVariables.FindPath - Retuning Path Variables at FIndPath 
+2025-01-02 20:14:18 [Thread-9] INFO  c.c.w.T.ThreadSocketImplementation - We have Path vars [] 
+2025-01-02 20:14:18 [Thread-9] INFO  c.c.w.R.InitializeRequestParams - Initializing Request Line RequestLine="GET /favicon.ico HTTP/1.1"
+2025-01-02 20:14:18 [Thread-9] INFO  c.c.w.R.InitializeRequestParams - null Contins Params? ="false"
+2025-01-02 20:14:18 [Thread-9] INFO  c.c.w.T.ThreadSocketImplementation - There is no Class and Method associated with the URL 
+2025-01-02 20:14:18 [Thread-9] INFO  c.c.w.T.ThreadSocketImplementation - Successfully completed Socket implmentation 
+2025-01-02 20:14:45 [Thread-0] INFO  c.c.w.T.ThreadSocketImplementation - Inititalizing socket Socket at Port="52335"
+2025-01-02 20:14:45 [Thread-0] INFO  c.c.w.T.ThreadStartUp - Exection Begins Thread Id: ="26"
+2025-01-02 20:14:45 [Thread-10] INFO  c.c.w.T.ThreadSocketImplementation - Thread Execution started 
+2025-01-02 20:14:45 [Thread-10] INFO  c.c.w.R.InitialiseRequestBody - Inside InitialiseRequestBody RequestLine="GET /GetName/Shashwenth/Age/ HTTP/1.1"
+2025-01-02 20:14:45 [Thread-10] INFO  c.c.w.R.InitialiseRequestBody - Successfully initialized Request Body Request Body Method="GET" REquest Body Path="/GetName/Shashwenth/Age/"
+2025-01-02 20:14:45 [Thread-10] INFO  c.c.w.h.CheckValidityService - Initializing Validity Service 
+2025-01-02 20:14:45 [Thread-10] INFO  c.c.w.handlePathVariables.FindPath - Initializating Find Path Path="/GetName/Shashwenth/Age/"
+2025-01-02 20:14:45 [Thread-10] INFO  c.c.w.handlePathVariables.FindPath - End Of Checking Path validity 
+2025-01-02 20:14:45 [Thread-10] INFO  c.c.w.handlePathVariables.FindPath - Returning Class and Method List at FindPath 
+2025-01-02 20:14:45 [Thread-0] INFO  c.c.w.T.ThreadSocketImplementation - Inititalizing socket Socket at Port="52336"
+2025-01-02 20:14:45 [Thread-10] WARN  c.c.w.h.CheckValidityService - --------------Insode NO Class Exception------------ 
+2025-01-02 20:14:45 [Thread-0] INFO  c.c.w.T.ThreadStartUp - Exection Begins Thread Id: ="27"
+2025-01-02 20:14:45 [Thread-10] INFO  c.c.w.handlePathVariables.FindPath - Retuning Path Variables at FIndPath 
+2025-01-02 20:14:45 [Thread-10] INFO  c.c.w.T.ThreadSocketImplementation - We have Path vars [Shashwenth] 
+2025-01-02 20:14:45 [Thread-11] INFO  c.c.w.T.ThreadSocketImplementation - Thread Execution started 
+2025-01-02 20:14:45 [Thread-10] INFO  c.c.w.R.InitializeRequestParams - Initializing Request Line RequestLine="GET /GetName/Shashwenth/Age/ HTTP/1.1"
+2025-01-02 20:14:45 [Thread-10] INFO  c.c.w.R.InitializeRequestParams - null Contins Params? ="false"
+2025-01-02 20:14:45 [Thread-10] INFO  c.c.w.T.ThreadSocketImplementation - There is no Class and Method associated with the URL 
+2025-01-02 20:14:45 [Thread-10] INFO  c.c.w.T.ThreadSocketImplementation - Successfully completed Socket implmentation 
+2025-01-02 20:14:46 [Thread-11] INFO  c.c.w.R.InitialiseRequestBody - Inside InitialiseRequestBody RequestLine="GET /favicon.ico HTTP/1.1"
+2025-01-02 20:14:46 [Thread-11] INFO  c.c.w.R.InitialiseRequestBody - Successfully initialized Request Body Request Body Method="GET" REquest Body Path="/favicon.ico"
+2025-01-02 20:14:46 [Thread-11] INFO  c.c.w.h.CheckValidityService - Initializing Validity Service 
+2025-01-02 20:14:46 [Thread-11] INFO  c.c.w.handlePathVariables.FindPath - Initializating Find Path Path="/favicon.ico"
+2025-01-02 20:14:46 [Thread-11] INFO  c.c.w.handlePathVariables.FindPath - End Of Checking Path validity 
+2025-01-02 20:14:46 [Thread-11] INFO  c.c.w.handlePathVariables.FindPath - Returning Class and Method List at FindPath 
+2025-01-02 20:14:46 [Thread-11] WARN  c.c.w.h.CheckValidityService - --------------Insode NO Class Exception------------ 
+2025-01-02 20:14:46 [Thread-11] INFO  c.c.w.handlePathVariables.FindPath - Retuning Path Variables at FIndPath 
+2025-01-02 20:14:46 [Thread-11] INFO  c.c.w.T.ThreadSocketImplementation - We have Path vars [] 
+2025-01-02 20:14:46 [Thread-11] INFO  c.c.w.R.InitializeRequestParams - Initializing Request Line RequestLine="GET /favicon.ico HTTP/1.1"
+2025-01-02 20:14:46 [Thread-11] INFO  c.c.w.R.InitializeRequestParams - null Contins Params? ="false"
+2025-01-02 20:14:46 [Thread-11] INFO  c.c.w.T.ThreadSocketImplementation - There is no Class and Method associated with the URL 
+2025-01-02 20:14:46 [Thread-11] INFO  c.c.w.T.ThreadSocketImplementation - Successfully completed Socket implmentation 
+2025-01-02 20:52:25 [Thread-0] INFO  c.c.w.T.ThreadSocketImplementation - Inititalizing socket Socket at Port="53305"
+2025-01-02 20:52:25 [Thread-0] INFO  c.c.w.T.ThreadStartUp - Exection Begins Thread Id: ="28"
+2025-01-02 20:52:25 [Thread-0] INFO  c.c.w.T.ThreadSocketImplementation - Inititalizing socket Socket at Port="53306"
+2025-01-02 20:52:25 [Thread-12] INFO  c.c.w.T.ThreadSocketImplementation - Thread Execution started 
+2025-01-02 20:52:25 [Thread-0] INFO  c.c.w.T.ThreadStartUp - Exection Begins Thread Id: ="29"
+2025-01-02 20:52:25 [Thread-13] INFO  c.c.w.T.ThreadSocketImplementation - Thread Execution started 
+2025-01-02 20:52:26 [Thread-12] INFO  c.c.w.R.InitialiseRequestBody - Inside InitialiseRequestBody RequestLine="GET /favicon.ico HTTP/1.1"
+2025-01-02 20:52:26 [Thread-12] INFO  c.c.w.R.InitialiseRequestBody - Successfully initialized Request Body Request Body Method="GET" REquest Body Path="/favicon.ico"
+2025-01-02 20:52:26 [Thread-12] INFO  c.c.w.h.CheckValidityService - Initializing Validity Service 
+2025-01-02 20:52:26 [Thread-12] INFO  c.c.w.handlePathVariables.FindPath - Initializating Find Path Path="/favicon.ico"
+2025-01-02 20:52:26 [Thread-12] INFO  c.c.w.handlePathVariables.FindPath - End Of Checking Path validity 
+2025-01-02 20:52:26 [Thread-12] INFO  c.c.w.handlePathVariables.FindPath - Returning Class and Method List at FindPath 
+2025-01-02 20:52:26 [Thread-12] WARN  c.c.w.h.CheckValidityService - --------------Insode NO Class Exception------------ 
+2025-01-02 20:52:26 [Thread-12] INFO  c.c.w.handlePathVariables.FindPath - Retuning Path Variables at FIndPath 
+2025-01-02 20:52:26 [Thread-12] INFO  c.c.w.T.ThreadSocketImplementation - We have Path vars [] 
+2025-01-02 20:52:26 [Thread-12] INFO  c.c.w.R.InitializeRequestParams - Initializing Request Line RequestLine="GET /favicon.ico HTTP/1.1"
+2025-01-02 20:52:26 [Thread-12] INFO  c.c.w.R.InitializeRequestParams - null Contins Params? ="false"
+2025-01-02 20:52:26 [Thread-12] INFO  c.c.w.T.ThreadSocketImplementation - There is no Class and Method associated with the URL 
+2025-01-02 20:52:26 [Thread-12] INFO  c.c.w.T.ThreadSocketImplementation - Successfully completed Socket implmentation 
+2025-01-02 20:52:30 [Thread-13] INFO  c.c.w.T.ThreadSocketImplementation - There is no Class and Method associated with the URL 
+2025-01-02 20:52:30 [Thread-13] INFO  c.c.w.T.ThreadSocketImplementation - Successfully completed Socket implmentation 
+2025-01-02 21:17:55 [main] INFO  com.codingchallenges.web_server.App - Execution Started 
+2025-01-02 21:17:55 [main] INFO  com.codingchallenges.web_server.App - Intitalizing Trie Mapper 
+2025-01-02 21:17:55 [main] INFO  com.codingchallenges.web_server.App - Initializing User Implementation 
+2025-01-02 21:17:55 [main] INFO  com.codingchallenges.web_server.App - Registered the Class name and function name for Reflection 
+2025-01-02 21:17:55 [main] INFO  com.codingchallenges.web_server.App - Registering Endpoint path="/GetName"
+2025-01-02 21:17:55 [main] INFO  c.c.w.h.RegisterEndpoint - Our Method Param Types ------------ [] 
+2025-01-02 21:17:55 [main] INFO  c.c.w.h.RegisterEndpoint - Successfully initialized methodParameters list 
+2025-01-02 21:17:55 [main] INFO  c.c.w.h.RegisterEndpoint - Path array ------------ [, GetName]  
+2025-01-02 21:17:55 [main] INFO  c.c.w.h.RegisterEndpoint - Successfully Registered The Endpoint in Root 
+2025-01-02 21:17:55 [main] INFO  com.codingchallenges.web_server.App - Successfully initialized the path /GetName and method GET with FunctionName GetName 
+2025-01-02 21:17:55 [main] INFO  com.codingchallenges.web_server.App - Registered the Class name and function name for Reflection 
+2025-01-02 21:17:55 [main] INFO  com.codingchallenges.web_server.App - Registering Endpoint path="/GetName/{name}/Age/{age}"
+2025-01-02 21:17:55 [main] INFO  c.c.w.h.RegisterEndpoint - Our Method Param Types ------------ [class java.lang.String, class java.lang.String] 
+2025-01-02 21:17:55 [main] INFO  c.c.w.h.RegisterEndpoint - Successfully initialized methodParameters list 
+2025-01-02 21:17:55 [main] INFO  c.c.w.h.RegisterEndpoint - Path array ------------ [, GetName, {name}, Age, {age}]  
+2025-01-02 21:17:55 [main] INFO  c.c.w.h.RegisterEndpoint - Successfully Registered The Endpoint in Root 
+2025-01-02 21:17:55 [main] INFO  com.codingchallenges.web_server.App - Successfully initialized the path /GetName/{name}/Age/{age} and method GET with FunctionName GetNameandAge 
+2025-01-02 21:17:55 [main] INFO  com.codingchallenges.web_server.App - Registered the Class name and function name for Reflection 
+2025-01-02 21:17:55 [main] INFO  com.codingchallenges.web_server.App - Registering Endpoint path="/getAge"
+2025-01-02 21:17:55 [main] INFO  c.c.w.h.RegisterEndpoint - Our Method Param Types ------------ [] 
+2025-01-02 21:17:55 [main] INFO  c.c.w.h.RegisterEndpoint - Successfully initialized methodParameters list 
+2025-01-02 21:17:55 [main] INFO  c.c.w.h.RegisterEndpoint - Path array ------------ [, getAge]  
+2025-01-02 21:17:55 [main] INFO  c.c.w.h.RegisterEndpoint - Successfully Registered The Endpoint in Root 
+2025-01-02 21:17:55 [main] INFO  com.codingchallenges.web_server.App - Successfully initialized the path /getAge and method GET with FunctionName getAge 
+2025-01-02 21:17:55 [main] INFO  com.codingchallenges.web_server.App - Registered the Class name and function name for Reflection 
+2025-01-02 21:17:55 [main] INFO  com.codingchallenges.web_server.App - Registering Endpoint path="/SetName/{name}"
+2025-01-02 21:17:55 [main] INFO  c.c.w.h.RegisterEndpoint - Our Method Param Types ------------ [class java.lang.String] 
+2025-01-02 21:17:55 [main] INFO  c.c.w.h.RegisterEndpoint - Successfully initialized methodParameters list 
+2025-01-02 21:17:55 [main] INFO  c.c.w.h.RegisterEndpoint - Path array ------------ [, SetName, {name}]  
+2025-01-02 21:17:55 [main] INFO  c.c.w.h.RegisterEndpoint - Successfully Registered The Endpoint in Root 
+2025-01-02 21:17:55 [main] INFO  com.codingchallenges.web_server.App - Successfully initialized the path /SetName/{name} and method POST with FunctionName SetName 
+2025-01-02 21:17:55 [main] INFO  com.codingchallenges.web_server.App - Registered the Class name and function name for Reflection 
+2025-01-02 21:17:55 [main] INFO  com.codingchallenges.web_server.App - Registering Endpoint path="/SetNameAsReqParameter"
+2025-01-02 21:17:55 [main] INFO  c.c.w.h.RegisterEndpoint - Our Method Param Types ------------ [class java.lang.String] 
+2025-01-02 21:17:55 [main] INFO  c.c.w.h.RegisterEndpoint - Successfully initialized methodParameters list 
+2025-01-02 21:17:55 [main] INFO  c.c.w.h.RegisterEndpoint - Path array ------------ [, SetNameAsReqParameter]  
+2025-01-02 21:17:55 [main] INFO  c.c.w.h.RegisterEndpoint - Successfully Registered The Endpoint in Root 
+2025-01-02 21:17:55 [main] INFO  com.codingchallenges.web_server.App - Successfully initialized the path /SetNameAsReqParameter and method POST with FunctionName SetNameAsReqParameter 
+2025-01-02 21:17:55 [main] INFO  com.codingchallenges.web_server.App - Registered the Class name and function name for Reflection 
+2025-01-02 21:17:55 [main] INFO  com.codingchallenges.web_server.App - Registering Endpoint path="/TestCastRequestParams/"
+2025-01-02 21:17:55 [main] INFO  c.c.w.h.RegisterEndpoint - Our Method Param Types ------------ [class java.lang.Integer, class java.lang.String, class java.lang.Double, class java.lang.String] 
+2025-01-02 21:17:55 [main] INFO  c.c.w.h.RegisterEndpoint - Successfully initialized methodParameters list 
+2025-01-02 21:17:55 [main] INFO  c.c.w.h.RegisterEndpoint - Path array ------------ [, TestCastRequestParams]  
+2025-01-02 21:17:55 [main] INFO  c.c.w.h.RegisterEndpoint - Successfully Registered The Endpoint in Root 
+2025-01-02 21:17:55 [main] INFO  com.codingchallenges.web_server.App - Successfully initialized the path /TestCastRequestParams/ and method POST with FunctionName TestCastRequestParams 
+2025-01-02 21:17:55 [main] INFO  com.codingchallenges.web_server.App - Server Socket Thread:  Thread Id="15"
+2025-01-02 21:17:55 [Thread-0] INFO  c.c.w.T.ThreadStartUp - Server Started Listening at... PORT="8080"
+2025-01-02 21:18:02 [Thread-0] INFO  c.c.w.T.ThreadSocketImplementation - Inititalizing socket Socket at Port="54227"
+2025-01-02 21:18:02 [Thread-0] INFO  c.c.w.T.ThreadStartUp - Exection Begins Thread Id: ="17"
+2025-01-02 21:18:02 [Thread-0] INFO  c.c.w.T.ThreadSocketImplementation - Inititalizing socket Socket at Port="54228"
+2025-01-02 21:18:02 [Thread-0] INFO  c.c.w.T.ThreadStartUp - Exection Begins Thread Id: ="18"
+2025-01-02 21:18:02 [Thread-2] INFO  c.c.w.T.ThreadSocketImplementation - Thread Execution started 
+2025-01-02 21:18:02 [Thread-1] INFO  c.c.w.T.ThreadSocketImplementation - Thread Execution started 
+2025-01-02 21:18:02 [Thread-1] INFO  c.c.w.R.InitialiseRequestBody - Inside InitialiseRequestBody RequestLine="GET /GetName/Shashwenth/Age/10 HTTP/1.1"
+2025-01-02 21:18:02 [Thread-1] INFO  c.c.w.R.InitialiseRequestBody - Successfully initialized Request Body Request Body Method="GET" REquest Body Path="/GetName/Shashwenth/Age/10"
+2025-01-02 21:18:02 [Thread-1] INFO  c.c.w.h.CheckValidityService - Initializing Validity Service 
+2025-01-02 21:18:02 [Thread-1] INFO  c.c.w.handlePathVariables.FindPath - Initializating Find Path Path="/GetName/Shashwenth/Age/10"
+2025-01-02 21:18:02 [Thread-1] INFO  c.c.w.handlePathVariables.FindPath - End Of Checking Path validity 
+2025-01-02 21:18:02 [Thread-1] INFO  c.c.w.handlePathVariables.FindPath - Returning Class and Method List at FindPath 
+2025-01-02 21:18:02 [Thread-1] INFO  c.c.w.handlePathVariables.FindPath - Retuning Path Variables at FIndPath 
+2025-01-02 21:18:02 [Thread-1] INFO  c.c.w.T.ThreadSocketImplementation - We have Path vars [Shashwenth, 10] 
+2025-01-02 21:18:02 [Thread-1] INFO  c.c.w.R.InitializeRequestParams - Initializing Request Line RequestLine="GET /GetName/Shashwenth/Age/10 HTTP/1.1"
+2025-01-02 21:18:02 [Thread-1] INFO  c.c.w.R.InitializeRequestParams - null Contins Params? ="false"
+2025-01-02 21:18:02 [Thread-1] INFO  c.c.w.T.ThreadSocketImplementation - Contains Path Variables 
+2025-01-02 21:18:02 [Thread-1] INFO  c.c.w.T.ThreadSocketImplementation - No Request Body 
+2025-01-02 21:18:02 [Thread-1] INFO  c.c.w.T.ExecuteReturnMethod - Inititlaizing the Execute Return Method with Java Reflection className="com.example.Example1.ExampleMethods" Method Name="GetNameandAge"
+2025-01-02 21:18:02 [Thread-1] INFO  c.c.w.T.ThreadSocketImplementation - At Not Req Body with Shashwenth  
+2025-01-02 21:18:02 [Thread-1] INFO  c.c.w.T.ExecuteReturnMethod - Successfully Loaded the Class Class="com.example.Example1.ExampleMethods"
+2025-01-02 21:18:02 [Thread-1] INFO  c.c.w.T.ExecuteReturnMethod - Found The Function Method="GetNameandAge"
+2025-01-02 21:18:03 [Thread-1] INFO  c.c.w.T.ExecuteReturnMethod - Successfully Completed the Execute Return Method 
+2025-01-02 21:18:03 [Thread-1] INFO  c.c.w.T.ThreadSocketImplementation - Successfully completed Socket implmentation 
+2025-01-02 21:18:03 [Thread-2] INFO  c.c.w.R.InitialiseRequestBody - Inside InitialiseRequestBody RequestLine="GET /favicon.ico HTTP/1.1"
+2025-01-02 21:18:03 [Thread-2] INFO  c.c.w.R.InitialiseRequestBody - Successfully initialized Request Body Request Body Method="GET" REquest Body Path="/favicon.ico"
+2025-01-02 21:18:03 [Thread-2] INFO  c.c.w.h.CheckValidityService - Initializing Validity Service 
+2025-01-02 21:18:03 [Thread-2] INFO  c.c.w.handlePathVariables.FindPath - Initializating Find Path Path="/favicon.ico"
+2025-01-02 21:18:03 [Thread-2] INFO  c.c.w.handlePathVariables.FindPath - End Of Checking Path validity 
+2025-01-02 21:18:03 [Thread-2] INFO  c.c.w.handlePathVariables.FindPath - Returning Class and Method List at FindPath 
+2025-01-02 21:18:03 [Thread-2] WARN  c.c.w.h.CheckValidityService - --------------Insode NO Class Exception------------ 
+2025-01-02 21:18:03 [Thread-2] INFO  c.c.w.handlePathVariables.FindPath - Retuning Path Variables at FIndPath 
+2025-01-02 21:18:03 [Thread-2] INFO  c.c.w.T.ThreadSocketImplementation - We have Path vars [] 
+2025-01-02 21:18:03 [Thread-2] INFO  c.c.w.R.InitializeRequestParams - Initializing Request Line RequestLine="GET /favicon.ico HTTP/1.1"
+2025-01-02 21:18:03 [Thread-2] INFO  c.c.w.R.InitializeRequestParams - null Contins Params? ="false"
+2025-01-02 21:18:03 [Thread-2] INFO  c.c.w.T.ThreadSocketImplementation - There is no Class and Method associated with the URL 
+2025-01-02 21:18:03 [Thread-2] INFO  c.c.w.T.ThreadSocketImplementation - Successfully completed Socket implmentation 
+2025-01-02 21:18:08 [Thread-0] INFO  c.c.w.T.ThreadSocketImplementation - Inititalizing socket Socket at Port="54232"
+2025-01-02 21:18:08 [Thread-0] INFO  c.c.w.T.ThreadStartUp - Exection Begins Thread Id: ="19"
+2025-01-02 21:18:08 [Thread-3] INFO  c.c.w.T.ThreadSocketImplementation - Thread Execution started 
+2025-01-02 21:18:08 [Thread-3] INFO  c.c.w.R.InitialiseRequestBody - Inside InitialiseRequestBody RequestLine="GET /GetName/Shashwenth/Age/Shas HTTP/1.1"
+2025-01-02 21:18:08 [Thread-3] INFO  c.c.w.R.InitialiseRequestBody - Successfully initialized Request Body Request Body Method="GET" REquest Body Path="/GetName/Shashwenth/Age/Shas"
+2025-01-02 21:18:08 [Thread-3] INFO  c.c.w.h.CheckValidityService - Initializing Validity Service 
+2025-01-02 21:18:08 [Thread-3] INFO  c.c.w.handlePathVariables.FindPath - Initializating Find Path Path="/GetName/Shashwenth/Age/Shas"
+2025-01-02 21:18:08 [Thread-3] INFO  c.c.w.handlePathVariables.FindPath - End Of Checking Path validity 
+2025-01-02 21:18:08 [Thread-3] INFO  c.c.w.handlePathVariables.FindPath - Returning Class and Method List at FindPath 
+2025-01-02 21:18:08 [Thread-3] INFO  c.c.w.handlePathVariables.FindPath - Retuning Path Variables at FIndPath 
+2025-01-02 21:18:08 [Thread-3] INFO  c.c.w.T.ThreadSocketImplementation - We have Path vars [Shashwenth, Shas] 
+2025-01-02 21:18:08 [Thread-3] INFO  c.c.w.R.InitializeRequestParams - Initializing Request Line RequestLine="GET /GetName/Shashwenth/Age/Shas HTTP/1.1"
+2025-01-02 21:18:08 [Thread-0] INFO  c.c.w.T.ThreadSocketImplementation - Inititalizing socket Socket at Port="54233"
+2025-01-02 21:18:08 [Thread-3] INFO  c.c.w.R.InitializeRequestParams - null Contins Params? ="false"
+2025-01-02 21:18:08 [Thread-0] INFO  c.c.w.T.ThreadStartUp - Exection Begins Thread Id: ="20"
+2025-01-02 21:18:08 [Thread-3] INFO  c.c.w.T.ThreadSocketImplementation - Contains Path Variables 
+2025-01-02 21:18:08 [Thread-4] INFO  c.c.w.T.ThreadSocketImplementation - Thread Execution started 
+2025-01-02 21:18:08 [Thread-3] INFO  c.c.w.T.ThreadSocketImplementation - No Request Body 
+2025-01-02 21:18:08 [Thread-3] INFO  c.c.w.T.ExecuteReturnMethod - Inititlaizing the Execute Return Method with Java Reflection className="com.example.Example1.ExampleMethods" Method Name="GetNameandAge"
+2025-01-02 21:18:08 [Thread-3] INFO  c.c.w.T.ThreadSocketImplementation - At Not Req Body with Shashwenth  
+2025-01-02 21:18:08 [Thread-3] INFO  c.c.w.T.ExecuteReturnMethod - Successfully Loaded the Class Class="com.example.Example1.ExampleMethods"
+2025-01-02 21:18:08 [Thread-3] INFO  c.c.w.T.ExecuteReturnMethod - Found The Function Method="GetNameandAge"
+2025-01-02 21:18:08 [Thread-3] INFO  c.c.w.T.ExecuteReturnMethod - Successfully Completed the Execute Return Method 
+2025-01-02 21:18:08 [Thread-3] INFO  c.c.w.T.ThreadSocketImplementation - Successfully completed Socket implmentation 
+2025-01-02 21:18:09 [Thread-4] INFO  c.c.w.R.InitialiseRequestBody - Inside InitialiseRequestBody RequestLine="GET /favicon.ico HTTP/1.1"
+2025-01-02 21:18:09 [Thread-4] INFO  c.c.w.R.InitialiseRequestBody - Successfully initialized Request Body Request Body Method="GET" REquest Body Path="/favicon.ico"
+2025-01-02 21:18:09 [Thread-4] INFO  c.c.w.h.CheckValidityService - Initializing Validity Service 
+2025-01-02 21:18:09 [Thread-4] INFO  c.c.w.handlePathVariables.FindPath - Initializating Find Path Path="/favicon.ico"
+2025-01-02 21:18:09 [Thread-4] INFO  c.c.w.handlePathVariables.FindPath - End Of Checking Path validity 
+2025-01-02 21:18:09 [Thread-4] INFO  c.c.w.handlePathVariables.FindPath - Returning Class and Method List at FindPath 
+2025-01-02 21:18:09 [Thread-4] WARN  c.c.w.h.CheckValidityService - --------------Insode NO Class Exception------------ 
+2025-01-02 21:18:09 [Thread-4] INFO  c.c.w.handlePathVariables.FindPath - Retuning Path Variables at FIndPath 
+2025-01-02 21:18:09 [Thread-4] INFO  c.c.w.T.ThreadSocketImplementation - We have Path vars [] 
+2025-01-02 21:18:09 [Thread-4] INFO  c.c.w.R.InitializeRequestParams - Initializing Request Line RequestLine="GET /favicon.ico HTTP/1.1"
+2025-01-02 21:18:09 [Thread-4] INFO  c.c.w.R.InitializeRequestParams - null Contins Params? ="false"
+2025-01-02 21:18:09 [Thread-4] INFO  c.c.w.T.ThreadSocketImplementation - There is no Class and Method associated with the URL 
+2025-01-02 21:18:09 [Thread-4] INFO  c.c.w.T.ThreadSocketImplementation - Successfully completed Socket implmentation 
+2025-01-02 21:21:26 [Thread-0] INFO  c.c.w.T.ThreadSocketImplementation - Inititalizing socket Socket at Port="54380"
+2025-01-02 21:21:26 [Thread-0] INFO  c.c.w.T.ThreadStartUp - Exection Begins Thread Id: ="21"
+2025-01-02 21:21:26 [Thread-5] INFO  c.c.w.T.ThreadSocketImplementation - Thread Execution started 
+2025-01-02 21:21:26 [Thread-5] INFO  c.c.w.R.InitialiseRequestBody - Inside InitialiseRequestBody RequestLine="POST /TestCastRequestParams?id=1&name=Shash&amount=10.00 HTTP/1.1"
+2025-01-02 21:21:26 [Thread-5] INFO  c.c.w.R.InitialiseRequestBody - Successfully initialized Request Body Request Body Method="POST" REquest Body Path="/TestCastRequestParams"
+2025-01-02 21:21:26 [Thread-5] INFO  c.c.w.h.CheckValidityService - Initializing Validity Service 
+2025-01-02 21:21:26 [Thread-5] INFO  c.c.w.handlePathVariables.FindPath - Initializating Find Path Path="/TestCastRequestParams"
+2025-01-02 21:21:26 [Thread-5] INFO  c.c.w.handlePathVariables.FindPath - End Of Checking Path validity 
+2025-01-02 21:21:26 [Thread-5] INFO  c.c.w.handlePathVariables.FindPath - Returning Class and Method List at FindPath 
+2025-01-02 21:21:26 [Thread-5] INFO  c.c.w.handlePathVariables.FindPath - Retuning Path Variables at FIndPath 
+2025-01-02 21:21:26 [Thread-5] INFO  c.c.w.T.ThreadSocketImplementation - We have Path vars [] 
+2025-01-02 21:21:26 [Thread-5] INFO  c.c.w.R.InitializeRequestParams - Initializing Request Line RequestLine="POST /TestCastRequestParams?id=1&name=Shash&amount=10.00 HTTP/1.1"
+2025-01-02 21:21:26 [Thread-5] INFO  c.c.w.R.InitializeRequestParams - null Contins Params? ="true"
+2025-01-02 21:21:26 [Thread-5] INFO  c.c.w.R.InitializeRequestParams - Returning the Request Parameters 
+2025-01-02 21:21:26 [Thread-5] INFO  c.c.w.T.ThreadSocketImplementation - Contains Body contentLength="115"
+2025-01-02 21:21:26 [Thread-5] INFO  c.c.w.T.ThreadSocketImplementation - Contains Path Variables 
+2025-01-02 21:21:26 [Thread-5] INFO  c.c.w.T.ThreadSocketImplementation - Contains Request Parameters 
+2025-01-02 21:21:26 [Thread-5] INFO  c.c.w.T.ExecuteReturnMethod - Inititlaizing the Execute Return Method with Java Reflection className="com.example.Example1.ExampleMethods" Method Name="TestCastRequestParams"
+2025-01-02 21:21:26 [Thread-5] INFO  c.c.w.T.ThreadSocketImplementation - Contains Request Body 
+2025-01-02 21:21:26 [Thread-5] INFO  c.c.w.T.ExecuteReturnMethod - Successfully Loaded the Class Class="com.example.Example1.ExampleMethods"
+2025-01-02 21:21:26 [Thread-5] INFO  c.c.w.T.ExecuteReturnMethod - Found The Function Method="TestCastRequestParams"
+2025-01-02 21:21:26 [Thread-5] INFO  c.c.w.T.ExecuteReturnMethod - Successfully Completed the Execute Return Method 
+2025-01-02 21:21:26 [Thread-5] INFO  c.c.w.T.ThreadSocketImplementation - Successfully completed Socket implmentation 
